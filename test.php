@@ -7,7 +7,7 @@
 
 <?php 
 for ($i = 0; $i <= 10; $i++) {
-    echo "<div>$i</div> <br>"
+    echo "<div id=\"div$i\">$i</div>\n"
 ?>
 
 </body>
