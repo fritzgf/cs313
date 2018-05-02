@@ -7,7 +7,7 @@
 
 <?php 
 
-for ($i = 0; $i <= 10; $i++) { 
+for ($i = 0; $i < 10; $i++) { 
     echo "<div id=\"div$i\">$i</div>\n";
  
 } 
