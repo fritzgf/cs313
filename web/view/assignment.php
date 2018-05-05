@@ -16,21 +16,15 @@
 <html  lang="en">
 
 <head>
-   
-
     <meta charset="utf-8">
     <title> Directory| assignments</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
-    </script>
+    <link rel="stylesheet" type="text/css" href="./../css/stylesheet.css" media="screen">
 
 </head>
 
 <body>
 
-
-    <!--body holds the content of the page-->
-    <div id=" wrapper">
-
+    <div id=" wrapper
 
         <header>
 
@@ -49,6 +43,7 @@
       
         <footer>
         <?php
+    
         require("./../common/footer.php");
         ?>
         </footer>

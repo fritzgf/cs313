@@ -5,9 +5,9 @@
 
     <meta charset="utf-8">
     <title> Home | </title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
-    </script>
 
+    <link rel="stylesheet" type="text/css" href="./../css/stylesheet.css" media="screen">
+   
 </head>
 
 <body>
@@ -23,7 +23,7 @@
        
         <nav>
             <?php
-        require("./../common/header.php");
+        require("./../common/navigation.php");
         ?>
         </nav>
 
