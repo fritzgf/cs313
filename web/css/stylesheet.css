@@ -12,8 +12,7 @@ a:link {
     text-decoration: none;
 }
  .description{
-     border-style: solid;
-     border-width: 5px;
+    
      width: 500px;
      margin-left:2em;
      padding-top: 1em;
@@ -21,6 +20,14 @@ a:link {
 .wrapper{
     display:flex;
 
+}
+.image{
+    margin-left:2em;
+    padding-top: 1em;
+}
+.picture-name{
+    margin-left:2em;
+    padding-top: 1em;
 }
 
 
