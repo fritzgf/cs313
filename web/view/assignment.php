@@ -17,14 +17,13 @@
         </header>
         <!-- links to my future assignments-->
         <nav>
-        
+       
         </nav>
 
         <main>
-       <p> Coming up soon...</p>
+
         </main>
       
-
         <footer>
         <?php
     
