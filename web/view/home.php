@@ -23,7 +23,7 @@
        
         <nav>
             <?php
-        require("common/navigation.php");
+        require("./../common/header.php");
         ?>
         </nav>
 
@@ -34,7 +34,7 @@
       
         <footer>
         <?php
-        require("common/footer.php");
+        require("./../common/footer.php");
         ?>
         </footer>
     </div>

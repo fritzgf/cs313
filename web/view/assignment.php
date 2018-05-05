@@ -38,7 +38,7 @@
         <!-- links to my future assignments-->
         <nav>
         <?php
-        require("common/navigation.php");
+        require("./../common/navigation.php");
         ?>
         </nav>
 
@@ -49,7 +49,7 @@
       
         <footer>
         <?php
-        require("common/footer.php");
+        require("./../common/footer.php");
         ?>
         </footer>
     </div>
