@@ -21,9 +21,7 @@
         </nav>
 
         <main>
-        <?php
-        require("./../common/navigation.php");
-        ?>
+       <p> Coming up soon...</p>
         </main>
       
 
