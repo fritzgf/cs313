@@ -2,31 +2,36 @@
 <html  lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title> Directory| assignments</title>
-    <link rel="stylesheet" type="text/css" href="./../css/stylesheet.css" media="screen">
 
+    <meta charset="utf-8">
+    <title> Home | </title>
+
+    <link rel="stylesheet" type="text/css" href="./../css/stylesheet.css" media="screen">
+   
 </head>
 
 <body>
 
-    <div id=" wrapper
+<h1>Please see my assignments below </h1>
+
+    <div id=" wrapper">
+
 
         <header>
 
         </header>
-        <!-- links to my future assignments-->
-        <nav>
        
+        <nav>
+         
         </nav>
 
         <main>
 
+            <h1> Coming up soon... </h1>
         </main>
       
         <footer>
         <?php
-    
         require("./../common/footer.php");
         ?>
         </footer>
@@ -35,7 +40,3 @@
 
 </html>
 
-
-
- 
-    
