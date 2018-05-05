@@ -2,7 +2,7 @@
 <html  lang="en">
 
 <head>
-    <!-- head describes the page to the browser-->
+    
 
     <meta charset="utf-8">
     <title> Home | fritzgf.github.io</title>
