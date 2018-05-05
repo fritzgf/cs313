@@ -31,7 +31,7 @@
 
             <h2> This is a little bit about my home country. </h2>
             
-           <img src="./..images/citadelle.jpg">
+           <img src="/view/images/citadelle.jpg">
             <figcaption id="picture-name"> Citadelle Laferrière, Haiti </figcaption>
             <div class="description"> 
             <p>The Citadelle Laferrière is a mountaintop fortress, located
