@@ -11,7 +11,11 @@ body {
 a:link {
     text-decoration: none;
 }
-
+ .p{
+     border-style: solid;
+     border-width: 5px;
+     width: 200px;
+ }
 
 
 
