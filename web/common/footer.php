@@ -1,3 +1,3 @@
 
-        <p>    &copy;2018, Fritz Fevrier</>
+        <p class="footer">    &copy;2018, Fritz Fevrier</>
         

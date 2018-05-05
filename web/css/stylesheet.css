@@ -25,9 +25,15 @@ a:link {
     margin-left:2em;
     padding-top: 1em;
 }
-.picture-name{
+#picture-name{
     margin-left:2em;
     padding-top: 1em;
+}
+h1{
+    margin-left:2em;
+}
+.footer{
+    margin-left:2em;
 }
 
 
