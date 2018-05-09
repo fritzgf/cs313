@@ -6,14 +6,14 @@
 
 <?php
 // define variables and set to empty values
-$name = $email = $major = $comment = $continnent = "";
+$name = $email = $major = $comment = $continent = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $name = test_input($_POST["name"]);
   $email = test_input($_POST["email"]);
   $major = test_input($_POST["major"]);
   $comment = test_input($_POST["comment"]);
-  $continnent = test_input($_POST["continnent"]);
+  $continent = test_input($_POST["continent"]);
 }
 
 function test_input($data) {
