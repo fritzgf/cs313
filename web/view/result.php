@@ -35,7 +35,7 @@ echo $major;
 echo "<br>";
 echo $comment;
 echo "<br>";
-echo $continnent;
+echo $continent;
 ?>
 </body>
 </html>
