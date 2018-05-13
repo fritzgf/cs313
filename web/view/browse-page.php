@@ -14,7 +14,7 @@
 <title></title>
 <body>
 
-<h1>List of Products</h1>
+<h1>List of Products form items</h1>
 
     <img src="/images/citadelle.jpg" class="image">
             <figcaption id="picture-name"> Price: $1.50 </figcaption>
