@@ -36,7 +36,7 @@
 </section>
 
 <section>
-<form method="post" action="view-confirmation.php">
+<form method="post" action="confirmation.php">
     <input type="submit" value="confirmation"> <br>
  
 </form>
