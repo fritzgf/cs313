@@ -7,7 +7,13 @@
     <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" >  </script>
    
     <script type="text/javascript" > 
+     function displayItems()
+     {
+        $.adjax({url: "view-cart.php", success:function(result)
+        
+        })
 
+     }
     
     </script>
 </head>
@@ -19,13 +25,9 @@
     <img src="/images/citadelle.jpg" class="image">
             <figcaption id="picture-name"> Price: $1.50 </figcaption>
             <div class="description"> 
-            <?php
-            function ViewItems(){
-                require("./../view-cart.php");
-            }
-          ?>
+          
 
-<input type="button" name="addToCart" onclick="document.write('<?php viewItems() ?>');" value="Add to cart">
+<button onclick="displayItems" value="Add to cart">
                 
 </body>
 </html>
