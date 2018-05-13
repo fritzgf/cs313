@@ -27,7 +27,7 @@
             <div class="description"> 
           
 
-<button onclick="displayItems" value="Add to cart">
+<button onclick="displayItems()"> Add to cart </button>
                 
 </body>
 </html>
