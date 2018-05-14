@@ -8,10 +8,29 @@
 <body>
 
 <h1>Please see your items selected</h1>
+<?php
+// define variables and set to empty values
+$image = "";
 
-<div>
-</div>
-            
-                <a> </a>
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $image = test_input($_POST["name"]);
+
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
+<?php
+echo "<h1>Result </h>";
+echo"<br>";
+echo $image;
+echo "<br>";
+
+?>
 </body>
 </html>

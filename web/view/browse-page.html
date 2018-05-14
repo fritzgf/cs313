@@ -23,15 +23,32 @@
 <title></title>
 <body>
 
-<h1>List of Products form items</h1>
-
-    <img src="/images/citadelle.jpg" class="image">
-            <figcaption id="picture-name"> Price: $1.50 </figcaption>
-            <div class="description"> 
-            </div>
-          
-
-<button onclick="displayItems()"> Add to cart </button>
-                
+    <form method="post" action="view-cart.php"> 
+   <h1>List of Products form items</h1>
+<table>  
+    
+      
+    <tr> 
+    <td>  <img src="/images/products/anvil-tn.png" class="image"> <figcaption id="picture-name"> Price: $1.50 </figcaption>
+        <div class="description"> 
+        </div>  </td>
+    </tr>
+   
+            <input type="checkbox" name="image" value="anvil" checked="checked"> <br>
+        </table>
+        
+        <table>  
+    
+      
+                <tr> 
+                <td>  <img src="/images/products/bomb-tn.png" class="image"> <figcaption id="picture-name"> Price: $1.50 </figcaption>
+                    <div class="description"> 
+                    </div>  </td>
+                </tr>
+               
+                        <input type="checkbox" name="image" value="bomb" checked="checked">  <br>
+                    </table>
+        <input type="submit" name="Add to cart">
+</form>            
 </body>
 </html>
