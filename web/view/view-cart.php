@@ -13,7 +13,7 @@
 $image = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $image = test_input($_POST["name"]);
+  $image = test_input($_POST["image"]);
 
 }
 
