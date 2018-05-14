@@ -9,11 +9,11 @@
     <script type="text/javascript" > 
      function displayItems()
      {
-        $.adjax({url: "view-cart.php", success:function(result)
+        $.adjax({url:"view-cart.php", success:function(result)
         
         })
 
-     }
+     } 
     
     </script>
 </head>
