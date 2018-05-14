@@ -10,6 +10,9 @@
      function displayItems()
      {
         $.adjax({url:"view-cart.php", success:function(result)
+        {
+            $("div").text(result);
+        }
         
         })
 
@@ -25,6 +28,7 @@
     <img src="/images/citadelle.jpg" class="image">
             <figcaption id="picture-name"> Price: $1.50 </figcaption>
             <div class="description"> 
+            </div>
           
 
 <button onclick="displayItems()"> Add to cart </button>

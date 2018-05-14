@@ -9,9 +9,9 @@
 
 <h1>Please see your items selected</h1>
 
-<?php
-             require("./../view-cart.php");
-                ?>
+<div>
+</div>
+            
                 <a> </a>
 </body>
 </html>
