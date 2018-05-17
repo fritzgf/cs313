@@ -7,8 +7,14 @@
 <title></title>
 <body>
 
-<h1>Enter a shipping address</h1>
+<header>
+</header>
 
+<nav> </nav>
+
+<main>
+<h1>Enter a shipping address</h1>
+ 
 <section>
 <form method="post" action="" >
 
@@ -41,5 +47,6 @@
  
 </form>
 </section>
+</main>
 </body>
 </html>

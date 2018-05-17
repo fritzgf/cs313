@@ -1,0 +1,43 @@
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  background-color:whitesmoke;
+}
+a:link {
+    text-decoration: none;
+}
+ .description{
+    
+     width: 500px;
+     margin-left:2em;
+     padding-top: 1em;
+ }
+.wrapper{
+    display:flex;
+
+}
+.image{
+    margin-left:2em;
+    padding-top: 1em;
+}
+#picture-name{
+    margin-left:2em;
+    padding-top: 1em;
+}
+h1{
+    margin-left:.5em;
+}
+h2{
+    margin-left:1em;
+}
+.footer{
+    margin-left:1em;
+    padding-top: 1em;
+}
+
+
