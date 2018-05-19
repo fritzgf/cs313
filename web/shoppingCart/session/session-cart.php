@@ -17,4 +17,4 @@ elseif ($action === "remove") {
     $_SESSION['price'] = array_values($_SESSION['price']);
 }
 
-
+ 
