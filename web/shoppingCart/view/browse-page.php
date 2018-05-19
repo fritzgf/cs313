@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = array();
+    $_SESSION['price'] = array();
+}
+?>
 <!DOCTYPE html>
 <html lang="eng">
 

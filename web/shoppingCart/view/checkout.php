@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="eng">
 
@@ -44,7 +47,13 @@
 <section>
 <form method="post" action="confirmation.php">
     <input type="submit" value="confirmation"> <br>
- 
+    <?php
+                        if (count($_SESSION['cart']) >= 1) {
+                            echo "<input type='submit' value='Confirm'>";
+                        } else {
+                            echo "<p>You cannot check out with an empty cart</p>";
+                        }
+                        ?>
 </form>
 </section>
 </main>

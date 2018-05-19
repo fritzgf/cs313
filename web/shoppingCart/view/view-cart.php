@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="eng">
 
@@ -33,7 +36,7 @@ echo "<p> total: <span id= 'orderTotal'>" . $total . "</span>  Golden pieces";
 
 ?>
 
-<p id="chekout-link"> <a href='./../view/checkout.php'> Checkout> Che ckout </a> </p> 
+<p id="chekout-link"> <a href='./../view/checkout.php'> Checkout> Checkout </a> </p> 
 </main>
 </div>
 <script src="script.js" type="text/javascript"></script>
