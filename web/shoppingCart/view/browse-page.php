@@ -34,32 +34,32 @@ if(!isset($_SESSION['cart'])) {
                     <table>
                         <tr>
                             <td><button onclick="addToCart('anvil-tn', 50)">Add to Cart</button></td>
-                            <td onmouseenter="itemDetails(0)" onmouseout="removeDetails()">Potion of Healing</td>
+                            <td onmouseenter="itemDetails(0)" onmouseout="removeDetails()">anvil</td>
                             <td>50 Gold Pieces per vial</td>
                         </tr>
                         <tr>
                             <td><button onclick="addToCart('bomb-tn', 90)">Add to Cart</button></td>
-                            <td onmouseenter="itemDetails(1)" onmouseout="removeDetails()">Philter of Love</td>
+                            <td onmouseenter="itemDetails(1)" onmouseout="removeDetails()">bomb</td>
                             <td>90 Gold Pieces per vial</td>
                         </tr>
                         <tr>
                             <td><button onclick="addToCart('catapult-tn', 120)">Add to Cart</button></td>
-                            <td onmouseenter="itemDetails(2)" onmouseout="removeDetails()">Dust of Dryness</td>
+                            <td onmouseenter="itemDetails(2)" onmouseout="removeDetails()">catapult</td>
                             <td>120 Gold Pieces per pinch</td>
                         </tr>
                         <tr>
                             <td><button onclick="addToCart('helmet-tn', 120)">Add to Cart</button></td>
-                            <td onmouseenter="itemDetails(3)" onmouseout="removeDetails()">Elixir of Health</td>
+                            <td onmouseenter="itemDetails(3)" onmouseout="removeDetails()">helmet</td>
                             <td>120 Gold Pieces per vial</td>
                         </tr>
                         <tr>
                             <td><button onclick="addToCart('hole-tn', 200)">Add to Cart</button></td>
-                            <td onmouseenter="itemDetails(4)" onmouseout="removeDetails()">Marvelous Pigments</td>
+                            <td onmouseenter="itemDetails(4)" onmouseout="removeDetails()">hole</td>
                             <td>200 Gold Pieces per box</td>
                         </tr>
                         <tr>
                             <td><button onclick="addToCart('mallet-tn', 400)">Add to Cart</button></td>
-                            <td onmouseenter="itemDetails(5)" onmouseout="removeDetails()">Sovereign Glue</td>
+                            <td onmouseenter="itemDetails(5)" onmouseout="removeDetails()">mallet</td>
                             <td>400 Gold Pieces per vial</td>
                         </tr>
                     </table>

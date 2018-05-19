@@ -10,36 +10,42 @@ session_start();
 <title></title>
 <body>
 
-<header> </header>
+   <h2>Shopping Cart</h2>
+                    <ul>
+                        <?php
+                        $index = 0;
+                        foreach ($_SESSION['cart'] as $item) {
+                            echo "<li id='$index'><button onclick='removeFromCart($index, " . $_SESSION['price'][$index] . ")'>Remove from Cart</button> $item</li>";
+                            $index++;
+                        }
+                        ?>
+                    </ul>
 
+                    <?php
+                    $total = 0;
+                    foreach ($_SESSION['price'] as $price) {
+                        $total += $price;
+                    }
+                    echo "</p>Total: <span id='orderTotal'>" . $total . "</span> Gold Pieces";
+                    ?>
+                </section>
+                
+                <?php
+                /*
+                if (count($_SESSION['cart']) >= 1) {
+                    echo "<p id='checkout-link'><a href='checkout.php'>Checkout</a></p>";
+                } else {
+                    echo "<p>You cannot check out with an empty cart</p>";
+                }
+                */
+                ?>
+                <p id='checkout-link'><a href='checkout.php'>Checkout</a></p>
+            </main>
 
-   <nav></nav>
-<div class="container">
-  <main> 
-<h1>Shopping Cart</h1>
-<ul> 
-<?php
-$index=0;
-foreach($_SESSION['cart'] as $item){
-echo"<li id='$index'> <button onclick='removeFromCart ($index. ". $_SESSION ['price']['$index'] . " )'> Remove From  Cart</button>$item</li>" ;
-$index++;  }
-?>
-</ul>
-
-<?php
-$total=0;
-foreach($_SESSION['price'] as $price){
-  $total+= $price;
-
-}
-echo "<p> total: <span id= 'orderTotal'>" . $total . "</span>  Golden pieces";
-
-?>
-
-<p id="chekout-link"> <a href='./../view/checkout.php'> Checkout> Checkout </a> </p> 
-</main>
-</div>
-<script src="script.js" type="text/javascript"></script>
+            <footer>
+            </footer>
+        </div>
+        <script src="script.js" type="text/javascript"></script>
 
 </body>
 </html>
