@@ -3,7 +3,7 @@
 
 <head meta charset="UTF-8">
     <meta name ="viewport" comment="width=device-width">
-    <title></title>
+    <title>browse Items</title>
 </head>
     <body>
         <div class="container">
