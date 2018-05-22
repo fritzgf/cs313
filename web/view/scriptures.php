@@ -12,7 +12,7 @@
 <body>
     
     <?php
-     require("./../view/dbaccess.php");
+     require("./../library/dbaccess.php");
     ?>
 </body>
 </html>
