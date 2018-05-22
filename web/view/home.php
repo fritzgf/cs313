@@ -34,7 +34,7 @@ echo" $count";
         <header>
 
         </header>
-       
+
         <nav>
             <?php
         require("./../common/navigation.php");
@@ -45,7 +45,7 @@ echo" $count";
 
             <h2> This is a little bit about my home country. </h2>
             
-           <img src="/images/citadelle.jpg" class="image">
+           <img s(rc="/images/citadelle.jpg" class="image">
             <figcaption id="picture-name"> Citadelle Laferrière, Haiti </figcaption>
             <div class="description"> 
             <p>The Citadelle Laferrière is a mountaintop fortress, located
