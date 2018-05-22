@@ -14,9 +14,12 @@ $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPass
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
-foreach ($db->query('SELECT * FROM scriptures') as $row)
-{
-  echo $row['book'];
+    foreach ($db->query('SELECT * FROM scriptures') as $row)
+	{
+		echo '<strong>' . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</strong> - "  . $row['content'];
+
+		echo '<br/>';
+		echo '<br/>';
 
   echo '<br/>';
 }

@@ -6,7 +6,7 @@
 <h1>Scripture Resources</h1>
 
 <?php 
- require("./../view/dbaccess.php");
+ require("./../library/dbacess.php");
 ?>
 
 <form> 
