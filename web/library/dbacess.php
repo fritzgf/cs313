@@ -22,4 +22,21 @@ $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		echo '<br/>';
 
   echo '<br/>';
+if(isset($_POST['SubmitButton'])){ //check if form was submitted
+  $book = $_POST['inputBook']; //get input text
+
+  $stmt = $db->prepare('SELECT * FROM scriptures WHERE book=:book');
+  $stmt->execute(array(':book' => $book));
+  $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+}    
+
+
+
+
+foreach ($rows as $row) {
+	print $row["book"] . " " . $row["verse"] .":" . $row["chapter"]."<br/>";
 }
+
+	}
+?>

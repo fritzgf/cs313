@@ -10,7 +10,14 @@
     <script src="main.js"></script>
 </head>
 <body>
+
+<form action="" method="post">
+	<input type="text" name="inputBook"/>
+    <input type="submit" name="SubmitButton"/>
     
+echo '<h3> Results </h3>';
+</form> 
+
     <?php
       require("./../library/dbacess.php");
     ?>
