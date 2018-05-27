@@ -43,8 +43,6 @@ if(isset($_POST['SubmitButton'])){ //check if form was submitted
 }    
 
 
-
-
 foreach ($rows as $row) {
 	print $row["book"] . " " . $row["verse"] .":" . $row["chapter"]."<br/>";
 }
