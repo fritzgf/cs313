@@ -24,11 +24,14 @@ $query = "SELECT * FROM interview_questions";
 $statement = $db->prepare($query);
 $statement->bindValue(":interviewText", $user_question, PDO::PARAM_STR);
 $statement->execute();
-foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $interview_questions)
+
+foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $interview_question)
 {
     $interviewText = $interview_questions["interviewText"];
-    $date = $interviewText["date"];
+    $date = $interview_questions["date"];
      
-    echo "$interviewText <br> $date";
+    echo "$interviewText";
+    echo "<br>";
+    echo "$date";
 }
 ?>
