@@ -9,7 +9,7 @@
 <body>
 <?php
     
-      require("./../library/dbacess.php");
+      require("./../library/model.php");
     ?>
 </body>
 </html>
