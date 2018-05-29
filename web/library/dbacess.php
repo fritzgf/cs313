@@ -47,5 +47,20 @@ foreach ($rows as $row) {
 	print $row["book"] . " " . $row["verse"] .":" . $row["chapter"]."<br/>";
 }
 
-	}
+  }
+  $user_question = $_GET["interviewText"];
+$query = "SELECT * FROM interview_questions";
+$statement = $db->prepare($query);
+$statement->bindValue(":interviewText", $user_question, PDO::PARAM_STR);
+$statement->execute();
+
+foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $interview_question)
+{
+    $interviewText = $interview_questions["interviewText"];
+    $date = $interview_questions["date"];
+     
+    echo "$interviewText";
+    echo "<br>";
+    echo "$date";
+}
 ?>
