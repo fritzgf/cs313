@@ -25,27 +25,19 @@ echo 'Error!:' .$ex->getMessage();
 die();
 
 }
-    foreach ($db->query('SELECT * FROM scriptures') as $row)
-	{
-		echo '<strong>' . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</strong> - "  . $row['content'];
+$user_question = $_GET["interviewText"];
+$query = "SELECT * FROM interview_questions";
+$statement = $db->prepare($query);
+$statement->bindValue(":interviewText", $user_question, PDO::PARAM_STR);
+$statement->execute();
 
-		echo '<br/>';
-		echo '<br/>';
-
-  echo '<br/>';
-if(isset($_POST['SubmitButton'])){ //check if form was submitted
-  $book = $_POST['inputBook']; //get input text
-
-  $stmt = $db->prepare('SELECT * FROM scriptures WHERE book=:book');
-  $stmt->execute(array(':book' => $book));
-  $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-}    
-
-
-foreach ($rows as $row) {
-	print $row["book"] . " " . $row["verse"] .":" . $row["chapter"]."<br/>";
+foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $interview_question)
+{
+    $interviewText = $interview_questions["interviewText"];
+    $date = $interview_questions["date"];
+     
+    echo "$interviewText";
+    echo "<br>";
+    echo "$date";
 }
-
-	}
-?>
+  ?>
