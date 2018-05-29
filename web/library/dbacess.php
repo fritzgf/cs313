@@ -27,14 +27,14 @@ die();
 }
 
 $user_iq = $_GET["interviewText"];
-
+var_dump($stmt);
+exit;
 $query= "SELECT iq.interviewText, iq.date, u.user_id, u.firstName FROM interview_questions as iq INNER JOIN users as u ON iq.user_id= u.id";
 
 $stmt = $db->prepare($query);
 $stmt->bindValue(':interviewText', $user_iq, PDO::PARAM_STR);
 $stmt->execute();
-var_dump($stmt);
-exit;
+
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $rows)
