@@ -32,7 +32,7 @@ $stmt = $db->prepare($query);
 $stmt->bindValue(':interviewText', $user_iq, PDO::PARAM_STR);
 $stmt->execute();
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+var_dump($rows);
 foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $rows)
 {
     $interviewText = $rows["interviewText"];
@@ -42,6 +42,6 @@ foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $rows)
     echo "$interviewText";
     echo "<br>";
     echo "$date";
-    $firstName = $rows["firstName"];
+  
 }
   ?>
