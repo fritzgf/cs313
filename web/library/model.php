@@ -20,9 +20,9 @@ catch (PDOException $ex)
 }
 ?>
 <?php
-	foreach ($db->query('SELECT * FROM scriptures') as $row)
+	foreach ($db->query('SELECT * FROM interview_questions') as $row)
 	{
-		echo '<strong>' . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</strong> - "  . $row['content'];
+		echo  $row["interviewText"];
 
 		echo '<br/>';
 	}
