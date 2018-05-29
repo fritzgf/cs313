@@ -27,9 +27,9 @@ die();
 }
 foreach ($db->query('SELECT iq.interviewText, iq.date, u.user_id, u.firstName FROM interview_questions as iq INNER JOIN users as u ON iq.user_id= u.id') as $row)
 {
-  echo  $row["interviewText"];
-  echo $row["date"];
-  echo $row["firstName"];
+  echo  $row['interviewText'];
+  echo $row['date'];
+  echo $row['firstName'];
     echo "<br>";  
 }
 ?>
