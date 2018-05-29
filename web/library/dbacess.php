@@ -26,7 +26,7 @@ die();
 
 }
 $user_question = $_GET["interviewText"];
-$query = "SELECT * FROM interview_questions";
+$query = "SELECT * FROM interview_questions WHERE interviewText=:interviewText";
 $statement = $db->prepare($query);
 $statement->bindValue(":interviewText", $user_question, PDO::PARAM_STR);
 $statement->execute();
