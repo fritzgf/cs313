@@ -19,7 +19,7 @@ echo '<h3> Results </h3>'
 </form> 
 
     <?php
-      require("./../library/dbacess.php");
+        require("./../library/model.php");
     ?>
 </body>
 </html>
