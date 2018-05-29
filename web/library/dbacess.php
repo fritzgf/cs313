@@ -25,16 +25,16 @@ echo 'Error!:' .$ex->getMessage();
 die();
 
 }
-$user_question = $_GET["interviewText"];
-$query = "SELECT * FROM interview_questions WHERE interviewText=:interviewText";
-$statement = $db->prepare($query);
-$statement->bindValue(":interviewText", $user_question, PDO::PARAM_STR);
-$statement->execute();
+$query= "SELECT in.interviewText, in.date, u.user_id FROM interview_questions in INNER JOIN users u ON in.interviewText = u.user_id WHERE interviewText = :interview_question_id";
+$stmt = $db->prepare($query);
+$stmt->bindValue(':interview', $interviewText, PDO::PARAM_STR);
+$stmt->execute();
+$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $interview_question)
 {
-    $interviewText = $interview_questions["interviewText"];
-    $date = $interview_questions["date"];
+    $interviewText = $interview_question["interviewText"];
+    $date = $interview_question["date"];
      
     echo "$interviewText";
     echo "<br>";
