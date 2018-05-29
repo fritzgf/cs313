@@ -20,7 +20,7 @@ catch (PDOException $ex)
 }
 foreach ($db->query('SELECT * FROM interview_questions') as $row)
 {
-    echo  $row['interviewTex'] ;
+    echo  $row["interviewTex"] ;
 
     echo '<br/>';
     echo '<br/>';
