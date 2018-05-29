@@ -25,11 +25,9 @@ echo 'Error!:' .$ex->getMessage();
 die();
 
 }
-
-
 $query= "SELECT iq.interviewText, iq.date, u.user_id, u.firstName FROM interview_questions as iq INNER JOIN users as u ON iq.user_id= u.id";
 
-foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $rows)
+foreach ($db->query('SELECT * FROM scriptures') as $row)
 {
      
     echo "$interviewText";
