@@ -18,13 +18,12 @@ catch (PDOException $ex)
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
-foreach ($db->query('SELECT * FROM interview_questions') as $row)
-{
-    echo  $row["interviewTex"] ;
-
-    echo '<br/>';
-    echo '<br/>';
-
-echo '<br/>';
-}
 ?>
+<?php
+	foreach ($db->query('SELECT * FROM scriptures') as $row)
+	{
+		echo '<strong>' . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</strong> - "  . $row['content'];
+
+		echo '<br/>';
+	}
+	?>
