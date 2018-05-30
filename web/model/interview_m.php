@@ -11,6 +11,6 @@ foreach ($db->query('SELECT iq.interviewText, iq.date, iq.user_id, u.firstName F
   
   echo "<br>";  
   echo $row['firstName'];
-   
+  echo "<hr>";  
 }
 ?>
