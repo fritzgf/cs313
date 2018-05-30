@@ -1,7 +1,5 @@
 <?php
-    
-      require("./../model/interview_m.php");
-     
+      require("./../model/interview_m.php");  
     ?>
     <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +10,34 @@
     <title>Interview Questions</title>
 </head>
 <body>
+<div class="wrapper">
 
+      <header class="page-header">
 
+<?php  ?>
+
+</header>
+
+<nav id="page-nav">
+
+<?php require("./../common/nav.php"); ?>
+</nav>
+
+ <main class="page-main">
+ <section id="home-content">
+<form action="interviewq.php" method="post">
+
+<label> Ask question </label> <br>
+<input type="text" name="title" id="title"> 
+<textarea rows="100" cols="200">  </textarea> <br>
+<input type="button" name="submit"> <br>
+</form>
+</div>
+</section>
+  </main>
+
+<footer>
+<?php require("./../common/footer.php");?>
+</footer>
 </body>
 </html>
