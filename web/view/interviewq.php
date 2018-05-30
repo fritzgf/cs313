@@ -29,8 +29,8 @@
 
 <label> Ask question </label> <br>
 <input type="text" name="title" id="title"> 
-<textarea rows="100" cols="200">  </textarea> <br>
-<input type="button" name="submit"> <br>
+<textarea rows="30" cols="50">  </textarea> <br>
+<input type="submit" value="Submit"> <br>
 </form>
 </div>
 </section>
