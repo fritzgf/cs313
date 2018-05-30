@@ -9,7 +9,8 @@
 <body>
 <?php
     
-      require("./../library/model.php");
+      require("./../library/interview_m.php");
+      require("./../library/connections.php");
     ?>
 </body>
 </html>
