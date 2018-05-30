@@ -30,7 +30,7 @@
 <label> Ask question </label> <br>
 <input type="text" name="title" id="title"> 
 <textarea rows="30" cols="50">  </textarea> <br>
-<input type="submit" value="Submit"> <br>
+<input type="submit" value="submit"> <br>
 </form>
 </div>
 </section>
