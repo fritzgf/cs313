@@ -1,7 +1,7 @@
 <?php
     
       require("./../model/interview_m.php");
-      require("./../library/connections.php");
+     
     ?>
     <!DOCTYPE html>
 <html lang="en">
