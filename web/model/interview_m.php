@@ -6,9 +6,10 @@ foreach ($db->query('SELECT iq.interviewText, iq.date, iq.user_id, u.firstName F
 {
  
   echo  $row['interviewtext'];
+  echo "<br>"; 
   echo $row['date'];
   echo "<hr>";  
-  echo "<br>";  
+  
   echo $row['firstName'];
     echo "<hr>";  
 }
