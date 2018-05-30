@@ -1,7 +1,4 @@
-<?php
-      require("./../model/interview_m.php");  
-    ?>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,6 +22,9 @@
 
  <main class="page-main">
  <section id="home-content">
+ <?php
+      require("./../model/interview_m.php");  
+    ?>
 <form action="interviewq.php" method="post">
 
 <label> Ask question </label> <br>
