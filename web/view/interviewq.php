@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+    
+      require("./../model/interview_m.php");
+      require("./../library/connections.php");
+    ?>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,10 +12,7 @@
     <title>Interview Questions</title>
 </head>
 <body>
-<?php
-    
-      require("./../model/interview_m.php");
-      require("./../library/connections.php");
-    ?>
+
+
 </body>
 </html>
