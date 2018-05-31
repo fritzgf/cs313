@@ -1,7 +1,7 @@
 <ul class="flexlist">
-                <li><a href="." title="Acme">Home</a></li>
-                <li><a href="#" title="interview questions">Interview Question</a> </li>
-                <li><a href="#" title="Ask questions">Ask questions</a></li>
-                <li><a href="#" title="Articles">Articles </a> </li>
+                <li><a href="home.php" title="Acme">Home</a></li>
+                <li><a href="interviewq.php" title="interview questions">Interview Question</a> </li>
+                <li><a href="ask-question.php" title="Ask questions">Ask questions</a></li>
+                <li><a href="articles.php" title="Articles">Articles </a> </li>
            
             </ul>

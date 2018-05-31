@@ -36,9 +36,12 @@ echo" $count";
         </header>
 
         <nav>
-            <?php
-        require("./../common/navigation.php");
-        ?>
+        <ul class="flexlist">
+<li> <a href="/view/home.php"> Home</a></li>
+
+<li> <a href="interviewq.php"> My Project</a></li>
+            </ul>
+      
         </nav>
 
         <main>

@@ -233,5 +233,10 @@ a:active {
             font-size: 17px;
 
         }
+        .page-header{
+            display: flex;
+            justify-content: space-between;
+            min-height: 100px;
+        }
     }
 
