@@ -52,17 +52,17 @@ h2{
     width:114.75px;
     height:45.75px;
 }
-.page-header{
+/* .page-header{
     display:flex;
     justify-content: space-between;
-    max-height: 50px;
-}
+    
+} */
 /*******************************
 * Page Navigation Styles
 *******************************/
 
 #page-nav {
-    background-color: red;
+    background-color:#f49e42;
     position: fixed;
     bottom: 0;
     left: 0;
