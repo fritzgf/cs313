@@ -13,9 +13,7 @@
 
       <header class="page-header">
 
-<?php 
-
- ?>
+    <?php require("./../common/header.php"); ?>
 
 </header>
 
@@ -27,7 +25,7 @@
  <main class="page-main">
  <section id="home-content">
  <?php
-      require("./../model/interview_m.php");  
+      require("./../model/interviewq-model.php");  
     ?>
      <form action="interviewq.php" method="post">
 
