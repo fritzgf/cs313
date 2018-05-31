@@ -13,7 +13,7 @@
 
       <header class="page-header">
 
-    <?php require("./../common/header.php"); ?>
+    <!-- <?php require("./../common/header.php"); ?> -->
 
 </header>
 
