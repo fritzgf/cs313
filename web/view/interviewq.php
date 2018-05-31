@@ -34,8 +34,7 @@
 
      <form action="interviewq.php" method="post">
 
-     <label> Your Answer </label> <br>
-      <textarea rows="30" cols="50">  </textarea> <br>
+      <textarea rows="30" cols="50"> Your Answer </textarea> <br>
       <input type="submit" value="Post your Answer"> <br>
    </form>
 </div>
