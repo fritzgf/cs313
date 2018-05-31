@@ -26,8 +26,8 @@
 
 <form action="interviewq.php" method="post">
 
-<label> Ask questions </label> <br>
-<input type="text" name="title" id="title"> 
+<label> Ask Question </label> <br>
+
 <textarea rows="30" cols="50">  </textarea> <br>
 <input type="submit" value="Submit"> <br>
 </form>

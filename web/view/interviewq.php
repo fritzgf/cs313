@@ -24,12 +24,13 @@
 
  <main class="page-main">
  <section id="home-content">
+   <h1> All Questions</h1>
  <?php
       require("./../model/interviewq-model.php");  
     ?> 
     <br>
     <br>
-       <p>  <a class="create-account" href="./../view/ask-questions.php">Ask questions </a></p>
+       <p>  <a class="ask-question" href="./../view/ask-questions.php">Ask Question </a></p>
 
      <form action="interviewq.php" method="post">
 
