@@ -7,6 +7,38 @@
     <title>Ask Questions</title>
 </head>
 <body>
-    
+<div class="wrapper">
+
+<header class="page-header">
+
+<!-- <?php require("./../common/header.php"); ?> -->
+
+</header>
+
+<nav id="page-nav">
+
+<?php require("./../common/nav.php"); ?>
+</nav>
+
+<main class="page-main">
+<section id="home-content">
+<?php
+require("./../model/interviewq-model.php");  
+?>
+<form action="interviewq.php" method="post">
+
+<label> Ask questions </label> <br>
+<input type="text" name="title" id="title"> 
+<textarea rows="30" cols="50">  </textarea> <br>
+<input type="submit" value="Submit"> <br>
+</form>
+</div>
+</section>
+</main>
+
+<footer id="page-footer">
+      <hr>
+<?php require("./../common/footer.php");?>
+</footer>
 </body>
 </html>

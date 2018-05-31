@@ -26,13 +26,17 @@
  <section id="home-content">
  <?php
       require("./../model/interviewq-model.php");  
-    ?>
+    ?> 
+    <br>
+    <br>
+       <p>  <a class="create-account" href="./../view/ask-questions.php">Ask questions </a></p>
+
      <form action="interviewq.php" method="post">
 
-     <label> Ask question </label> <br>
+     <label> Your Answer </label> <br>
      <input type="text" name="title" id="title"> 
       <textarea rows="30" cols="50">  </textarea> <br>
-      <input type="submit" value="submit"> <br>
+      <input type="submit" value="Post your Answer"> <br>
    </form>
 </div>
 </section>
