@@ -158,5 +158,80 @@ a:active {
             max-width: 1000px;
             margin: 1.5em auto;
         }
+
+    
+        /* Style login page*/
+        .logForm {
+
+            display: flex;
+            margin:auto;
+        }
+        #signIn{
+            text-align: center;
+            margin-left:2.5em;
+        }
+        .login-page{
+            display:flex;
+            flex-direction:column;
+            text-align:center;  
+            margin-top: 2em;
+
+        }
+
+        button{
+            width:300px;
+            height: 30px;
+            margin-left:40%;
+            background-color:red;
+            color:white;
+
+        }
+
+        input{
+            width:300px;
+            height: 20px;
+            flex-direction:column;
+            text-align:left;
+            margin-left:40%;
+            margin-top: 2em;
+        }
+
+        .psw{
+            text-align: center;
+            margin-left:40%;
+            font-size: 12px;
+            margin-top:2em;
+
+        }
+
+        .create-account{
+            text-align:left;
+            margin-left:35%;
+            width:140px;
+        }
+
+        /* Style register page*/
+        .register-page{
+            display:flex;
+            flex-direction:column;
+            text-align: center;
+            display: flex;
+            margin:auto;
+
+        }
+
+        label{
+            margin-left:18.5em;
+            display:flex;
+        }
+        #account{
+            padding-top:2em;
+
+        }
+        #account-text{
+            padding-top:2em; 
+            font-size: 17px;
+
+        }
     }
 
