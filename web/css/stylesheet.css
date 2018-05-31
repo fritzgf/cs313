@@ -101,10 +101,10 @@ h2{
     color: white;
 }
 
-a:focus {
+/* a:focus {
 
     background: white;
-}
+} */
 
 a:active {
     background: white;
