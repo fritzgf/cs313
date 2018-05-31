@@ -68,7 +68,7 @@ h2{
     left: 0;
     width: 100%;
     z-index: 200;
-    margin-bottom: 10em;
+    margin-bottom:2em;
 }
 
 #page-nav ul {
@@ -234,10 +234,10 @@ h2{
             font-size: 17px;
 
         }
-        .page-header{
+        /* .page-header{
             display: flex;
             justify-content: space-between;
             min-height: 100px;
-        }
+        } */
     }
 
