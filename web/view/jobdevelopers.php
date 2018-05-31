@@ -7,7 +7,29 @@
     <title>Job Developers</title>
 </head>
 <body>
-   <p> <b> Comming Soon... </b></p>
+<div class="wrapper">
 
+<header class="page-header">
+
+<!-- <?php require("./../common/header.php"); ?> -->
+
+</header>
+
+<nav id="page-nav">
+
+<?php require("./../common/nav.php"); ?>
+</nav>
+
+<main class="page-main">
+<section id="home-content">
+   <h1> <b> Comming Soon... </b></h1>
+   </div>
+</section>
+  </main>
+
+ <footer id="page-footer">
+            <hr>
+<?php require("./../common/footer.php");?>
+</footer>
 </body>
 </html>
