@@ -12,8 +12,6 @@
 
 <header class="page-header">
 
-<!-- <?php require("./../common/header.php"); ?> -->
-
 </header>
 
 <nav id="page-nav">
