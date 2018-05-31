@@ -29,18 +29,19 @@
  <?php
       require("./../model/interview_m.php");  
     ?>
-<form action="interviewq.php" method="post">
+     <form action="interviewq.php" method="post">
 
-<label> Ask question </label> <br>
-<input type="text" name="title" id="title"> 
-<textarea rows="30" cols="50">  </textarea> <br>
-<input type="submit" value="submit"> <br>
-</form>
+     <label> Ask question </label> <br>
+     <input type="text" name="title" id="title"> 
+      <textarea rows="30" cols="50">  </textarea> <br>
+      <input type="submit" value="submit"> <br>
+   </form>
 </div>
 </section>
   </main>
 
-<footer>
+ <footer id="page-footer">
+            <hr>
 <?php require("./../common/footer.php");?>
 </footer>
 </body>

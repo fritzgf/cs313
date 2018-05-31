@@ -44,7 +44,7 @@ h2{
     display: flex;
     flex-direction: column;
     padding-bottom: 5%;
-    background-color: black;
+    background-color: whitesmoke;
     margin: 8px;
 
 }
@@ -114,4 +114,49 @@ a:active {
 #home_color {
     color: white;
 }
+
+ /********************************
+    * Medium Screen Styles
+    ********************************/
+
+    @media (min-width: 41.67em) {
+
+        .wrapper {
+            margin: 1.5em;
+            padding-bottom: 2%;
+        }
+
+        /* nav bar at top */
+        #page-nav {
+            position: inherit;
+        }
+
+        .page-main {
+            border-top: none;
+        }
+
+        #home-content {
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
+        #page-footer {
+            margin-bottom: 1%;
+        }
+    }
+
+/********************************
+    * Large Screen Styles
+********************************/
+
+    @media (min-width: 66.7em) {
+        body {
+            font-size: 1.5vw;
+        }
+
+        .wrapper {
+            max-width: 1000px;
+            margin: 1.5em auto;
+        }
+    }
 
