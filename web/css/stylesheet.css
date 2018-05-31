@@ -40,5 +40,61 @@ h2{
     padding-top: 1em;
 }
 
+/*******************************
+* Page Navigation Styles
+*******************************/
 
+#page-nav {
+    background-color: red;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+#page-nav ul {
+    display: flex;
+    align-items: stretch;
+    height: 2.5em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#page-nav ul li {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+}
+
+#page-nav a {
+    display: flex;
+    text-decoration: none;
+
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+#page-nav li a{
+    color:white;
+}
+
+#page-nav a:link {
+    color: white;
+}
+
+a:focus {
+
+    background: white;
+}
+
+a:active {
+    background: white;
+    color: white;
+} 
+
+#home_color {
+    color: white;
+}
 
