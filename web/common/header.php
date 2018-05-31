@@ -1,10 +1,8 @@
 <?php
 
 if (isset($_SESSION['loggedin']) != TRUE){
-  echo ' <a href="./../view/login.php"> <figure id="account-img"> 
-    <img src= "/acme/images/site/account.gif" alt="Acme account" title= " account for acme site" id="account">
-   <figcaption id="account-text">  Login </figcaption>
-   </figure>   
+  echo ' <a href="./../view/login.php"> <figure id="account-img" id="account-text" > 
+     Login  
 </a>';
    
  
