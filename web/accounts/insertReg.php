@@ -27,7 +27,8 @@ $statement->bindValue(":firstName", $firstName, PDO::PARAM_STR);
 $statement->bindValue(":lastName", $lastName, PDO::PARAM_STR);
 $statement->bindValue(":email", $email, PDO::PARAM_STR);
 $statement->execute();
-
+var_dump($statement);
+exit;
 // header("Location: courseDetails.php?course_id=$courseId");
 die();
 ?>
