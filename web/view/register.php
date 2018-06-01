@@ -1,8 +1,4 @@
-<?php
-
-      require("./../accounts/insertReg.php");  
-    ?>
-     <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
