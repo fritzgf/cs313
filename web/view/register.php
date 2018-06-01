@@ -34,7 +34,7 @@
         ?>
 
 
-        <form method="post" action="login.php" class="form">
+        <form method="post" action="insertReg.php" class="form">
 
             <div class="register-page"> 
                 <h1>Sign up</h1>
