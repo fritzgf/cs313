@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./../css/stylesheet.css" media="screen">
     <title>Interview Questions</title>
 </head>
-<body>
+<body>  
 <div class="wrapper">
 
       <header class="page-header">
