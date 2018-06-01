@@ -23,7 +23,7 @@
 
 <main class="page-main">
 <section id="home-content">
-   <h1> <b> Comming Soon... </b></h1>
+   <h1> <b> Coming Soon... </b></h1>
    </div>
 </section>
   </main>

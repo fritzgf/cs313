@@ -6,6 +6,11 @@
 // Create or access a Session
 session_start();
 
+require("./../library/connections.php");
+
+$db = get_db();
+
+
 $firtstName = htmlspecialchars($_POST["firstName"]);
 $lastName = htmlspecialchars($_POST["lastName"]);
 $email = htmlspecialchars($_POST["email"]);
