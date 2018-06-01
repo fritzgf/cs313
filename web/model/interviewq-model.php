@@ -21,8 +21,9 @@ $interview_questions = $statement->fetchAll(PDO::FETCH_ASSOC);
 foreach ($interview_questions as $interview_question) {
 	$id = $interview_question["id"];
 	$interviewText = $interview_question["interviewText"];
-	 $firstName = $interview_question["firstName"];
-	echo "<li><a href='courseDetails.php?course_id=$id'>$interviewText - $user_id</a></li>";
+   $firstName = $interview_question["firstName"];
+   $date = $interview_question["date"];
+	echo "<li><a href='courseDetails.php?course_id=$id'>$interviewText - $firstName -  $date</a></li>";
 }
 
 ?>
