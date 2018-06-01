@@ -12,7 +12,7 @@ $db = get_db();
 //   echo "<hr>"; 
 //   echo "<br>";   
 // }
-$query = "SELECT id, interviewText, user_id FROM interview_questions";
+$query = "SELECT iq.interviewText, iq.date, u.firstName FROM interview_questions as iq INNER JOIN users as u ON iq.user_id= u.id";
 $statement = $db->prepare($query);
 // Bind any variables I need, here...
 $statement->execute();
@@ -21,7 +21,7 @@ $interview_questions = $statement->fetchAll(PDO::FETCH_ASSOC);
 foreach ($interview_questions as $interview_question) {
 	$id = $interview_question["id"];
 	$interviewText = $interview_question["interviewText"];
-	$user_id = $interview_question["user_id"];
+	 $firstName = $interview_question["firstName"];
 	echo "<li><a href='courseDetails.php?course_id=$id'>$interviewText - $user_id</a></li>";
 }
 
