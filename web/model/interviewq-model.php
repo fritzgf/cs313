@@ -18,6 +18,11 @@ $statement = $db->prepare($query);
 $statement->execute();
 $interview_questions = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-
+foreach ($interview_questions as $interview_question) {
+	$id = $interview_question["id"];
+	$interviewText = $interview_question["interviewText"];
+	$user_id = $interview_question["user_id"];
+	echo "<li><a href='courseDetails.php?course_id=$id'>$interviewText - $user_id</a></li>";
+}
 
 ?>
