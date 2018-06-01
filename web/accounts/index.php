@@ -14,9 +14,9 @@ $db = get_db();
 $firtstName = htmlspecialchars($_POST["firstName"]);
 $lastName = htmlspecialchars($_POST["lastName"]);
 $email = htmlspecialchars($_POST["email"]);
-// echo "Course: $courseId\n";
-// echo "date: $date\n";
-// echo "content: $content\n";
+echo "firstName: $firstName\n";
+echo "lastName: $lastName\n";
+echo "email: $email\n";
 // require("dbConnect.php");
 // $db = get_db();
 
@@ -26,6 +26,6 @@ $statement->bindValue(":firstName", $firtstName, PDO::PARAM_STR);
 $statement->bindValue(":lastName", $lastName, PDO::PARAM_STR);
 $statement->bindValue(":email", $email, PDO::PARAM_STR);
 $statement->execute();
-header("Location: courseDetails.php?course_id=$courseId");
+// header("Location: courseDetails.php?course_id=$courseId");
 die();
 ?>
