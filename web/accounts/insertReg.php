@@ -11,7 +11,7 @@ require("./../library/connections.php");
 $db = get_db();
 
 
-$firtstName = htmlspecialchars($_POST["firstName"]);
+$firstName = htmlspecialchars($_POST["firstName"]);
 $lastName = htmlspecialchars($_POST["lastName"]);
 $email = htmlspecialchars($_POST["email"]);
 // echo "firstName: $firstName\n";
@@ -23,7 +23,7 @@ $email = htmlspecialchars($_POST["email"]);
 $query = "INSERT INTO users (firstName, lastName, email) VALUES (:firstName, :lastName, :email)";
 
 $statement = $db->prepare($query);
-$statement->bindValue(":firstName", $firtstName, PDO::PARAM_STR);
+$statement->bindValue(":firstName", $firstName, PDO::PARAM_STR);
 $statement->bindValue(":lastName", $lastName, PDO::PARAM_STR);
 $statement->bindValue(":email", $email, PDO::PARAM_STR);
 $statement->execute();
