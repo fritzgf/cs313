@@ -20,7 +20,7 @@ $email = htmlspecialchars($_POST["email"]);
 // require("dbConnect.php");
 // $db = get_db();
 
-$query = "INSERT INTO users (firtsName, lastName, email) VALUES (:firstName, :lastName, :email)";
+$query = "INSERT INTO users (firstName, lastName, email) VALUES (:firstName, :lastName, :email)";
 
 $statement = $db->prepare($query);
 $statement->bindValue(":firstName", $firtstName, PDO::PARAM_STR);
