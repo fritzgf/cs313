@@ -13,7 +13,7 @@ $db = get_db();
 //   echo "<hr>"; 
 //   echo "<br>";   
 // }
-$query = "SELECT id, interviewtext, date FROM interview_questions";
+$query = "SELECT iq.interviewtext, iq.date, iq.user_id, u.firstname FROM interview_questions as iq INNER JOIN users as u ON iq.user_id= u.id";
 $statement = $db->prepare($query);
 // Bind any variables I need, here...
 $statement->execute();
@@ -26,9 +26,11 @@ foreach ($rows as $row) {
    $date = $row["date"];
    
 
-  echo "<li><a href='interviewq.php?user_id=$id'>$interviewtext </a></li>";
-  echo "<li><a href='interviewq.php?user_id=$id'> $firstname </a></li>";
-  echo "<li><a href='interviewq.php?user_id=$id'> $date</a></li>";
+   echo "<hr>";
+  echo "<li><a href='interviewq.php?user_id=$id'>$interviewtext <br>- $firstname - $date </a></li>";
+  echo "<hr>";
+  // echo "<li><a href='interviewq.php?user_id=$id'> $firstname </a></li>";
+  // echo "<li><a href='interviewq.php?user_id=$id'> $date</a></li>";
 }
 
 ?>
