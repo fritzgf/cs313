@@ -25,7 +25,7 @@
 
     <section id="home-content">
         
-        <form class="logForm" method="post" action="interviewp.php">
+        <form class="logForm" method="post" action="./../view/interviewq.php">
 
 
             <div class="login-page">
@@ -45,7 +45,7 @@
                 <input type="hidden" name="action" value="login">
                 <span class="psw">Forgot password? <a href="#">send reset email</a></span>
 
-                <p>  <a class="create-account" href="./../view/register.php">Create an account </a></p>
+                <p> <a class="create-account" href="./../view/register.php">Create an account </a></p>
 
             </div>
 
