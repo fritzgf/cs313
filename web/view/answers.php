@@ -21,13 +21,17 @@
 
 <main class="page-main">
 <section id="home-content">
+<?php
+      require("./../model/displayAnswer-model.php");  
+    ?> 
 
-<form action="interviewq.php" method="post">
+   <p>  <a class="ask-question" href="./../view/ask-question.php">Ask Question </a></p>
+<form action="./../model/insertInterview-model.php" method="post">
 
-<label> Ask Question </label> <br>
-
-<textarea rows="30" cols="50">  </textarea> <br>
-
+<label> Share your Answer </label> <br>
+<input type="date" name="date"><br>
+<textarea name="interviewtext" placeholder="interviewtext" rows="30" cols="50">  </textarea> <br>
+<input type="hidden" name="user_id" value="<?php echo $links; ?>">
 <input type="submit" value="Submit"> <br>
 </form>
 </div>

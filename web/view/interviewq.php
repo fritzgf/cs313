@@ -30,13 +30,7 @@
     ?> 
     <br>
     <br>
-       <p>  <a class="ask-question" href="./../view/ask-questions.php">Ask Question </a></p>
-
-     <form action="interviewq.php" method="post">
-
-      <textarea rows="30" cols="50"> Your Answer </textarea> <br>
-      <input type="submit" value="Post your Answer"> <br>
-   </form>
+  
 </div>
 </section>
   </main>

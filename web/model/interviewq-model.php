@@ -25,8 +25,8 @@ foreach ($rows as $row) {
    $firstname = $row["firstname"];
    $date = $row["date"];
    
-
-  echo "<li><a href='interviewq.php?user_id=$id'>$interviewtext <br>- $firstname - $date </a></li>";
+   echo "<hr>";
+  echo "<li><a href='interviewq.php?user_id=$id'>$interviewtext <br> $firstname - $date </a></li>";
   echo "<hr>";
   // echo "<li><a href='interviewq.php?user_id=$id'> $firstname </a></li>";
   // echo "<li><a href='interviewq.php?user_id=$id'> $date</a></li>";
