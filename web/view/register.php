@@ -1,5 +1,5 @@
-<?php require("./../accounts/insertReg.php");
- ?>
+<!-- <?php require("./../accounts/insertReg.php");
+ ?> -->
  <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +36,7 @@
         ?>
 
 
-        <form method="post" action="./../view/login.php" class="form">
+        <form method="post" action="./../accounts/insertReg.php" class="form">
 
             <div class="register-page"> 
                 <h1>Sign up</h1>
