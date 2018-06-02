@@ -1,4 +1,4 @@
-<?php require("./../accounts/insertReg.php.php");
+<?php require("./../accounts/insertReg.php");
  ?>
  <!DOCTYPE html>
 <html lang="en">
