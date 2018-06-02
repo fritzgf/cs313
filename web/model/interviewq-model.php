@@ -6,11 +6,10 @@ $db = get_db();
 foreach ($db->query('SELECT iq.interviewtext, iq.date, iq.user_id, u.firstname FROM interview_questions as iq INNER JOIN users as u ON iq.user_id= u.id') as $row)
 {
   echo "<hr>";  
-  echo  $row['interviewtext'];
-  echo "<hr>";  
-  echo  $row['firstname'];
+  echo  $row['interviewtext']; 
+   echo "<br>"; 
+  echo  $row['firstname'];-$row['date']; 
   echo "<br>"; 
-  echo $row['date'];
   echo "<hr>"; 
   echo "<br>";   
 }
