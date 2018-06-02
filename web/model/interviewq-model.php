@@ -22,13 +22,12 @@ $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
 foreach ($rows as $row) {
 	$id = $row["id"];
 	$interviewtext = $row["interviewtext"];
-   $firstname = $row["firstName"];
+   $firstname = $row["firstname"];
    $date = $row["date"];
    
 
-   echo "<hr>";
   echo "<li><a href='interviewq.php?user_id=$id'>$interviewtext <br>- $firstname - $date </a></li>";
- 
+  echo "<hr>";
   // echo "<li><a href='interviewq.php?user_id=$id'> $firstname </a></li>";
   // echo "<li><a href='interviewq.php?user_id=$id'> $date</a></li>";
 }
