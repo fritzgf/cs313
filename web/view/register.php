@@ -1,5 +1,3 @@
-<!-- <?php require("./../accounts/insertReg.php");
- ?> -->
  <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,7 +58,7 @@
                 <input type="submit" name="submit" id="regbtn" value="Register">
                 <!-- Add the action name - value pair -->
                 <!-- <input type="hidden" name="action" value="register"> -->
-                <!-- <input type="hidden" name="id" value="<?php echo $courseId; ?>"> -->
+                <!-- <input type="hidden" name="" value="<?php echo $courseId; ?>"> -->
 
             </div>  
 
