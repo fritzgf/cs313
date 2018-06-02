@@ -24,7 +24,10 @@ foreach ($rows as $row) {
    $firstName = $row["firstName"];
    $date = $row["date"];
    
-	echo "<li><a href='courseDetails.php?user_id=$id'>$interviewText - $firstName -  $date</a></li>";
+
+  echo "<li><a href='courseDetails.php?user_id=$id'>$interviewText </a></li>";
+  echo "<li><a href='courseDetails.php?user_id=$id'> $firstName </a></li>";
+  echo "<li><a href='courseDetails.php?user_id=$id'> $date</a></li>";
 }
 
 ?>
