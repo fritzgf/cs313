@@ -10,4 +10,4 @@ $row = $statement->fetch();
 $interviewtext = $row["interviewtext"];
 $firstname = $row["firstname"];
 $date = $row["date"];
-?>
+?> 
