@@ -2,19 +2,19 @@
 require("./../library/connections.php");
 $db = get_db();
 
-$links = htmlspecialchars($_POST["user_id"]);
+$links = htmlspecialchars($_POST["interview_id"]);
 $date = htmlspecialchars($_POST["date"]);
 $interviewtext = htmlspecialchars($_POST["interviewtext"]);
 // echo "Course: $courseId\n";
 // echo "date: $date\n";
 // echo "content: $content\n";
 
-$query = "INSERT INTO interview_questions (interviewtext, user_id, date) VALUES (:interviewtext, :user_id, :date)";
+$query = "INSERT INTO interview_questions (interviewtext, interview_id, date) VALUES (:interviewtext, :interview_id, :date)";
 $statement = $db->prepare($query);
 $statement->bindValue(":interviewtext", $interviewtext, PDO::PARAM_STR);
-$statement->bindValue(":user_id", $links, PDO::PARAM_INT);
+$statement->bindValue(":interview_id", $links, PDO::PARAM_INT);
 $statement->bindValue(":date", $date, PDO::PARAM_STR);
 $statement->execute();
-header("Location: ../view/answers.php?user_id=$links");
+header("Location: ../view/answers.php?interview_id=$links");
 die();
 ?>

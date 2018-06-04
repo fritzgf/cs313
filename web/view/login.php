@@ -25,7 +25,7 @@
 
     <section id="home-content">
         
-        <form class="logForm" method="post" action="#">
+        <form class="logForm" method="post" action="interviewq.php">
 
 
             <div class="login-page">
