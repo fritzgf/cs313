@@ -21,11 +21,11 @@
 
 <main class="page-main">
 <section id="home-content">
-<?php
+<!-- <?php
 
 require("./../model/displayAnswer-model.php");  
 
-      ?> 
+      ?>  -->
 
 
    <p>  <a class="ask-question" href="./../view/ask-question.php">Ask Question </a></p>
