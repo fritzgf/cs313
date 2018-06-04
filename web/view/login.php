@@ -25,7 +25,7 @@
 
     <section id="home-content">
         
-        <form class="logForm" method="post" action="./../model/displayAnswer-model.php"">
+        <form class="logForm" method="post" action="./../accounts/log.php">
 
 
             <div class="login-page">
