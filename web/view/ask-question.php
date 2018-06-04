@@ -21,9 +21,9 @@
 
 <main class="page-main">
 <section id="home-content">
-<?php
+<!-- <?php
       require("./../model/displayAnswer-model.php");  
-    ?> 
+    ?>  -->
 
  
 <form action="./../model/insertInterview-model.php" method="post">
