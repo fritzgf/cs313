@@ -11,7 +11,7 @@ $interviewtext = $row["interviewtext"];
 $firstname = $row["firstname"];
 $date = $row["date"];
 echo "<hr>";
-  echo "<li><a href='interviewq.php?interview_id=$id'>$interviewtext <br> $firstname - $date </a></li>";
+  echo "<li>$interviewtext <br> $firstname - $date </li>";
   echo "<hr>";
   echo "<br>"
 ?> 
