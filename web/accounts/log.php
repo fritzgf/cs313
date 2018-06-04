@@ -27,6 +27,8 @@ $db = get_db();
    return 1;
      // echo 'Mached found'; 
      // exit;
+     header("Location: ../view/answers.php");
+     die();
   }
 
 ?>
