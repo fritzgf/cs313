@@ -21,9 +21,12 @@
 
 <main class="page-main">
 <section id="home-content">
-<?php
-      require("./../model/displayAnswer-model.php");  
-    ?> 
+<!-- <?php
+echo "THis is a test";
+// require("./../model/displayAnswer-model.php");  
+
+      ?>  -->
+
 
    <p>  <a class="ask-question" href="./../view/ask-question.php">Ask Question </a></p>
 <form action="./../model/insertInterview-model.php" method="post">
