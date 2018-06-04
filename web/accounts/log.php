@@ -29,6 +29,6 @@ $db = get_db();
      // exit;
    
   }
-  header("Location: ../view/answers.php?interview_id=$links");
+  echo "<li>$interviewtext <br> $firstname - $date </li>";
      die();
 ?>
