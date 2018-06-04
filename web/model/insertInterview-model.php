@@ -15,6 +15,6 @@ $statement->bindValue(":interviewtext", $interviewtext, PDO::PARAM_STR);
 $statement->bindValue(":user_id", $links, PDO::PARAM_INT);
 $statement->bindValue(":date", $date, PDO::PARAM_STR);
 $statement->execute();
-header("Location: interviewq.php?user_id=$links");
+header("Location: ../interviewq.php?user_id=$links");
 die();
 ?>
