@@ -23,7 +23,7 @@
 <section id="home-content">
 <?php
 
-// require("./../model/displayAnswer-model.php");  
+require("./../model/displayAnswer-model.php");  
 
       ?> 
 
