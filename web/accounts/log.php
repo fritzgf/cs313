@@ -29,6 +29,6 @@ $db = get_db();
      // exit;
    
   }
-  header("Location: ../view/answers.php");
+  header("Location: ../view/interviewq.php");
      die();
 ?>
