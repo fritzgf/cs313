@@ -3,7 +3,6 @@ require("./../library/connections.php");
 $db = get_db();
 
 $links = htmlspecialchars($_POST["user_id"]);
-echo $_POST["user_id"];
 $date = htmlspecialchars($_POST["date"]);
 $interviewtext = htmlspecialchars($_POST["interviewtext"]);
 // echo "Course: $courseId\n";

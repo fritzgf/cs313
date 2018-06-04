@@ -13,7 +13,7 @@ $db = get_db();
 //   echo "<hr>"; 
 //   echo "<br>";   
 // }
-$query = "SELECT iq.id iq.interviewtext, iq.date, iq.user_id, u.firstname FROM interview_questions as iq INNER JOIN users as u ON iq.user_id= u.id";
+$query = "SELECT iq.id, iq.interviewtext, iq.date, iq.user_id, u.firstname FROM interview_questions as iq INNER JOIN users as u ON iq.user_id= u.id";
 $statement = $db->prepare($query);
 // Bind any variables I need, here...
 $statement->execute();
