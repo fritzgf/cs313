@@ -10,4 +10,8 @@ $row = $statement->fetch();
 $interviewtext = $row["interviewtext"];
 $firstname = $row["firstname"];
 $date = $row["date"];
+echo "<hr>";
+  echo "<li><a href='interviewq.php?interview_id=$id'>$interviewtext <br> $firstname - $date </a></li>";
+  echo "<hr>";
+  echo "<br>"
 ?> 
