@@ -13,11 +13,11 @@ $db = get_db();
 $email = htmlspecialchars($_POST["email"]);
 $password = htmlspecialchars($_POST["password"]);
 // Run basic checks, return if errors
-if (empty($clientEmail) || empty($passwordCheck)) {
-    $message = '<p class="notice">Please provide a valid email address and password.</p>';
-    include '../view/login.php';
-    exit;
-  }
+// if (empty($clientEmail) || empty($passwordCheck)) {
+//     $message = '<p class="notice">Please provide a valid email address and password.</p>';
+//     include '../view/login.php';
+//     exit;
+//   }
 
 // Check for an existing email address
 
