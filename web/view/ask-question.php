@@ -16,7 +16,8 @@
 
 <nav id="page-nav">
 
-<?php require("./../common/nav.php"); ?>
+<?php require("./../common/nav.php");
+ ?>
 </nav>
 
 <main class="page-main">
@@ -26,7 +27,7 @@
     ?>  -->
 
  
-<form action="./../model/insertInterview-model.php" method="post">
+<form action="#" method="post">
 
 <label> Ask question </label> <br>
 <input type="date" name="date"><br>
