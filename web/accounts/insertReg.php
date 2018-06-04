@@ -29,6 +29,6 @@ $statement->bindValue(":email", $email, PDO::PARAM_STR);
 $statement->execute();
 // var_dump($statement);
 // exit;
- header("Location: login.php");
+ header("Location: ../view/login.php");
 die();
 ?> 

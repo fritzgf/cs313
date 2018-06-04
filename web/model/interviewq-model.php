@@ -20,7 +20,7 @@ $statement->execute();
 $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($rows as $row) {
-	$id = $row["id"];
+	$id = $row["id"]; 
 	$interviewtext = $row["interviewtext"];
    $firstname = $row["firstname"];
    $date = $row["date"];
