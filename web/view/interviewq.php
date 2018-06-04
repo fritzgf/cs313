@@ -27,7 +27,11 @@
    <h1> All Questions</h1>
  <?php
       require("./../model/interviewq-model.php");  
-    ?> 
+   
+    
+require("./../model/displayAnswer-model.php");  
+
+?> 
     <br>
     <br>
   
