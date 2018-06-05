@@ -12,6 +12,10 @@ $db = get_db();
 
 $email = htmlspecialchars($_POST["email"]);
 $password = htmlspecialchars($_POST["password"]);
+
+$hash = password_hash($password, PASSWORD_DEFAULT);
+
+
 // Run basic checks, return if errors
 // if (empty($email) || empty($passwordCheck)) {
 //     $message = '<p class="notice">Please provide a valid email address and password.</p>';
@@ -28,9 +32,9 @@ $password = htmlspecialchars($_POST["password"]);
   $stmt->execute();
   
   $matchEmail = $stmt->fetch(PDO::FETCH_NUM);
-  echo '2\n';
+ 
   $stmt->closeCursor();
-  echo '1\n';
+  
   // if(empty($email)){
   //  return 0;
   //    // echo 'Mached not found';
@@ -41,15 +45,15 @@ $password = htmlspecialchars($_POST["password"]);
   //    // exit;
    
   // }
-  $sql = 'SELECT id, firstname, lastname, email, password FROM users WHERE email= :email';
-  echo '0\n';
+
+  $sql = 'SELECT id, email FROM users WHERE email= :email AND password=:hash';
   $stmt = $db->prepare($sql);
-  echo '1\n';
-  $stmt->bindValue(':email', email, PDO::PARAM_STR);
-  echo '2\n';
+  $stmt->bindValue(':email', $email, PDO::PARAM_STR);
+  $stmt->bindValue(':hash', $hash, PDO::PARAM_STR);
   $stmt->execute();
-  echo '3\n';
-  $rows = $stmt->fetch(PDO::FETCH_ASSOC);
+  $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+
   header("Location: ../view/interviewq.php");
      die();
 ?>
