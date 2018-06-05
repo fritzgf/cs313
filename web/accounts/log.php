@@ -31,16 +31,16 @@ $password = htmlspecialchars($_POST["password"]);
   echo '2\n';
   $stmt->closeCursor();
   echo '1\n';
-  if(empty($email)){
-   return 0;
-     // echo 'Mached not found';
-     // exit;
-  } else {
-   return 1;
-     // echo 'Mached found'; 
-     // exit;
+  // if(empty($email)){
+  //  return 0;
+  //    // echo 'Mached not found';
+  //    // exit;
+  // } else {
+  //  return 1;
+  //    // echo 'Mached found'; 
+  //    // exit;
    
-  }
+  // }
   $sql = 'SELECT user_id, fistname, lastname, email, password FROM users WHERE email= :email';
   echo '0\n';
   $stmt = $db->prepare($sql);
