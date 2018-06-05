@@ -41,7 +41,7 @@ $password = htmlspecialchars($_POST["password"]);
   //    // exit;
    
   // }
-  $sql = 'SELECT user_id, fistname, lastname, email, password FROM users WHERE email= :email';
+  $sql = 'SELECT id, firstname, lastname, email, password FROM users WHERE email= :email';
   echo '0\n';
   $stmt = $db->prepare($sql);
   echo '1\n';
