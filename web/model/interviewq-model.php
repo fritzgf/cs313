@@ -23,7 +23,7 @@ foreach ($rows as $row) {
 	$id = $row["id"]; 
 	$interviewtext = $row["interviewtext"];
    $firstname = $row["firstname"];
-   $date = $row["date"];
+   $date = $row["date"]; 
    
    echo "<hr>";
   echo "<li><a href='answers.php?interview_id=$id'>$interviewtext <br> $firstname - $date </a></li>";
