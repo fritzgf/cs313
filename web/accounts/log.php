@@ -5,7 +5,7 @@
 
 // Create or access a Session
 session_start();
-echo '1\n';
+
 require("./../library/connections.php");
 
 $db = get_db();
@@ -26,9 +26,11 @@ $password = htmlspecialchars($_POST["password"]);
   $stmt = $db->prepare($sql);
   $stmt->bindValue(':email', $email, PDO::PARAM_STR);
   $stmt->execute();
-  echo '2\n';
+  
   $matchEmail = $stmt->fetch(PDO::FETCH_NUM);
+  echo '2\n';
   $stmt->closeCursor();
+  echo '1\n';
   if(empty($email)){
    return 0;
      // echo 'Mached not found';
@@ -40,8 +42,11 @@ $password = htmlspecialchars($_POST["password"]);
    
   }
   $sql = 'SELECT user_id, fistname, lastname, email, password FROM users WHERE email= :email';
+  echo '0\n';
   $stmt = $db->prepare($sql);
+  echo '1\n';
   $stmt->bindValue(':email', email, PDO::PARAM_STR);
+  echo '2\n';
   $stmt->execute();
   echo '3\n';
   $rows = $stmt->fetch(PDO::FETCH_ASSOC);
