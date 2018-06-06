@@ -5,9 +5,9 @@ $db = get_db();
 $links = htmlspecialchars($_POST["interview_id"]);
 $date = htmlspecialchars($_POST["date"]);
 $interviewtext = htmlspecialchars($_POST["interviewtext"]);
-// echo "Course: $courseId\n";
-// echo "date: $date\n";
-// echo "content: $content\n";
+echo "interview_id: $links\n";
+echo "date: $date\n";
+echo "interviewtext: $interviewtext\n";
 
 $query = "INSERT INTO interview_questions (interviewtext, interview_id, date) VALUES (:interviewtext, :interview_id, :date)";
 $statement = $db->prepare($query);

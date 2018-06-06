@@ -39,6 +39,8 @@
 
 <footer id="page-footer">
       <hr>
+
+      
 <?php require("./../common/footer.php");?>
 </footer>
 
