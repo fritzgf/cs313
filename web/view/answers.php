@@ -35,7 +35,7 @@ require("./../model/displayAnswer-model.php");
 
 <label> Share your Answer </label> <br>
 <label> date </label>
-<input type="date" name="date"><br>
+
 <textarea name="interviewtext" placeholder="interviewtext" rows="30" cols="50">  </textarea> <br>
 
 <input type="submit" value="Submit"> <br>
