@@ -34,9 +34,10 @@ require("./../model/displayAnswer-model.php");
 <form action="./../model/insertInterview-model.php" method="post">
 
 <label> Share your Answer </label> <br>
+<label> date </label>
 <input type="date" name="date"><br>
 <textarea name="interviewtext" placeholder="interviewtext" rows="30" cols="50">  </textarea> <br>
-<input type="hidden" name="interviewid" value="<?php echo $links; ?>">
+<input type="hidden" name="id" value="<?php echo $links; ?>">
 <input type="submit" value="Submit"> <br>
 </form>
 </div>
