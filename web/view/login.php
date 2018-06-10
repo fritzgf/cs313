@@ -30,7 +30,7 @@
         echo $message;
     }
     ?>
-    <form class="logForm" method="post" action="/web/accounts/">
+    <form class="logForm" method="post" action="./../accounts/index.php">
 
 
         <div class="login-page">
@@ -50,7 +50,7 @@
             <input type="hidden" name="action" value="login">
             <span class="psw">Forgot password? <a href="#">send reset email</a></span>
 
-            <p>  <a class="create-account" href="?action=registration">Create an account </a></p>
+            <p>  <a class="create-account" href="./../accounts/?action=registration">Create an account </a></p>
 
         </div>
 
@@ -64,7 +64,7 @@
 
 <footer id="page-footer">
     <hr>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/web/common/footer.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/../common/footer.php'; ?>
 </footer>
 </div>
 </body>
