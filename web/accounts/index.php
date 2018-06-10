@@ -152,7 +152,7 @@ if(empty($firstname) || empty($lastname) || empty($email) || empty($password)){
    // Send the data to the model
    $regOutcome = regUser($firstname, $lastname, $email, $hashedPassword);
     
-   
+   var_dump( $regOutcome);
    
    // Check and report the result
    if($regOutcome === 1){
