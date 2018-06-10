@@ -99,8 +99,8 @@ switch ($action){
    
      case 'Register':
    // Filter and store the data
-     $firstName = filter_input(INPUT_POST, 'firstname', FILTER_SANITIZE_STRING);
-     $lastName = filter_input(INPUT_POST, 'lastname',FILTER_SANITIZE_STRING);
+     $firstName = filter_input(INPUT_POST, 'firstName', FILTER_SANITIZE_STRING);
+     $lastName = filter_input(INPUT_POST, 'lastName',FILTER_SANITIZE_STRING);
      $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
      $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
      
