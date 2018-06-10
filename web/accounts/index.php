@@ -24,7 +24,7 @@ switch ($action){
          session_destroy();
         setcookie('firstname', $firstName, strtotime('-1 year'), '/');
         
-       header("Location:../view/reviewq.php");
+       header("Location:../view/interviewq.php");
    
     break;
    
@@ -136,7 +136,10 @@ $firstname = filter_input(INPUT_POST, 'firstname', FILTER_SANITIZE_STRING);
 $lastname = filter_input(INPUT_POST, 'lastname', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
 $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
-
+echo'$firstname';
+echo'$lastnmae';
+echo'$email';
+echo'$password';
 // Check for missing data
 if(empty($firstname) || empty($lastname) || empty($email) || empty($password)){
     $message = '<p>Please provide information for all empty form fields.</p>';
