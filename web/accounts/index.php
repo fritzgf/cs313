@@ -92,12 +92,12 @@ switch ($action){
     //include '../view/login.php';
    //break;
    
-   case 'registration':
+   case 'register':
         include '../view/register.php';
    
     break;
    
-     case 'register':
+     case 'Register':
    // Filter and store the data
      $firstName = filter_input(INPUT_POST, 'firstname', FILTER_SANITIZE_STRING);
      $lastName = filter_input(INPUT_POST, 'lastname',FILTER_SANITIZE_STRING);
@@ -123,7 +123,7 @@ switch ($action){
    // Check for missing data
    if(empty($firstName) || empty($lastName) || empty($email) || empty($checkPassword)){
      $message = '<p>Please provide information for all empty form fields.</p>';
-     include '../view/registration.php';
+     include '../view/register.php';
      exit;
    }
    
@@ -138,20 +138,20 @@ switch ($action){
    if($regOutcome === 1){
    
     
-     $message = "<p>Thanks for registering $firstname. Please use your email and password to login.</p>";
+     $message = "<p>Thanks for registering $firstName. Please use your email and password to login.</p>";
      include '../view/login.php';
      exit;
    } else {
-     $message = "<p>Sorry $firstname, but the registration failed. Please try again.</p>";
+     $message = "<p>Sorry $firstName, but the registration failed. Please try again.</p>";
      include '../view/registration.php';
      //  Check if the firstname cookie exists, get its value
    if(isset($_COOKIE['firstname'])){
-     $cookieFirstname = filter_input(INPUT_COOKIE, 'firstname', FILTER_SANITIZE_STRING);
+     $cookieFirstname = filter_input(INPUT_COOKIE, 'firstName', FILTER_SANITIZE_STRING);
    }
-   $firstName= $_SESSION['userData'] ['firstname'];
+   $firstName= $_SESSION['userData'] ['firstName'];
     setcookie('firstname', $firstName, strtotime('+1 year'), '/');
     
-    $cookieFirstname = filter_input(INPUT_COOKIE, 'firstname', FILTER_SANITIZE_STRING);
+    $cookieFirstname = filter_input(INPUT_COOKIE, 'firstName', FILTER_SANITIZE_STRING);
      exit;
      
    }
