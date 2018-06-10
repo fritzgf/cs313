@@ -17,10 +17,10 @@ switch ($action) {
         if (isset($_SESSION['userData'])) {
             //now get the character's associated with this user
             $regOutcome = regUser($_SESSION['userData']['email']);
-            include "../view/interviewq.php";
+            include "./../view/interviewq.php";
             exit;
         } else {
-            include "../view/login.php";
+            include "./../view/login.php";
             exit;
         }
         break;
@@ -31,7 +31,7 @@ switch ($action) {
         // Check for missing data
         if (empty($firstName) || empty($password)) {
             $message = '<p>Both a username and password are required</p>';
-            include "../view/login.php";
+            include "./../view/login.php";
             exit;
         }
         $userData = getUser($email);
@@ -40,7 +40,7 @@ switch ($action) {
         // If the hashes don't match create an error and return to the login view
         if (!$hashCheck) {
             $message = '<p>Please provide a valid username and password</p>';
-            include '../login.php';
+            include './../view/login.php';
             exit;
         }
         // Remove the password from the array
@@ -50,14 +50,14 @@ switch ($action) {
         $_SESSION['userData'] = $userData;
         //now get the character's associated with this user
         $regOutcome = regUser($_SESSION['userData']['email']);
-        include "../view/interviewq.php";
+        include "./../view/interviewq.php";
         break;
     case 'logout':
         session_destroy();
-        header("Location: ../view/interviewq.php");
+        header("Location: ./../view/interviewq.php");
         break;
     case 'register':
-        include "../view/register.php";
+        include "./../view/register.php";
         break;
     case 'Register':
         // Filter and store the data
@@ -69,7 +69,7 @@ switch ($action) {
         // Check for missing data
         if(empty($firstName) || empty($lastName) || empty($email) || empty($password)){
             $message = '<p>Please provide information for all empty form fields.</p>';
-            include '../view/register.php';
+            include './../view/register.php';
             exit;
         }
         // Hash the checked password
@@ -80,15 +80,15 @@ switch ($action) {
         // Check and report the result
         if($regOutcome === 1){
             $message = "<p>Thanks for registering. Please use your username and password to login.</p>";
-            include '../view/login.php';
+            include './../view/login.php';
             exit;
         } else {
             $message = "<p>Sorry, but the registration failed. Please try again.</p>";
-            include '../view/register.php';
+            include './../view/register.php';
             exit;
         }
         break;
 
         default:
-    include '../view/admin.php'; 
+    include './../view/admin.php'; 
     }
