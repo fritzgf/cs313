@@ -33,7 +33,7 @@
     ?>
 
 
-    <form method="post" action="?action=register" class="form">
+    <form method="post" action="./../accounts/index.php" class="form">
 
         <div class="register-page">
             <h1>Sign up</h1>
@@ -56,7 +56,7 @@
             <br>
             <input type="submit" name="submit" id="regbtn" value="Register">
             <!-- Add the action name - value pair -->
-         
+            <input type="hidden" name="action" value="register">
 
         </div>  
 
