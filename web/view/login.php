@@ -30,7 +30,7 @@
         echo $message;
     }
     ?>
-    <form class="logForm" method="post" action="./../accounts/index.php">
+    <form class="logForm" method="post" action="./../accounts/?action=login">
 
 
         <div class="login-page">
@@ -47,7 +47,7 @@
 
           
             <input type="submit" name="submit" id="logbtn" value="Sign in"> 
-            <input type="hidden" name="action" value="login">
+         
             <span class="psw">Forgot password? <a href="#">send reset email</a></span>
 
             <p>  <a class="create-account" href="./../accounts/?action=registration">Create an account </a></p>
