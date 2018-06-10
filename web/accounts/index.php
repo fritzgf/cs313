@@ -184,12 +184,12 @@ $firstName= $_SESSION['userData'] ['firstname'];
 //
 //     break;
      
-     case 'updateClient':
-     $clientId = $_SESSION['clientData']['clientId'];
+    //  case 'updateClient':
+    //  $clientId = $_SESSION['clientData']['clientId'];
      
-     $clientData = getClientId($clientId);
+    //  $clientData = getClientId($clientId);
      
-    include '../view/client-update.php'; 
+    // include '../view/client-update.php'; 
    
 break;
 

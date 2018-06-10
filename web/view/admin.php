@@ -1,6 +1,6 @@
 <?php
 if (isset($_SESSION['loggedin']) != TRUE) {
-    header("Location: /acme/index.php");
+    header("Location: ../view/login.php");
 }
 ?>
 <!DOCTYPE html>
@@ -22,7 +22,7 @@ if (isset($_SESSION['loggedin']) != TRUE) {
             <header class="page-header">
 
 
-                <?php include $_SERVER['DOCUMENT_ROOT'] . '/acme/common/header.php'; ?>
+               
 
 
 
@@ -39,7 +39,7 @@ if (isset($_SESSION['loggedin']) != TRUE) {
             <main class="page-main">
 
                 <section id="home-content">
-                    <h1> <?php echo $_SESSION['clientData']['clientFirstname'] . " " . $_SESSION['clientData']['clientLastname']; ?> </h1> 
+                    <h1> <?php echo $_SESSION['userData']['firstName'] . " " . $_SESSION['userData']['lastName']; ?> </h1> 
 
                     <?php
                     if (isset($_SESSION['loggedin']) == TRUE) {
@@ -47,29 +47,13 @@ if (isset($_SESSION['loggedin']) != TRUE) {
                     }
                     ?>
                     <ul> 
-                        <li> First Name: <?php echo $_SESSION['clientData']['clientFirstname']; ?></li>
-                        <li> Last Name : <?php echo $_SESSION['clientData']['clientLastname']; ?> </li>
-                        <li> Email : <?php echo $_SESSION['clientData']['clientEmail']; ?></li>
+                        <li> First Name: <?php echo $_SESSION['userData']['firstName']; ?></li>
+                        <li> Last Name : <?php echo $_SESSION['userData']['lastName']; ?> </li>
+                        <li> Email : <?php echo $_SESSION['userData']['email']; ?></li>
 
 
                     </ul>
-                    <a class="account-link" href="/acme/accounts/?action=updateClient"> Update Your account</a>
-
-                    <div>  
-
-                        <?php
-                        if ($_SESSION['clientData']['clientLevel'] > 1) {
-                            echo'<h1> Administration Functions </h1>
-                        <p> Please use the link below to manage Projects</p>';
-
-                            echo '<a class="Product-link" href="/acme/products/"> Product </a>';
-                        }
-                        ?>
-                    </div>
-                <?php
-                 echo $displayReviewDetails;
-
-                  ?>
+            
                 </section>
 
 
@@ -78,7 +62,7 @@ if (isset($_SESSION['loggedin']) != TRUE) {
 
             <footer id="page-footer">
                 <hr>
-                <?php include $_SERVER['DOCUMENT_ROOT'] . '/acme/common/footer.php'; ?>
+                
             </footer>
 
         </div>
