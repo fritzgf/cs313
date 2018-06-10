@@ -40,7 +40,7 @@ switch ($action){
       session_destroy();
      setcookie('firstname', $firstName, strtotime('-1 year'), '/');
      
-    header("Location:../view/login.php");
+    header("Location:../view/reviewq.php");
 
  break;
 
