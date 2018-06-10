@@ -16,6 +16,6 @@ $statement->bindValue(":interviewtext", $interviewtext, PDO::PARAM_STR);
 
 $statement->execute();
 echo" 1\n";
-header("Location: ../view/answers.php?interview_id=$links");
+header("Location: ../view/answers.php");
 die();
 ?>

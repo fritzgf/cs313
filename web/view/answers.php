@@ -37,7 +37,8 @@ require("./../model/displayAnswer-model.php");
 <label> date </label>
 
 <textarea name="interviewtext" placeholder="interviewtext" rows="30" cols="50">  </textarea> <br>
-
+<input type="hidden" name="id" value="<?php echo $links; ?>">
+<input type="hidden" name="user_id" value="<?php echo $links; ?>">
 <input type="submit" value="Submit"> <br>
 </form>
 </div>
