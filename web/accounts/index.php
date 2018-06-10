@@ -31,7 +31,7 @@ switch ($action) {
         // Check for missing data
         if (empty($firstName) || empty($password)) {
             $message = '<p>Both a username and password are required</p>';
-            include "../views/login.php";
+            include "../view/login.php";
             exit;
         }
         $userData = getUser($email);
@@ -50,16 +50,16 @@ switch ($action) {
         $_SESSION['userData'] = $userData;
         //now get the character's associated with this user
         $regOutcome = regUser($_SESSION['userData']['email']);
-        include "../views/userPage.php";
+        include "../view/interviewq.php";
         break;
     case 'logout':
         session_destroy();
         header("Location: ../view/interviewq.php");
         break;
-    case 'go-to-register':
+    case 'register':
         include "../view/register.php";
         break;
-    case 'register':
+    case 'Register':
         // Filter and store the data
         $firstName = filter_input(INPUT_POST, 'firstName', FILTER_SANITIZE_STRING);
         $lastName = filter_input(INPUT_POST, 'lastName', FILTER_SANITIZE_STRING);
