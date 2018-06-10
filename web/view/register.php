@@ -33,7 +33,7 @@
     ?>
 
 
-    <form method="post" action="./../accounts/?action=register" class="form">
+    <form method="post" action="?action=register" class="form">
 
         <div class="register-page">
             <h1>Sign up</h1>

@@ -38,9 +38,9 @@ switch ($action){
  case 'log':
      //Finally, destroy the session.
       session_destroy();
-     setcookie('firstname', $clientFirstname, strtotime('-1 year'), '/');
+     setcookie('firstname', $firstName, strtotime('-1 year'), '/');
      
-    header("Location: /web/index.php");
+    header("Location:../view/login.php");
 
  break;
 

@@ -30,7 +30,7 @@
         echo $message;
     }
     ?>
-    <form class="logForm" method="post" action="./../accounts/?action=login">
+    <form class="logForm" method="post" action="?action=log">
 
 
         <div class="login-page">
