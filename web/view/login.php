@@ -50,7 +50,7 @@
             <input type="hidden" name="action" value="login">
             <span class="psw">Forgot password? <a href="#">send reset email</a></span>
 
-            <p>  <a class="create-account" href="/accounts/?action=registration">Create an account </a></p>
+            <p>  <a class="create-account" href=".../accounts/?action=registration">Create an account </a></p>
 
         </div>
 
