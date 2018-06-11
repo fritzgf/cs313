@@ -33,7 +33,7 @@
     ?>
 
 
-    <form method="post" action="./../accounts/index.php" class="form">
+    <form method="post" action="./../accounts/insertReg.php" class="form">
 
         <div class="register-page">
             <h1>Sign up</h1>
@@ -60,7 +60,7 @@
 
         </div>  
 
-        
+
 
     </form> 
 
