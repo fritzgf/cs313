@@ -127,7 +127,7 @@ switch ($action){
 //      exit;
 //    }
    
-case 'register':
+case 'registration':
 include "./../view/register.php";
 break;
 case 'Register':
