@@ -18,7 +18,6 @@ require_once './../model/accounts-model.php';
 
 switch ($action){
     
-    
     case 'log':
         //Finally, destroy the session.
          session_destroy();
@@ -132,14 +131,15 @@ include "./../view/register.php";
 break;
 case 'Register':
 // Filter and store the data
-$firstname = filter_input(INPUT_POST, 'firstname', FILTER_SANITIZE_STRING);
-$lastname = filter_input(INPUT_POST, 'lastname', FILTER_SANITIZE_STRING);
+$firstName = filter_input(INPUT_POST, 'firstName', FILTER_SANITIZE_STRING);
+$lastName = filter_input(INPUT_POST, 'lastName', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
 $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
-echo'$firstname';
-echo'$lastnmae';
-echo'$email';
-echo'$password';
+
+echo "firstName: $firstName\n";
+echo "lastName: $lastName\n";
+echo "email: $email\n";
+
 // Check for missing data
 if(empty($firstname) || empty($lastname) || empty($email) || empty($password)){
     $message = '<p>Please provide information for all empty form fields.</p>';
@@ -151,19 +151,17 @@ if(empty($firstname) || empty($lastname) || empty($email) || empty($password)){
    
    // Send the data to the model
    $regOutcome = regUser($firstname, $lastname, $email, $hashedPassword);
-    
-   var_dump( $regOutcome);
    
    // Check and report the result
    if($regOutcome === 1){
    
-    
      $message = "<p>Thanks for registering $firstname. Please use your email and password to login.</p>";
      include '../view/login.php';
      exit;
    } else {
      $message = "<p>Sorry $firstname, but the registration failed. Please try again.</p>";
      include '../view/registration.php';
+   }
      //  Check if the firstname cookie exists, get its value
    if(isset($_COOKIE['firstname'])){
      $cookieFirstname = filter_input(INPUT_COOKIE, 'firstName', FILTER_SANITIZE_STRING);
@@ -172,28 +170,26 @@ if(empty($firstname) || empty($lastname) || empty($email) || empty($password)){
     setcookie('firstname', $firstname, strtotime('+1 year'), '/');
     
     $cookieFirstname = filter_input(INPUT_COOKIE, 'firstName', FILTER_SANITIZE_STRING);
-     exit;
-     
+    
+   if($existingEmail){
+      if (isset($_COOKIE['reg'])) {
+          $message = "<p class='notice'>Thanks for registering $clientFirstname. Please use your email and password to login.</p>";
+          include '../view/login.php';
+      }
+      $message = "<p class='notice'>That email already exists. Please use a different email.</p>";
+      exit;
    }
-   //if($existingEmail){
-   //    if (isset($_COOKIE['reg'])) {
-   //        $message = "<p class='notice'>Thanks for registering $clientFirstname. Please use your email and password to login.</p>";
-   //        include '../view/login.php';
-   //    }
-   //    $message = "<p class='notice'>That email already exists. Please use a different email.</p>";
-   //    exit;
-   //}
-   //
-   //echo '<script> type="text/javascript">', 'location.reload();','</script>';
-   //
-   //     break;
+   
+   echo '<script> type="text/javascript">', 'location.reload();','</script>';
+   
+       break;
         
-       //  case 'updateClient':
-       //  $clientId = $_SESSION['clientData']['clientId'];
+        case 'updateClient':
+        $clientId = $_SESSION['clientData']['clientId'];
         
-       //  $clientData = getClientId($clientId);
+        $clientData = getClientId($clientId);
         
-       // include '../view/client-update.php'; 
+       include '../view/client-update.php'; 
       
    break;
    
@@ -201,3 +197,4 @@ if(empty($firstname) || empty($lastname) || empty($email) || empty($password)){
        include '../view/admin.php'; 
       
    }
+  
