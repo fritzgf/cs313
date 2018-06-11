@@ -9,6 +9,7 @@ $statement = $db->prepare($query);
 $statement->bindValue(":firstName", $firstName, PDO::PARAM_STR);
 $statement->bindValue(":lastName", $lastName, PDO::PARAM_STR);
 $statement->bindValue(":email", $email, PDO::PARAM_STR);
+$statement->bindValue(":password", $password, PDO::PARAM_STR);
 
 // Insert the data
 $statement->execute();  
