@@ -38,12 +38,12 @@
         <div class="register-page">
             <h1>Sign up</h1>
 
-            <label for="firstname" > First Name </label> 
-            <input type="text" placeholder="Joe" name="firstname" id="firstname" <?php if (isset($firstname)) { echo "value='$firstname'"; }?> required>
+            <label for="firstName" > First Name </label> 
+            <input type="text" placeholder="Joe" name="firstName" id="firstName" <?php if (isset($firstName)) { echo "value='$firstName'"; }?> required>
             
 
-            <label for="lastname" > Last Name </label>
-            <input  type="text"  placeholder="John" name="lastname"  id="lastname" <?php if (isset($lastname)) { echo "value='$lastname'"; }?> required> 
+            <label for="lastName" > Last Name </label>
+            <input  type="text"  placeholder="John" name="lastName"  id="lastname" <?php if (isset($lastName)) { echo "value='$lastName'"; }?> required> 
             
 
             <label for="email"> Email address </label>
