@@ -87,46 +87,6 @@ switch ($action){
    header('Location: '.$_SERVER['REQUEST_URI']);
    
    
-   exit; 
-   
-    //include '../view/login.php';
-   //break;
-   
-//    case 'register':
-//         include '../view/register.php';
-   
-//     break;
-   
-//      case 'Register':
-//    // Filter and store the data
-//      $firstName = filter_input(INPUT_POST, 'firstName', FILTER_SANITIZE_STRING);
-//      $lastName = filter_input(INPUT_POST, 'lastName',FILTER_SANITIZE_STRING);
-//      $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-//      $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
-     
-//    $email = checkEmail($email);
-//    $checkPassword = checkPassword($password);
-    
-//    //Check for an existing email
-//    $existingEmail = checkExistingEmail($email);
-   
-//    // Check for existing email address in the table
-//    if($existingEmail){
-//        if (isset($_COOKIE['reg'])) {
-//      $message = '<p class="notice">That email address already exists. Do you want to login instead?</p>';
-//      include '../view/login.php';
-//      exit;
-//        }
-//      echo '<script> type="text/javascript">', 'location.reload();','</script>';
-//    }
-   
-//    // Check for missing data
-//    if(empty($firstName) || empty($lastName) || empty($email) || empty($checkPassword)){
-//      $message = '<p>Please provide information for all empty form fields.</p>';
-//      include '../view/register.php';
-//      exit;
-//    }
-   
 case 'registration':
 include "./../view/register.php";
 break;
