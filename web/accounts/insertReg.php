@@ -27,10 +27,10 @@ if (!isset($firstName) || $firstName == ""
 
 $hash = password_hash($password, PASSWORD_DEFAULT);
 
-echo "firstName: $firstName\n";
-echo "lastName: $lastName\n";
-echo "email: $email\n";
-require("dbConnect.php");
+// echo "firstName: $firstName\n";
+// echo "lastName: $lastName\n";
+// echo "email: $email\n";
+// require("dbConnect.php");
 $db = get_db();
 
 
