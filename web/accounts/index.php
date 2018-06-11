@@ -123,37 +123,6 @@ if(empty($firstName) || empty($lastName) || empty($email) || empty($password)){
      $message = "<p>Sorry $firstName, but the registration failed. Please try again.</p>";
      include '../view/register.php';
    }
-  //    //  Check if the firstname cookie exists, get its value
-  //  if(isset($_COOKIE['firstname'])){
-  //    $cookieFirstname = filter_input(INPUT_COOKIE, 'firstName', FILTER_SANITIZE_STRING);
-  //  }
-  //  $firstName= $_SESSION['userData'] ['firstName'];
-  //   setcookie('firstname', $firstname, strtotime('+1 year'), '/');
-    
-  //   $cookieFirstname = filter_input(INPUT_COOKIE, 'firstName', FILTER_SANITIZE_STRING);
-    
-  //  if($existingEmail){
-  //     if (isset($_COOKIE['reg'])) {
-  //         $message = "<p class='notice'>Thanks for registering $firstName. Please use your email and password to login.</p>";
-  //         include '../view/login.php';
-  //     }
-  //     $message = "<p class='notice'>That email already exists. Please use a different email.</p>";
-  //     exit;
-  //  }
-   
-  //  echo '<script> type="text/javascript">', 'location.reload();','</script>';
-   
-  //      break;
-        
-  //       case 'updateClient':
-  //       $clientId = $_SESSION['clientData']['clientId'];
-        
-  //       $clientData = getClientId($clientId);
-        
-  //      include '../view/client-update.php'; 
-      
-  //  break;
-   
    default:
        include '../view/admin.php'; 
       
