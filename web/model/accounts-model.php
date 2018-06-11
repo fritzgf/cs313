@@ -1,19 +1,19 @@
 <?php
 
-function regUser($firstname, $lastname, $email, $password) {
+function regUser($firstName, $lastName, $email, $password) {
    $db = get_db();
    
-$query = "INSERT INTO users (firstname, lastname, email, password) VALUES (:firstname, :lastname, :email, :password)";
+$query = "INSERT INTO users (firstName, lastName, email, password) VALUES (:firstName, :lastName, :email, :password)";
 
 $statement = $db->prepare($query);
-$statement->bindValue(":firstname", $firstname, PDO::PARAM_STR);
-$statement->bindValue(":lastname", $lastname, PDO::PARAM_STR);
+$statement->bindValue(":firstName", $firstName, PDO::PARAM_STR);
+$statement->bindValue(":lastName", $lastName, PDO::PARAM_STR);
 $statement->bindValue(":email", $email, PDO::PARAM_STR);
 
 // Insert the data
 $statement->execute();  
 // Ask how many rows changed as a result of our insert
-    $rowsChanged = $stmt->rowCount();
+    $rowsChanged = $statement->rowCount();
    
 // Close the database interaction
  $statement-->closeCursor();
