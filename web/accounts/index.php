@@ -82,9 +82,9 @@ switch ($action){
    // Store the array into the session
    // Store the new data
    
-   // Send them to the admin view
-   include '../view/admin.php';
-   header('Location: '.$_SERVER['REQUEST_URI']);
+  //  // Send them to the admin view
+  //  include '../view/admin.php';
+  //  header('Location: '.$_SERVER['REQUEST_URI']);
    
    
 case 'registration':
