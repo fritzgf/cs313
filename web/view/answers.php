@@ -43,14 +43,12 @@ require("./../model/displayAnswer-model.php");
 
    <p>  <a class="ask-question" href="./../view/ask-question.php">Ask Question </a></p>
 
-<form action="./../model/insertInterview-model.php" method="post">
+<form action="./../answers/yourAnswer.php" method="post">
 
 <label> Share your Answer </label> <br>
-<label> date </label>
-
 <textarea name="interviewtext" placeholder="interviewtext" rows="30" cols="50">  </textarea> <br>
 <input type="hidden" name="id" value="<?php echo $links; ?>">
-<input type="hidden" name="user_id" value="<?php echo $links; ?>">
+<input type="hidden" name="user_id" value="<?php echo $_SESSION['userData']['firstName']; ?>">
 <input type="submit" value="Submit"> <br>
 </form>
 </div>
