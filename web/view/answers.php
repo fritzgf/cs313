@@ -39,6 +39,11 @@ if(isset($_SESSION["userData"])){
 require("./../model/displayAnswer-model.php");  
 
  ?> 
+ <?php
+
+require("./../answers/displayAnswer.php");  
+
+ ?> 
    <p>  <a class="ask-question" href="./../view/ask-question.php">Ask Question </a></p>
 
 <form action="./../answers/yourAnswer.php" method="post">

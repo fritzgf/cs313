@@ -30,7 +30,7 @@ $statement->bindValue(":interviewId", $interviewId, PDO::PARAM_INT);
 $statement->execute();
 // var_dump($statement);
 // exit;
-// header("Location: ../view/login.php");
+header("Location: ../view/interviewq.php");
 die();
 
 

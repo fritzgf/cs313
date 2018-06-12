@@ -1,4 +1,13 @@
 <?php
+session_start();
+
+
+
+session_start();
+
+require("./../library/connections.php");
+
+$db = get_db();
 
 $userId= $_SESSION ["userData"]["user_id"];
 $interview_id= $_GET["userData"]["interview_id"];
@@ -10,13 +19,13 @@ $statement->execute();
 $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($rows as $row) {
-	$id = $row["id"]; 
-	$interviewtext = $row["interviewtext"];
+	$userId = $row["user_id"]; 
+	$answer = $row["answer"];
    $firstname = $row["firstname"];
    $date = $row["date"]; 
    
    echo "<hr>";
-  echo "<li><a href='answers.php?interview_id=$id'>$interviewtext <br> $firstname - $date </a></li>";
+  echo "<li><a href='answers.php?answer_id=$user_id'>$answer <br> $firstname - $date </a></li>";
   echo "<hr>";
 
 }
