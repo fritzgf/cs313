@@ -7,7 +7,7 @@ $interviewtext = htmlspecialchars($_POST["interviewtext"]);
 $userId = htmlspecialchars($_POST["user_id"]);
 $interviewId = htmlspecialchars($_POST["id"]);
 $date = htmlspecialchars($_POST["date"]);
-// echo "interview_id: $links\n";
+// echo "interview_id: $interviewId\n";
 // echo "date: $date\n";
 // echo "interviewtext: $interviewtext\n";
 echo" 1\n";

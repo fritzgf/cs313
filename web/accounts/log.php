@@ -41,7 +41,10 @@ if(!$hash){
 array_pop($userData);
 
 $_SESSION['userData']= $userData;
-header("Location: ../view/interviewq.php");
+
+var_dump($_SESSION['userData']);
+
+// header("Location: ../view/interviewq.php");
 
   // $sql = 'SELECT id, email FROM users WHERE email= :email AND password=:hash';
   // $stmt = $db->prepare($sql);
