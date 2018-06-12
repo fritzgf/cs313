@@ -35,7 +35,6 @@ $hash = password_hash($password, PASSWORD_DEFAULT);
 
 $query = "INSERT INTO users (firstName, lastName, email, password) VALUES (:firstName, :lastName, :email, :password)";
 
-exit;
 $statement = $db->prepare($query);
 $statement->bindValue(":firstName", $firstName, PDO::PARAM_STR);
 $statement->bindValue(":lastName", $lastName, PDO::PARAM_STR);
