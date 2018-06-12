@@ -22,7 +22,7 @@ $interviewId = htmlspecialchars($_POST["interview_id"]);
 // exit;
 
 $query = "INSERT INTO answers (answer, user_id, interview_id) VALUES (:answer, :user_id, interview_id)";
- var_dump($query);
+
 $statement = $db->prepare($query);
 $statement->bindValue(":answer", $answer, PDO::PARAM_STR);
 $statement->bindValue(":user_id", $userId, PDO::PARAM_INT);
