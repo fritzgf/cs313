@@ -27,7 +27,8 @@ $stmt = $db->prepare($sql);
 $stmt->bindValue(':email', $email, PDO::PARAM_STR);
 $stmt->execute();
 $userData = $stmt->fetch(PDO::FETCH_ASSOC);
-
+var_dump($userData);
+exit;
 $hash = password_verify($password, $userData['password']);
 
 // Check for an existing email address
