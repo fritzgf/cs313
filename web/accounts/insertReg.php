@@ -31,10 +31,11 @@ $hash = password_hash($password, PASSWORD_DEFAULT);
 // echo "lastName: $lastName\n";
 // echo "email: $email\n";
 // require("dbConnect.php");
-$db = get_db();
+
 
 $query = "INSERT INTO users (firstName, lastName, email, password) VALUES (:firstName, :lastName, :email, :password)";
-
+var_dump($query);
+exit;
 $statement = $db->prepare($query);
 $statement->bindValue(":firstName", $firstName, PDO::PARAM_STR);
 $statement->bindValue(":lastName", $lastName, PDO::PARAM_STR);
