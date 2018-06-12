@@ -7,7 +7,7 @@
 session_start();
 
 require("./../library/connections.php");
-require("./../model/insertReg.php");
+
 
 $db = get_db();
 
