@@ -3,7 +3,7 @@ session_start();
 
 
 
-session_start();
+
 
 require("./../library/connections.php");
 
@@ -16,10 +16,10 @@ $answer = htmlspecialchars($_POST["answer"]);
 $userId = htmlspecialchars($_POST["user_id"]);
 $interviewId = htmlspecialchars($_POST["interview_id"]);
 
-// echo "answer: $answer\n";
-// echo "user_id: $userId\n";
-// echo "interview_id: $interviewId\n";
-// exit;
+echo "answer: $answer\n";
+echo "user_id: $userId\n";
+echo "interview_id: $interviewId\n";
+exit;
 
 $query = "INSERT INTO answers (answer, user_id, interview_id) VALUES (:answer, :user_id, :interview_id)";
 

@@ -14,4 +14,4 @@ echo "<hr>";
   echo "<li>$interviewtext <br> $firstname - $date </li>";
   echo "<hr>";
   echo "<br>"
-?> 
+?>  
