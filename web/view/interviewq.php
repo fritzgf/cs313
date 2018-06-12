@@ -1,10 +1,6 @@
 <?php
 session_start();
 
-if(isset($_SESSION["userData"])){
-    include '../view/logout.php';
-
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,6 +22,13 @@ if(isset($_SESSION["userData"])){
 </header>
 
 <nav id="page-nav">
+<?php
+
+if(isset($_SESSION["userData"])){
+    include '../view/logout.php';
+
+}
+?>
 
 <?php require("./../common/nav.php"); ?>
 </nav>
