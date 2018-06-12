@@ -32,8 +32,9 @@ $hash = password_hash($password, PASSWORD_DEFAULT);
 // echo "email: $email\n";
 // require("dbConnect.php");
 $db = get_db();
-
-
+$userData=regUser($firstName, $lastName, $email, $password);
+function regUser($firstName, $lastName, $email, $password) {
+  $db = get_db();
 $query = "INSERT INTO users (firstName, lastName, email, password) VALUES (:firstName, :lastName, :email, :password)";
 
 $statement = $db->prepare($query);
@@ -44,6 +45,8 @@ $statement->bindValue(":password", $hash, PDO::PARAM_STR);
 $statement->execute();
 // var_dump($statement);
 // exit;
- header("Location: ../view/login.php");
+header("Location: ../view/login.php");
 die();
+}
+
 ?>  

@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if(isset($_SESSION["userData"])){
+    include '../view/logout.php';
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
