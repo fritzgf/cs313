@@ -9,14 +9,14 @@ $interviewtext = htmlspecialchars($_POST["interviewtext"]);
 // echo "interviewtext: $interviewtext\n";
 echo" 1\n";
 $query = "INSERT INTO interview_questions (interviewtext) VALUES (:interviewtext)";
-echo" 1\n";
+echo" 2\n";
 $statement = $db->prepare($query);
-echo" 1\n";
+echo" 3\n";
 $statement->bindValue(":interviewtext", $interviewtext, PDO::PARAM_STR);
 
-echo" 1\n";
+echo" 4\n";
 $statement->execute();
-echo" 1\n";
+echo" 5\n";
 header("Location: ../view/answers.php");
 die();
 ?>
