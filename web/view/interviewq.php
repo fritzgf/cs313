@@ -17,7 +17,7 @@ session_start();
 
       <header class="page-header">
 
-    <!-- <?php require("./../common/header.php"); ?> -->
+    <?php require("./../view/destroy.php"); ?> 
 
 </header>
 
