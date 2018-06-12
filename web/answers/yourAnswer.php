@@ -26,7 +26,7 @@ $query = "INSERT INTO answers (answer, user_id, interview_id) VALUES (:answer, :
 $statement = $db->prepare($query);
 $statement->bindValue(":answer", $answer, PDO::PARAM_STR);
 $statement->bindValue(":user_id", $userId, PDO::PARAM_INT);
-$statement->bindValue(":interviewId", $interviewId, PDO::PARAM_INT);
+$statement->bindValue(":interview_id", $interviewId, PDO::PARAM_INT);
 $statement->execute();
 // var_dump($statement);
 // exit;
