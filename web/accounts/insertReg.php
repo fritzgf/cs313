@@ -34,7 +34,7 @@ $hash = password_hash($password, PASSWORD_DEFAULT);
 
 
 $query = "INSERT INTO users (firstName, lastName, email, password) VALUES (:firstName, :lastName, :email, :password)";
-var_dump($query);
+
 exit;
 $statement = $db->prepare($query);
 $statement->bindValue(":firstName", $firstName, PDO::PARAM_STR);
@@ -42,7 +42,7 @@ $statement->bindValue(":lastName", $lastName, PDO::PARAM_STR);
 $statement->bindValue(":email", $email, PDO::PARAM_STR);
 $statement->bindValue(":password", $hash, PDO::PARAM_STR);
 $statement->execute();
-// var_dump($statement);
+var_dump($statement);
 // exit;
 header("Location: ../view/login.php");
 die();
