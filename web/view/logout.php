@@ -1,4 +1,4 @@
 
 
-<a href='../view/login.php'> Logout </a>
+<a href='../view/destroy.php'> Logout </a>
 
