@@ -37,7 +37,7 @@ if(isset($_SESSION["userData"])){
 
 
  
-<form action="#" method="post">
+<form action="./../model/insertInterview-model.php" method="post">
 
 <label> Ask question </label> <br>
 <input type="date" name="date"><br>
