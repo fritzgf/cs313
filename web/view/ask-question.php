@@ -40,8 +40,10 @@ if(isset($_SESSION["userData"])){
 <form action="./../model/insertInterview-model.php" method="post">
 
 <label> Ask question </label> <br>
+<input type="date" name="date"><br>
 <textarea name="interviewtext" placeholder="interviewtext" rows="30" cols="50">  </textarea> <br>
-
+<input type="hidden" name="user_id" value="<?php ?>">
+<input type="hidden" name="id" value="<?php  ?>">
 
 <input type="submit" value="Submit"> <br>
 </form>
