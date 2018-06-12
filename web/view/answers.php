@@ -38,8 +38,6 @@ if(isset($_SESSION["userData"])){
 
 require("./../model/displayAnswer-model.php");  
 
- ?> 
- <?php
 
 require("./../answers/displayAnswer.php");  
 
