@@ -25,8 +25,7 @@ $statement->execute();
    $db = get_db();
    $query = 'SELECT id, email FROM users WHERE email= :email';
    $statement = $db->prepare($query);
-   $statement->bindValue(':email', $email, PDO::PARAM_STR);
-   $statement->bindValue(':password', $password, PDO::PARAM_STR);
+     $statement->bindValue(':password', $password, PDO::PARAM_STR);
    $statement->execute();
    $userData = $statement->fetch(PDO::FETCH_ASSOC);
      
