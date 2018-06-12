@@ -46,8 +46,8 @@ require("./../model/displayAnswer-model.php");
 <form action="./../answers/yourAnswer.php" method="post">
 
 <label> Share your Answer </label> <br>
-<textarea name="answer" placeholder="interviewtext" rows="30" cols="50">  </textarea> <br>
-<input type="hidden" name="id" value="<?php echo $links; ?>">
+<textarea name="answer" placeholder="Type your answer" rows="30" cols="50">  </textarea> <br>
+<input type="hidden" name="interview_id" value="<?php echo $links; ?>">
 <input type="hidden" name="user_id" value="<?php echo $_SESSION['userData']['firstName']; ?>">
 <input type="submit" value="Submit"> <br>
 </form>
