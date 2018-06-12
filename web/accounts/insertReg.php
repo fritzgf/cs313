@@ -42,7 +42,7 @@ $statement->bindValue(":lastName", $lastName, PDO::PARAM_STR);
 $statement->bindValue(":email", $email, PDO::PARAM_STR);
 $statement->bindValue(":password", $hash, PDO::PARAM_STR);
 $statement->execute();
-var_dump($statement);
+echo" data inserted";
 // exit;
 header("Location: ../view/login.php");
 die();
