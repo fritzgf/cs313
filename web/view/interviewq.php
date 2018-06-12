@@ -17,7 +17,6 @@ session_start();
 
       <header class="page-header">
 
-    <?php require("./../view/destroy.php"); ?> 
 
 </header>
 
