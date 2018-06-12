@@ -15,7 +15,7 @@ $email = htmlspecialchars($_POST["email"]);
 $password = htmlspecialchars($_POST["password"]);
 
 //Run basic checks, return if errors
-if (empty($email) || empty($passwordCheck)) {
+if (empty($email) || empty($password)) {
   $message = '<p class="notice">Please provide a valid email address and password.</p>';
   include '../view/login.php';
   exit;
