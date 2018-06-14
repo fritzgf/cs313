@@ -16,7 +16,7 @@ $interviewId = htmlspecialchars($_POST["interview_id"]);
 echo "answer: $answer\n";
 echo "user_id: $userId\n";
 echo "interview_id: $interviewId\n";
-exit;
+
 
 $query = "INSERT INTO answers (answer, user_id, interview_id) VALUES (:answer, :user_id, :interview_id)";
 
