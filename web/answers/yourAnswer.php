@@ -18,13 +18,19 @@ echo "user_id: $userId\n";
 echo "interview_id: $interviewId\n";
 
 
+
 $query = "INSERT INTO answers (answer, user_id, interview_id) VALUES (:answer, :user_id, :interview_id)";
 
 $statement = $db->prepare($query);
 $statement->bindValue(":answer", $answer, PDO::PARAM_STR);
 $statement->bindValue(":user_id", $userId, PDO::PARAM_INT);
 $statement->bindValue(":interview_id", $interviewId, PDO::PARAM_INT);
+try{
 $statement->execute();
+} catch(PDOException $e){ 
+echo $e->getMessage();
+exit;
+}
 // var_dump($statement);
 // exit;
 header("Location: ../view/interviewq.php");
