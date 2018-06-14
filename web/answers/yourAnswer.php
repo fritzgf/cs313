@@ -12,14 +12,16 @@ $db = get_db();
 $answer = htmlspecialchars($_POST["answer"]);
 $userId = htmlspecialchars($_POST["user_id"]);
 $interviewId = htmlspecialchars($_POST["interview_id"]);
+$date = htmlspecialchars($_POST["date"]);
 
 echo "answer: $answer\n";
 echo "user_id: $userId\n";
 echo "interview_id: $interviewId\n";
+echo "date: $date\n";
 
 
 
-$query = "INSERT INTO answers (answer, user_id, interview_id) VALUES (:answer, :user_id, :interview_id)";
+$query = "INSERT INTO answers (answer, user_id, interview_id, date) VALUES (:answer, :user_id, :interview_id, :date)";
 
 $statement = $db->prepare($query);
 $statement->bindValue(":answer", $answer, PDO::PARAM_STR);
