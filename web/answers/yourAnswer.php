@@ -27,6 +27,7 @@ $statement = $db->prepare($query);
 $statement->bindValue(":answer", $answer, PDO::PARAM_STR);
 $statement->bindValue(":user_id", $userId, PDO::PARAM_INT);
 $statement->bindValue(":interview_id", $interviewId, PDO::PARAM_INT);
+$date->bindValue(":date", $date, PDO::PARAM_STR);
 try{
 $statement->execute();
 } catch(PDOException $e){ 
