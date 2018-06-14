@@ -42,7 +42,7 @@ array_pop($userData);
 
 $_SESSION['userData']= $userData;
 
-// var_dump($_SESSION['userData']);
+var_dump($_SESSION['userData']);
 
 // header("Location: ../view/interviewq.php");
 

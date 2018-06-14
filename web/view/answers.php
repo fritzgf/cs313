@@ -47,9 +47,10 @@ require("./../model/displayAnswer-model.php");
 <label> Share your Answer </label> <br>
 <textarea name="answer" placeholder="Type your answer" rows="30" cols="50">  </textarea> <br>
 <input type="hidden" name="interview_id" value="<?php echo $linksId; ?>">
-<input type="hidden" name="user_id" value="<?php echo $_SESSION['userData']; ?>">
+<input type="hidden" name="user_id" value="<?php echo $_SESSION["userData"]; ?>">
  <?php 
-  var_dump($_SESSION['userData'])
+ echo 'i am here';
+  var_dump($_SESSION['userData']);
  
  ?> 
 
