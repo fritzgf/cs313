@@ -45,7 +45,7 @@ require("./../model/displayAnswer-model.php");
 <form action="./../answers/yourAnswer.php" method="post">
 
 <label> Share your Answer </label> <br>
-<input value="2018-06-14" name="date" type="date" class="form-control" placeholder="YYYY-MM-DD><br> <br>
+<input value="2018-06-14" name="date" type="date" class="form-control" placeholder="YYYY-MM-DD"/><br> <br>
 <textarea name="answer" placeholder="Type your answer" rows="30" cols="50">  </textarea> <br>
 <input type="hidden" name="interview_id" value="<?php echo $linksId; ?>">
 <input type="hidden" name="user_id" value="<?php echo $_SESSION["userData"]["id"]; ?>">
