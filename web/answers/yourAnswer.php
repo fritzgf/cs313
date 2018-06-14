@@ -19,7 +19,7 @@ $date = htmlspecialchars($_POST["date"]);
 // echo "interview_id: $interviewId\n";
 // echo "date: $date\n";
 
-
+// insert data to the dabase
 
 $query = "INSERT INTO answers (answer, user_id, interview_id, date) VALUES (:answer, :user_id, :interview_id, :date)";
 
