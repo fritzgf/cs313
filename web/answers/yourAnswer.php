@@ -30,7 +30,7 @@ $statement->bindValue(":interview_id", $interviewId, PDO::PARAM_INT);
 $statement->bindValue(":date", $date, PDO::PARAM_STR);
 // try{
 $statement->execute();
-echo'success';
+
 // } catch(PDOException $e){ 
 // echo $e->getMessage();
 // exit;

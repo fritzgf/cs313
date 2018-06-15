@@ -36,7 +36,7 @@ if(isset($_SESSION["userData"])){
 
 <?php
 
-require("./../answers/displayAnswer.php");  
+require("./../model/displayAnswer-model.php");  
 
 
  ?> 
