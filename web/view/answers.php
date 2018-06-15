@@ -55,7 +55,7 @@ require("./../model/displayAnswer-model.php");
  
  ?> 
 
-<input type="submit" value="Submit"> <br>b 
+<input type="submit" value="Submit"> <br>
 </form>
 </div>
 </section>
