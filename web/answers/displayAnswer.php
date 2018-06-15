@@ -29,7 +29,7 @@ foreach ($rows as $row) {
    $interviewtext = $row["interviewtext"]; 
    
    echo "<hr>";
-   echo "<li><a href='answers.php?interview_id=$id'>$interviewtext <br> $firstname - $date </a></li>";
+   echo "$interviewtext <br> $firstname - $date </li>";
   echo "<li>$answer <br> $firstname - $date </li>";
   echo "<hr>";
 
