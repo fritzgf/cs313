@@ -37,7 +37,7 @@ if(isset($_SESSION["userData"])){
 <?php
 
 require("./../model/displayAnswer-model.php");  
-require("./../answers/displayAnswer.php"); 
+// require("./../answers/displayAnswer.php"); 
 
  ?> 
    <p>  <a class="ask-question" href="./../view/ask-question.php">Your answer </a></p>
