@@ -19,7 +19,7 @@ $date = htmlspecialchars($_POST["date"]);
 // echo "interview_id: $interviewId\n";
 // echo "date: $date\n";
 
-// insert data to the dabase
+// insert data to the database
 
 $query = "INSERT INTO answers (answer, user_id, interview_id, date) VALUES (:answer, :user_id, :interview_id, :date)";
 
@@ -27,7 +27,7 @@ $statement = $db->prepare($query);
 $statement->bindValue(":answer", $answer, PDO::PARAM_STR);
 $statement->bindValue(":user_id", $userId, PDO::PARAM_INT);
 $statement->bindValue(":interview_id", $interviewId, PDO::PARAM_INT);
-$date->bindValue(":date", $date, PDO::PARAM_STR);
+$statement->bindValue(":date", $date, PDO::PARAM_STR);
 // try{
 $statement->execute();
 // } catch(PDOException $e){ 

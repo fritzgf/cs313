@@ -50,8 +50,8 @@ require("./../model/displayAnswer-model.php");
 <input type="hidden" name="interview_id" value="<?php echo $linksId; ?>">
 <input type="hidden" name="user_id" value="<?php echo $_SESSION["userData"]["id"]; ?>">
  <?php 
-//  echo 'i am here';
-//   var_dump($_SESSION['userData']);
+ echo 'i am here';
+  var_dump($_SESSION['userData']);
  
  ?> 
 
