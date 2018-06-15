@@ -37,7 +37,7 @@ echo'success';
 // }
 // var_dump($statement);
 // exit;
-header("Location: ../view/interviewq.php");
+header("Location: ../view/answers.php");
 die();
 
 
