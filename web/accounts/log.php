@@ -44,7 +44,7 @@ $_SESSION['userData']= $userData;
 
 
 
-// header("Location: ../view/interviewq.php");
+header("Location: ../view/interviewq.php");
 
   // $sql = 'SELECT id, email FROM users WHERE email= :email AND password=:hash';
   // $stmt = $db->prepare($sql);
