@@ -10,7 +10,7 @@ require("./../library/connections.php");
 $db = get_db();
 
 $userId= $_SESSION ["userData"]["id"];
-$interviewtext= $_GET["interview_id"];
+$linksId =($_GET["interview_id"]);
 // echo '$_SESSION["userData"]["id"]: $userId\n';
 // echo "interview_id: $interview_id\n";
 // exit;
