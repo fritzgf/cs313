@@ -11,9 +11,11 @@ $db = get_db();
 
 $userId= $_SESSION ["userData"]["id"];
 $interviewtext= $_GET["interview_id"];
+// echo '$_SESSION["userData"]["id"]: $userId\n';
+// echo "interview_id: $interview_id\n";
+// exit;
 
-
-$query = "SELECT iq.id, interviewtext, iq.answer, iq.date, iq.user_id, u.firstname FROM answers as iq INNER JOIN users as u ON iq.user_id= u.id";
+$query = "SELECT iq.id, iq.interviewtext, iq.answer, iq.date, iq.user_id, u.firstname FROM answers as iq INNER JOIN users as u ON iq.user_id= u.id";
 $statement = $db->prepare($query);
 // Bind any variables I need, here...
 $statement->execute();
