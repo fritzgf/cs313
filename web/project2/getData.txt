@@ -1,0 +1,3 @@
+
+var myObj = { "name":"Fritz FEVRIER", "class":"CS 313" };
+var myJSON = JSON.stringify(myObj);
