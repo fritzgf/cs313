@@ -1,10 +1,6 @@
 <?php
 session_start();
 
-
-
-session_start();
-
 require("./../library/connections.php");
 
 $db = get_db();
