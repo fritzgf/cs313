@@ -38,6 +38,7 @@ if(isset($_SESSION["userData"])){
 
 // require("./../model/displayAnswer-model.php");  
 require("./../answers/displayAnswer.php"); 
+echo "what happened?"
 
  ?> 
    <p>  <a class="ask-question" href="./../view/ask-question.php">Your answer </a></p>
