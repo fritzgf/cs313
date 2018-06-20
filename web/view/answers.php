@@ -34,24 +34,22 @@ require("./../model/displayAnswer-model.php");
 
 
  ?> 
- <?php
 
- 
-// require("./../answers/displayAnswer.php"); 
 
- ?> 
+   <p>  <a class="ask-question" href="./../view/ask-question.php">Ask question </a></p>
 
-   <p>  <a class="ask-question" href="./../view/ask-question.php">Your answer </a></p>
+<form action="./../answers/yourAnswer.php" method="post" class="register-page" >
 
-<form action="./../answers/yourAnswer.php" method="post">
-
+<div class="login-page">
 <label> Share your Answer </label> <br>
 <input value="2018-06-14" name="date" type="input" class="form-control" placeholder="YYYY-MM-DD"/><br> <br>
-<textarea name="answer" placeholder="Type your answer" rows="10" cols="20">  </textarea> <br>
+<textarea name="answer" placeholder="Type your answer" rows="35" cols="40">  </textarea> <br>
 <input type="hidden" name="interview_id" value="<?php echo $linksId; ?>">
 <input type="hidden" name="user_id" value="<?php echo $_SESSION["userData"]["id"]; ?>">
 
 <input type="submit" value="Submit"> <br>
+</div>
+
 </form>
 </div>
 </section>
