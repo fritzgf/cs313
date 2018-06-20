@@ -2,9 +2,11 @@
 session_start();
 
 require("./../library/connections.php");
+ require("./../model/displayAnswer-model.php"); 
 
 $db = get_db();
-
+// call getInterviewq function
+$result=getInterviewq ($id);
 
 $userId= $_SESSION ["userData"]["id"];
 $interview_id= $_GET["interview_id"];
@@ -19,7 +21,9 @@ foreach ($rows as $row) {
    $firstname = $row["firstname"];
    $date = $row["date"]; 
    
+   echo "<li>$interviewtext <br> $firstname - $date </li>";
    echo "<hr>";
+  
   echo "<li><a href='answers.php?answer_id=$user_id'>$answer <br> $firstname - $date </a></li>";
   echo "<hr>";
 }
