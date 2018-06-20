@@ -47,14 +47,9 @@ require("./../model/displayAnswer-model.php");
 
 <label> Share your Answer </label> <br>
 <input value="2018-06-14" name="date" type="input" class="form-control" placeholder="YYYY-MM-DD"/><br> <br>
-<textarea name="answer" placeholder="Type your answer" rows="30" cols="50">  </textarea> <br>
+<textarea name="answer" placeholder="Type your answer" rows="10" cols="20">  </textarea> <br>
 <input type="hidden" name="interview_id" value="<?php echo $linksId; ?>">
 <input type="hidden" name="user_id" value="<?php echo $_SESSION["userData"]["id"]; ?>">
- <?php 
-//  echo 'i am here';
-//   var_dump($_SESSION['userData']);
- 
- ?> 
 
 <input type="submit" value="Submit"> <br>
 </form>

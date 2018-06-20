@@ -35,7 +35,7 @@ session_start();
 <div class="login-page">
 <label> Ask question </label> <br>
 <input value="2018-06-14" name="date" type="input" class="form-control" placeholder="YYYY-MM-DD"/><br> <br>
-<textarea name="interviewtext" placeholder="interviewtext" rows="30" cols="50">  </textarea> <br>
+<textarea name="interviewtext" placeholder="interviewtext" rows="10" cols="20">  </textarea> <br>
 <input type="hidden" name="user_id" value="<?php echo $_SESSION["userData"]["id"]; ?>">
 
 
