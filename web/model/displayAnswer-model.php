@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+
+require("./../library/connections.php");
+
+$db = get_db();
+
 // $userId= $_SESSION ["userData"]["user_id"];
 // $interview_id= $_GET["userData"]["interview_id"];
 
