@@ -25,6 +25,9 @@ if(isset($_SESSION["userData"])){
     include '../view/logout.php';
 
 }
+else{
+    include '../view/login.php';
+}
 ?>
 
 
