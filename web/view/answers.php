@@ -49,7 +49,7 @@ require("./../model/displayAnswer-model.php");
 
    <p>  <a class="ask-question" href="./../view/ask-question.php">Your answer </a></p>
 
-<form action="./../model/displayAnswer-model.php" method="post">
+<form action="./../answers/yourAnswer.php" method="post">
 
 <label> Share your Answer </label> <br>
 <input value="2018-06-14" name="date" type="input" class="form-control" placeholder="YYYY-MM-DD"/><br> <br>
