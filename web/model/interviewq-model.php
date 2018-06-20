@@ -16,7 +16,7 @@ foreach ($rows as $row) {
    $date = $row["date"]; 
    
    echo "<hr>";
-  echo "<a href='answers.php?interview_id=$id'>$interviewtext <br> $firstname  $date </a>";
+  echo "<a href='answers.php?interview_id=$id'>$interviewtext <br> <p>Asked by </p>$firstname  <p> at </p>  $date</a>";
  
   // echo "<li><a href='interviewq.php?user_id=$id'> $firstname </a></li>";
   // echo "<li><a href='interviewq.php?user_id=$id'> $date</a></li>";

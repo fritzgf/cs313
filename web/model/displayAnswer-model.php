@@ -31,7 +31,7 @@ $statement = $db->prepare($query);
 $statement->execute();
 $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
 echo "<hr>";
-echo "<li>$interviewtext <br> $firstname - $date </li>";
+echo "$interviewtext <br> <p>Asked by </p>$firstname  <p> at </p>  $date ";
 foreach ($rows as $row) {
 	$userId = $row["user_id"]; 
 	$answer = $row["answer"];
