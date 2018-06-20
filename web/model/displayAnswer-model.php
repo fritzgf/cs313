@@ -31,16 +31,18 @@ $statement = $db->prepare($query);
 // Bind any variables I need, here...
 $statement->execute();
 $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+echo "<li>$interviewtext <br> $firstname - $date </li>";
 foreach ($rows as $row) {
 	$userId = $row["user_id"]; 
 	$answer = $row["answer"];
    $firstname = $row["firstname"];
    $date = $row["date"]; 
    
-   echo "<li>$interviewtext <br> $firstname - $date </li>";
+ 
    echo "<hr>";
   
-  echo "$user_id'>$answer <br> $firstname - $date";
+  echo "$user_id -$answer <br> $firstname - $date";
   echo "<hr>";
 }
 ?>
