@@ -40,7 +40,7 @@ foreach ($rows as $row) {
    echo "<li>$interviewtext <br> $firstname - $date </li>";
    echo "<hr>";
   
-  echo "<li><a href='answers.php?answer_id=$user_id'>$answer <br> $firstname - $date </a></li>";
+  echo "$user_id'>$answer <br> $firstname - $date";
   echo "<hr>";
 }
 ?>
