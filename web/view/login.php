@@ -33,12 +33,12 @@ session_start();
         echo $message;
     }
     ?>
-    <form class="logForm" method="post" action="./../accounts/log.php">
+    <form class="register-page" method="post" action="./../accounts/log.php">
 
 
         <div class="login-page">
 
-            <h1 id="signIn">Sign in</h1>
+            <h1>Sign in</h1>
             <input  type="email" name="email" id="email" required placeholder="Enter a valid email address" <?php
             if (isset($email)) {
                 echo "value='$email'";
