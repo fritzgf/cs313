@@ -30,7 +30,7 @@ $statement = $db->prepare($query);
 // Bind any variables I need, here...
 $statement->execute();
 $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
-
+echo "<hr>";
 echo "<li>$interviewtext <br> $firstname - $date </li>";
 foreach ($rows as $row) {
 	$userId = $row["user_id"]; 
@@ -42,7 +42,7 @@ foreach ($rows as $row) {
    echo "<hr>";
   
   echo "$user_id -$answer <br> $firstname - $date";
-  echo "<hr>";
+ 
 }
 ?>
   
