@@ -35,7 +35,6 @@ die();
 
 
 ?>
-
 <?php
 require("./../library/connections.php");
 $linksId = htmlspecialchars($_GET["interview_id"]);
