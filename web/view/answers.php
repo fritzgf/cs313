@@ -40,6 +40,13 @@ require("./../model/displayAnswer-model.php");
 require("./../answers/displayAnswer.php"); 
 
  ?> 
+ <?php
+
+ 
+require("./../answers/displayAnswer.php"); 
+
+ ?> 
+
    <p>  <a class="ask-question" href="./../view/ask-question.php">Your answer </a></p>
 
 <form action="./../answers/yourAnswer.php" method="post">
