@@ -37,7 +37,7 @@ $statement->execute();
 // }
 // var_dump($statement);
 // exit;
-header("Location: ../view/answers.php");
+header("Location: ../view/answers.php?interview_id");
 die();
 
 
