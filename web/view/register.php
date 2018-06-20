@@ -41,20 +41,18 @@ session_start();
         <div class="register-page">
             <h1>Sign up</h1>
 
-            <label for="firstName" > First Name </label> 
+           
             <input type="text" placeholder="First Name" name="firstName" id="firstName" <?php if (isset($firstName)) { echo "value='$firstName'"; }?> required>
             
 
-            <label for="lastName" > Last Name </label>
+           
             <input  type="text"  placeholder="Last Name" name="lastName"  id="lastname" <?php if (isset($lastName)) { echo "value='$lastName'"; }?> required> 
             
 
-            <label for="email"> Email address </label>
             <input  type="email" name="email" id="email" required placeholder="Enter a valid email address" <?php if (isset($email)) { echo "value='$email'"; }?>>
        
 
-            <label for="password" > Password </label>
-            <input type="password"  name="password" id="password" required pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"  placeholder="must be 8 characters, e.g., Password#1">
+            <input type="password"  name="password" id="password" required pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"  placeholder="must be at least 8 characters, e.g., Password#1">
    
             <br>
             <input type="submit" name="submit" id="regbtn" value="Register">
