@@ -44,5 +44,6 @@ foreach ($rows as $row) {
   echo "$user_id -$answer <br> $firstname - $date";
  
 }
+echo "<hr>";
 ?>
   
