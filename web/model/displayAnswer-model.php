@@ -4,7 +4,7 @@ $linksId = htmlspecialchars($_GET["interview_id"]);
 
 
 $db = get_db();
-$query = "SELECT iq.id, iq.interviewtext, iq.date, iq.user_id, u.firstname FROM interview_questions as iq INNER JOIN users as u ON iq.user_id= u.id WHERE iq.id=:id";
+$query = "SELECT iq.id, iq.interviewtext, iq.date, iq.user_id, u.firstname FROM interview_questions as iq INNER JOIN users as u ON iq.user_id= u.id WHERE iq.id=:id ORDER BY date DESC";
 $statement = $db->prepare($query);
 $statement->bindValue(":id", $linksId, PDO::PARAM_INT);
 $statement->execute();
@@ -26,7 +26,7 @@ $date = $row["date"];
 
 $userId= $_SESSION ["userData"]["id"];
 $interview_id= $_GET["interview_id"];
-$query = "SELECT iq.id, iq.answer, iq.date, iq.user_id, u.firstname FROM answers as iq INNER JOIN users as u ON iq.user_id= u.id";
+$query = "SELECT iq.id, iq.answer, iq.date, iq.user_id, u.firstname FROM answers as iq INNER JOIN users as u ON iq.user_id= u.id  ORDER BY date DESC";
 $statement = $db->prepare($query);
 // Bind any variables I need, here...
 $statement->execute();
