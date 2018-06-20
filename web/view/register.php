@@ -52,7 +52,7 @@ session_start();
             <input  type="email" name="email" id="email" required placeholder="Enter a valid email address" <?php if (isset($email)) { echo "value='$email'"; }?>>
        
 
-            <input type="password"  name="password" id="password" required pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"  placeholder="must be at least 8 characters, e.g., Password#1">
+            <input type="password"  name="password" id="password" required pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"  placeholder="Must be at least 8 characters. e.g., Password#1">
    
             <br>
             <input type="submit" name="submit" id="regbtn" value="Register">

@@ -29,10 +29,10 @@ session_start();
 <main class="page-main">
 <section id="home-content">
 
-
+<div class="login-page">
  
-<form action="./../model/insertInterview-model.php" method="post">
-
+<form action="./../model/insertInterview-model.php" method="post" class="register-page" >
+<div class="login-page">
 <label> Ask question </label> <br>
 <input value="2018-06-14" name="date" type="input" class="form-control" placeholder="YYYY-MM-DD"/><br> <br>
 <textarea name="interviewtext" placeholder="interviewtext" rows="30" cols="50">  </textarea> <br>
@@ -40,6 +40,7 @@ session_start();
 
 
 <input type="submit" value="Submit"> <br>
+</div>
 </form>
 </div>
 </section>
