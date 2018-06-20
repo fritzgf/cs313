@@ -13,10 +13,10 @@ $interviewtext = $row["interviewtext"];
 $firstname = $row["firstname"];
 $date = $row["date"];
 
-echo "<hr>";
-  echo "<li>$interviewtext <br> $firstname - $date </li>";
-  echo "<hr>";
-  echo "<br>"
+// echo "<hr>";
+//   echo "<li>$interviewtext <br> $firstname - $date </li>";
+//   echo "<hr>";
+//   echo "<br>"
 
   ?>
   
