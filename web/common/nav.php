@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <ul class="flexlist">
                 <li><a href="home.php" title="Acme">Home</a></li>
                 <li><a href="interviewq.php" title="interview questions">Interview Question</a> </li>
