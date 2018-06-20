@@ -22,10 +22,10 @@ session_start();
 <?php
 
 if(isset($_SESSION["userData"]) != TRUE){
-    include '../view/login.php';
-  
+   echo '<a class="ask-question" href="./../view/login.php">login </a>';
 
-} else{
+} 
+else{
     include '../view/logout.php';
 }
 ?>
