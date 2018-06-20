@@ -21,13 +21,7 @@ session_start();
 </header>
 
 <nav id="page-nav">
-<?php
 
-if(isset($_SESSION["userData"])){
-    include '../view/logout.php';
-
-}
-?>
 
 <?php require("./../common/nav.php"); ?>
 </nav>

@@ -1,10 +1,5 @@
 <?php
 session_start();
-
-if(isset($_SESSION["userData"])){
-    include '../view/logout.php';
-
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,7 +53,7 @@ if(isset($_SESSION["userData"])){
             <input type="hidden" name="action" value="login">
             <span class="psw">Forgot password? <a href="#">send reset email</a></span>
 
-            <p>  <a class="create-account" href="./../accounts/?action=registration">Create an account </a></p>
+            <p>  <a class="create-account" href="./../view/register.php">Create an account </a></p>
 
         </div>
 
