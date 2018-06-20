@@ -6,7 +6,6 @@ require("./../library/connections.php");
 
 $db = get_db();
 // call getInterviewq function
-$result=getInterviewq ($id);
 
 $userId= $_SESSION ["userData"]["id"];
 $interview_id= $_GET["interview_id"];
