@@ -26,7 +26,7 @@ $date = $row["date"];
 
 $userId= $_SESSION ["userData"]["id"];
 $interview_id= $_GET["interview_id"];
-$query = "SELECT a.id, a.answer, a.date, a.user_id, u.firstname FROM answers as a INNER JOIN users as u ON a.user_id= u.id WHERE a.user_id=:id ORDER BY date DESC";
+$query = "SELECT a.id, a.answer, a.date, a.user_id, u.firstname FROM answers as a INNER JOIN users as u ON a.user_id= u.id WHERE a.user_id=:u.id ORDER BY date DESC";
 $statement = $db->prepare($query);
 // Bind any variables I need, here...
 $statement->execute();
