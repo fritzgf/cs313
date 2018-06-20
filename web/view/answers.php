@@ -34,12 +34,7 @@ if(isset($_SESSION["userData"])){
 <main class="page-main">
 <section id="home-content">
 
-<?php
 
-require("./../model/displayAnswer-model.php");  
-
-
- ?> 
  <?php
 
  
