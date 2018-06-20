@@ -6,12 +6,4 @@
            
             </ul>
 
-             <?php
-
-if(isset($_SESSION["userData"]) == TRUE){
-    include '../view/logout.php';
-
-} else{
-    include '../view/login.php';
-}
-?>
+  
