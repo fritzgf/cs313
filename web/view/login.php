@@ -67,7 +67,7 @@ session_start();
 
 <footer id="page-footer">
     <hr>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/../common/footer.php'; ?>
+    <?php require("./../common/footer.php");?>
 </footer>
 </div>
 </body>

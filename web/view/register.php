@@ -71,7 +71,7 @@ session_start();
 
 <footer id="page-footer">
     <hr>
-    <?php ?>
+    <?php require("./../common/footer.php");?>
 </footer>
 </div>
 </body>
