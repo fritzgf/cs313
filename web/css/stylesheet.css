@@ -206,8 +206,9 @@ h2{
         }
 
         .create-account{
-            text-align:center;
+            text-align: center;
             margin:auto;
+            margin-left: 10em;
             width:140px;
         }
 
