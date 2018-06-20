@@ -204,7 +204,9 @@ h2{
             margin-top:2em;
 
         }
-
+        .quesButton{
+            margin-right: 30%;
+        }
         .create-account{
             text-align: center;
             margin:auto;

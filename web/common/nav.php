@@ -5,7 +5,7 @@
                 <?php
 
 if(isset($_SESSION["userData"]) != TRUE){
-   echo '<a class="ask-question" href="./../view/login.php">login </a>';
+   echo '<li><a class="ask-question" href="./../view/login.php">login </a> </li>';
 
 } 
 else{
