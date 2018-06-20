@@ -19,16 +19,7 @@ session_start();
 </header>
 
 <nav id="page-nav">
-<?php
 
-if(isset($_SESSION["userData"]) != TRUE){
-   echo '<a class="ask-question" href="./../view/login.php">login </a>';
-
-} 
-else{
-    include '../view/logout.php';
-}
-?>
 
 
 <?php require("./../common/nav.php"); ?>
