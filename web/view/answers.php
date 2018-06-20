@@ -21,11 +21,10 @@ session_start();
 <nav id="page-nav">
 <?php
 
-if(isset($_SESSION["userData"])){
+if(isset($_SESSION["userData"]) == TRUE){
     include '../view/logout.php';
 
-}
-else{
+} else{
     include '../view/login.php';
 }
 ?>
