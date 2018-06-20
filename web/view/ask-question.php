@@ -39,7 +39,7 @@ session_start();
 <input type="hidden" name="user_id" value="<?php echo $_SESSION["userData"]["id"]; ?>">
 
 
-<input type="submit" value="Submit" class="quesButton"> <br>
+<input type="submit" value="Submit" class="quesButton"> 
 </div>
 </form>
 </div>
