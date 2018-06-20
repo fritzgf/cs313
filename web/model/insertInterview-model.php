@@ -22,6 +22,6 @@ $statement->bindValue(":date", $date, PDO::PARAM_STR);
 echo" 4\n";
 $statement->execute();
 echo" 5\n";
-header("Location: ../view/answers.php");
+header("Location: ../view/interviewq.php");
 die();
 ?>
