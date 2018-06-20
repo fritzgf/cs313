@@ -14,10 +14,10 @@ $userId = htmlspecialchars($_POST["user_id"]);
 $interviewId = htmlspecialchars($_POST["interview_id"]);
 $date = htmlspecialchars($_POST["date"]);
 
-// echo "answer: $answer\n";
-// echo "user_id: $userId\n";
-// echo "interview_id: $interviewId\n";
-// echo "date: $date\n";
+echo "answer: $answer\n";
+echo "user_id: $userId\n";
+echo "interview_id: $interviewId\n";
+echo "date: $date\n";
 
 // insert data to the database
 
