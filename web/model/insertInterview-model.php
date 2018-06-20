@@ -17,7 +17,7 @@ $statement = $db->prepare($query);
 echo" 3\n";
 $statement->bindValue(":interviewtext", $interviewtext, PDO::PARAM_STR);
 $statement->bindValue(":user_id", $userId, PDO::PARAM_INT);
-$statement->bindValue(":id", $interviewId, PDO::PARAM_STR);
+$statement->bindValue(":id", $interviewId, PDO::PARAM_INT);
 $statement->bindValue(":date", $date, PDO::PARAM_STR);
 
 
