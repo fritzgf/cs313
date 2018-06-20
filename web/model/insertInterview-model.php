@@ -5,13 +5,12 @@ $db = get_db();
 
 $interviewtext = htmlspecialchars($_POST["interviewtext"]);
 $userId = htmlspecialchars($_POST["user_id"]);
-$interviewId = htmlspecialchars($_POST["id"]);
 $date = htmlspecialchars($_POST["date"]);
 // echo "interview_id: $interviewId\n";
 // echo "date: $date\n";
 // echo "interviewtext: $interviewtext\n";
 echo" 1\n";
-$query = "INSERT INTO interview_questions (interviewtext, user_id, id, date) VALUES (:interviewtext, :user_id, :id, :date)";
+$query = "INSERT INTO interview_questions (interviewtext, user_id, date) VALUES (:interviewtext, :user_id, :date)";
 echo" 2\n";
 $statement = $db->prepare($query);
 echo" 3\n";
