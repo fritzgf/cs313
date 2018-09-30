@@ -62,7 +62,8 @@ h2{
 *******************************/
 
 #page-nav {
-    background-color:#f49e42;
+    /* background-color:#f49e42; */
+    background-color:black; 
     position: fixed;
     bottom: 0;
     left: 0;
