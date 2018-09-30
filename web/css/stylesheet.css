@@ -93,8 +93,8 @@ h2{
     text-decoration: none;
 
     flex: 1;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    /* align-items: ; */
 }
 #page-nav li a{
     color:white;
