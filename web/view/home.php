@@ -39,7 +39,7 @@ echo" $count";
         <ul class="flexlist">
 <li> <a href="/view/home.php"> Home</a></li>
 
-<li> <a href="interviewq.php"> My Project</a></li>
+<li> <a href="comingsoon.php"> My Project</a></li>
             </ul>
       
         </nav>
@@ -56,7 +56,7 @@ echo" $count";
 
           <p>Depicted on local currency, stamps and postcards, this
             amazing structure has become the symbol of Haiti&rsquo;s power and independence. It
-            was built in the beginning of the 19th century by one of the leaders of Haiti&rsquo;s
+            was built in the beginning of the 19th century by one of the leaders of Haiti&rsquo;
              slave revolution.</p>
 
          <p>The Citadelle Laferrière is also known simply as the
