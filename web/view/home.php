@@ -38,7 +38,7 @@ echo" $count";
 <li> <a href="comingsoon.php"> My Project</a></li>
             </ul> -->
       <?php
-      require("nav.php");
+     require("./../common/nav.php");
       ?>
         </nav>
 
