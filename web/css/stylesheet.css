@@ -75,7 +75,7 @@ h2{
 
 #page-nav ul {
     display: flex;
-    align-items: stretch;
+    align-items: left;
     height: 2.5em;
     margin: 0;
     padding: 0;
