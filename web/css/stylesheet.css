@@ -82,11 +82,12 @@ h2{
     list-style: none;
 }
 
-/* #page-nav ul li {
+#page-nav ul li {
     display: flex;
+    flex: stretch;
     
-    /* justify-content: right; */
-
+    /* justify-content: right;
+}
 
 #page-nav a {
     display: flex;
