@@ -7,10 +7,10 @@
     <link rel="stylesheet" type="text/css" href="./../css/stylesheet.css" media="screen">
     <title>My Project</title>
 </head>
-<nav>
-<?php
-     require("./../common/nav.php"); 
-      ?>
+<nav id="page-nav">
+
+
+<?php require("./../common/nav.php"); ?>
 </nav>
 <body>
     <p> Projects Coming Soon! <p/>

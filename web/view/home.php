@@ -1,17 +1,3 @@
-<?php
-session_start();
-
-if(!isset($_SESSION["countPage"])){
-    $_SESSION["countPage"]=0;
-
-}
-else{
-   
-    $_SESSION["countPage"]++;
-}
-$count= $_SESSION["countPage"];
-echo" $count";
-?>
 <!doctype html>
 <html  lang="en">
 
@@ -65,6 +51,20 @@ echo" $count";
         ?>
         </footer>
     </div>
+    <?php
+session_start();
+
+if(!isset($_SESSION["countPage"])){
+    $_SESSION["countPage"]=0;
+
+}
+else{
+   
+    $_SESSION["countPage"]++;
+}
+$count= $_SESSION["countPage"];
+echo" $count";
+?>
 </body>
 
 </html>
