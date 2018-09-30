@@ -24,7 +24,8 @@ $file = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
 // menu) into an array. Then here, we could loop over that array and check
 // the page name from that iteration in the loop vs the php filename.
 ?>
-
+<ul class="flexlist">
+                
 		<li class="nav-item <?php if ($file === 'home') echo 'active' ?>">
 			<a href="home.php">Home</a>
 		</li>
@@ -32,6 +33,9 @@ $file = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
 		<li class="nav-item <?php if ($file === 'comingsoon') echo 'active' ?>">
 			<a href="comingsoon.php">Project</a>
 		</li>
+            </ul>
 
-	<ul>
-</nav>
+  
+
+
+	
