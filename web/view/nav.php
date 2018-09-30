@@ -11,8 +11,8 @@ $file = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
 // link item.
 ?>
 
-<nav class="navbar navbar-inverse">
-	<ul class="nav navbar-nav">
+<nav class="page-nav">
+	<ul class="UlClass">
 
 <?php
 // There are more clever ways to do this, but as we are iterating through
