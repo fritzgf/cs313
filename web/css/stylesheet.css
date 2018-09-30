@@ -85,7 +85,7 @@ h2{
 #page-nav ul li {
     display: flex;
     flex: auto;
-    justify-content: right;
+    /* justify-content: right; */
 }
 
 #page-nav a {
@@ -93,8 +93,8 @@ h2{
     text-decoration: none;
 
     flex: 1;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
 }
 #page-nav li a{
     color:white;
