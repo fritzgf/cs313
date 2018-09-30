@@ -8,7 +8,9 @@
     <title>My Project</title>
 </head>
 <nav>
-<li> <a href="/view/home.php"> Home</a></li>
+<?php
+      require("nav.php");
+      ?>
 </nav>
 <body>
     <p> Projects Coming Soon! <p/>

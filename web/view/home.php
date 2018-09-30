@@ -33,11 +33,13 @@ echo" $count";
 
         <nav>
         <ul class="flexlist">
-<li> <a href="/view/home.php"> Home</a></li>
+<!-- <li> <a href="/view/home.php"> Home</a></li>
 
 <li> <a href="comingsoon.php"> My Project</a></li>
-            </ul>
-      
+            </ul> -->
+      <?php
+      require("nav.php");
+      ?>
         </nav>
 
         <main>
