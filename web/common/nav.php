@@ -1,7 +1,7 @@
 <ul class="flexlist">
                 <li><a href="home.php" title="Acme">Home</a></li>
                 <li><a href="comingsoon.php" title="">Projects</a> </li>
-                <li><a href="jobdevelopers.php" title="job developers">Job Developers</a></li>
+                <!-- <li><a href="jobdevelopers.php" title="job developers">Job Developers</a></li> -->
                 <?php
 
 // if(isset($_SESSION["userData"]) != TRUE){

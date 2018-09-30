@@ -25,22 +25,17 @@ echo" $count";
 </head>
 
 <body>
-    <div id=" wrapper">
+    <div id="wrapper">
 
         <header>
 
         </header>
 
-        <nav>
-        <ul class="flexlist">
-<!-- <li> <a href="/view/home.php"> Home</a></li>
+        <nav id="page-nav">
 
-<li> <a href="comingsoon.php"> My Project</a></li>
-            </ul> -->
-      <?php
-     require("./../common/nav.php");
-      ?>
-        </nav>
+
+<?php require("./../common/nav.php"); ?>
+</nav>
 
         <main>
             <h1>Welcome to My Repository </h1>
