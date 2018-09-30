@@ -24,7 +24,7 @@
 </nav>
 
         <main>
-            <h1>Welcome to My Repository </h1>
+        
             <h2> This is a little bit about my home country. </h2>
             
            <img src="/images/citadelle.jpg" class="image">

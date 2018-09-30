@@ -85,7 +85,7 @@ h2{
 #page-nav ul li {
     display: flex;
     flex: auto;
-    justify-content: center;
+    justify-content: right;
 }
 
 #page-nav a {
