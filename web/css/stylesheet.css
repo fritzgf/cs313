@@ -84,7 +84,7 @@ h2{
 
 #page-nav ul li {
     display: flex;
-    /* flex: auto; */
+    flex: left; 
     /* justify-content: right; */
 }
 
