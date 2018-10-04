@@ -52,7 +52,7 @@
         </footer>
     </div>
     <?php
-session_start();
+sesssion_start();
 
 if(!isset($_SESSION["countPage"])){
     $_SESSION["countPage"]=0;
@@ -63,7 +63,7 @@ else{
     $_SESSION["countPage"]++;
 }
 $count= $_SESSION["countPage"];
-echo" $count";
+echo" You have visited this page $count times";
 ?>
 </body>
 
