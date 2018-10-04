@@ -52,7 +52,7 @@
         </footer>
     </div>
     <?php
-sesssion_start();
+session_start();
 
 if(!isset($_SESSION["countPage"])){
     $_SESSION["countPage"]=0;
