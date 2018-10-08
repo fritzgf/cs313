@@ -130,10 +130,10 @@ if(!isset($_SESSION['cart'])) {
                         <td>200 Gold Pieces per box</td>
                     </tr> -->
                     <figure>
-                    <img src='images/anvil.jpeg' alt='Myth Black and White'>
+                    <img src='images/anvil.png' alt='Myth Black and White'>
 
                                 <figcaption>
-                            <button onclick="addToCart('hole', 200)">Add to Cart</button></td>
+                            <button onclick="addToCart('hole', 200)">Add to Cart</button>
                         <div onmouseenter="itemDetails(4)" onmouseout="removeDetails()">Marvelous Pigments</div>
                         <p>200 Gold Pieces per box</p>
                                 </figcaption>
@@ -186,7 +186,8 @@ if(!isset($_SESSION['cart'])) {
 <li id="displayDescription"> </li>
 <li id="displayManufacturer"></li>
 <li id="displayReviews"></li>
-<li id="displayPrice"><button onclick="addToCart('piano', 400)">Add to Cart</button></li>
+<li id="displayPrice"></li>
+<li id="displayButton"> </li>
 
 </ul>
 </div>

@@ -88,6 +88,7 @@ function getData(linkName) {
                 var price = data[linkName].price;
                 var reviews = data[linkName].reviews;
                 var path = data[linkName].path;
+                var addToCart = data[linkName].addToCart;
                 console.log(" data" + linkName);
                 $("title").html(linkName + ' | ACME');
                 $("#displayName").text(name);
@@ -96,7 +97,8 @@ function getData(linkName) {
                 $("#displayManufacturer").html("<b>Made by:</b> " + manufacturer);
                 $("#displayReviews").html("<b>Reviews:</b> " + reviews + " /5 starts");
                 $("#displayPrice").html("Price: $ " + price);
-
+                $("#displayButton").html(<button onclick="addToCart('hole', 200)"> </button> + addToCart);
+                
             }
 
 
