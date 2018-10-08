@@ -38,7 +38,7 @@ if(!isset($_SESSION['cart'])) {
                 
                 <table>
                     <tr> <figure>
-      <img src='images/jpg' alt='Myth Black and White'>
+      <img src='images/anvil.jpeg' alt='Myth Black and White'>
       <figcaption>Infinite Discs | P-Blend | Available: 5 | Price: $9.99 | 175g | BLACK & WHITE</figcaption>
     </figure>
                         <td><button onclick="addToCart('anvil', 50)">Add to Cart</button></td>
