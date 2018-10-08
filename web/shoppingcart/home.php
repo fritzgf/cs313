@@ -11,12 +11,13 @@ if(!isset($_SESSION['cart'])) {
 <head meta charset="UTF-8">
     <meta name ="viewport" comment="width=device-width">
     <title>browse Items</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
     <body>
         <div class="container">
             <header>
                 <h1>Welcome to the Marcket's shop</h1>
-                <a href="view-cart.php">View Cart</a>
+                <a href="viewCart.php">View Cart</a>
             </header>
     
             <nav></nav>

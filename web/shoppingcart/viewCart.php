@@ -6,6 +6,7 @@ session_start();
 
 <head meta charset="UTF-8">
     <meta name ="viewport" comment="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <title></title>
 <body>
