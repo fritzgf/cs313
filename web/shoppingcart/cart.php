@@ -16,5 +16,3 @@ elseif ($action === "remove") {
     $_SESSION['cart'] = array_values($_SESSION['cart']);
     $_SESSION['price'] = array_values($_SESSION['price']);
 }
-
- 

@@ -1,17 +1,36 @@
 <?php
 session_start();
 ?>
+
 <!DOCTYPE html>
-<html lang="eng">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width">
+        <title>View Cart | MME</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
 
-<head meta charset="UTF-8">
-    <meta name ="viewport" comment="width=device-width">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<title></title>
-<body>
+    <body>
+        <div id="container">
+            <header>
+                <h1>Meldanen's Mystic Emporium</h1>
+                <a href="home.php">Browse Items</a>
+            </header>
 
-   <h2>Shopping Cart</h2>
+            <nav></nav>
+
+            <main>
+                <p></p>
+
+                <section>
+                    <h2>Shopping Cart</h2>
                     <ul>
                         <?php
                         $index = 0;
@@ -48,5 +67,5 @@ session_start();
         </div>
         <script src="script.js" type="text/javascript"></script>
 
-</body>
+    </body>
 </html>
