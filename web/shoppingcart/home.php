@@ -183,10 +183,10 @@ if(!isset($_SESSION['cart'])) {
 
 <ul id="description-position">
 
-<li id="displayDescription"></li>
+<li id="displayDescription"> </li>
 <li id="displayManufacturer"></li>
 <li id="displayReviews"></li>
-<li id="displayPrice"></li>
+<li id="displayPrice"><button onclick="addToCart('piano', 400)">Add to Cart</button></li>
 
 </ul>
 </div>
