@@ -34,7 +34,7 @@ $(function () {
 
 
     $.ajax({
-        url: "/acme/js/acme.json",
+        url: "product.json",
         dataType: "json",
         success: function (data) {
             console.log(data);
