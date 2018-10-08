@@ -27,11 +27,11 @@ if(!isset($_SESSION['cart'])) {
 
            <nav id="page-nav">
             <ul>
-                <li><a id= "home_color" href="/acme/index.html" title="Go to home page">Home</a></li>
-                <li><a id="anvils" href="views/anvils.html" title="Acme's product"></a></li>
-                <li><a id="explosive" href="views/explosives.html" title="Acme's product"></a></li>
-                <li><a id="decoys" href="views/decoys.html" title="Acme's product"></a></li>
-                <li><a id="traps" href="views/traps.html" title="Acme's product"></a></li>
+                <li><a id= "home_color" href="home.php" title="Go to home page">Home</a></li>
+                <li><a id="anvils" href="anvils.html" title="Acme's product"></a></li>
+                <li><a id="explosive" href="explosives.html" title="Acme's product"></a></li>
+                <li><a id="decoys" href="decoys.html" title="Acme's product"></a></li>
+                <li><a id="traps" href="traps.html" title="Acme's product"></a></li>
             </ul>
 
         </nav>
