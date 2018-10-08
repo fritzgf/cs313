@@ -21,7 +21,7 @@ if(!isset($_SESSION['cart'])) {
     <div id="wrapper">
     <header class="page-header">
     <img src="/acme/images/site/logo.png" alt="Acme logo" title=" logo for acme site">
-            <h1>Meldanen's Mystic Emporium</h1>
+            
             <a href="viewCart.php">View Cart</a>
         </header>
 
@@ -199,6 +199,7 @@ if(!isset($_SESSION['cart'])) {
             <p> &copy; 2017 ACME Inc., All rights reserved. <br> All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.</p>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="script.js" type="text/javascript"></script>
 </div>
 </body>
