@@ -37,7 +37,10 @@ if(!isset($_SESSION['cart'])) {
                 </div>
                 
                 <table>
-                    <tr>
+                    <tr> <figure>
+      <img src='images/jpg' alt='Myth Black and White'>
+      <figcaption>Infinite Discs | P-Blend | Available: 5 | Price: $9.99 | 175g | BLACK & WHITE</figcaption>
+    </figure>
                         <td><button onclick="addToCart('anvil', 50)">Add to Cart</button></td>
                         <td onmouseenter="itemDetails(0)" onmouseout="removeDetails()">Potion of Healing</td>
                         <td>50 Gold Pieces per vial</td>
