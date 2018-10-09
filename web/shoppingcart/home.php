@@ -52,20 +52,20 @@ if(!isset($_SESSION['cart'])) {
     
             
                     <figure class="featured-image">
-                    <img src='images/longImage.png' alt='Myth Black and White'>
-            <figcaption><button onclick="addToCart('anvil', 50)">Add to Cart</button>
-                       <div  onmouseenter="itemDetails(0)" onmouseout="removeDetails()">Potion of Healing</div>
-                        <p>50 Gold Pieces per vial</p></figcaption>
+                    <img src='images/longImage.png' alt=''>
+            <figcaption><button onclick="addToCart('Eufy's Speaker, 45)">Add to Cart</button>
+                       <div  onmouseenter="itemDetails(0)" onmouseout="removeDetails()">Eufy's Speaker</div>
+                        <p>Price: $45</p></figcaption>
                   </figure>
                        
                     <figure>
-                    <img src='images/Huawei.png' alt='Myth Black and White'>
+                    <img src='images/Huawei.png' alt=''>
 
 
                                 <figcaption>
-                                <button onclick="addToCart('bomb', 90)">Add to Cart</button>
-                        <div onmouseenter="itemDetails(1)" onmouseout="removeDetails()">Philter of Love</div>
-                        <p>90 Gold Pieces per vial</p>
+                                <button onclick="addToCart('Huawe Alexa', 60)">Add to Cart</button>
+                        <div onmouseenter="itemDetails(1)" onmouseout="removeDetails()">Huawe Alexa</div>
+                        <p>Price: $60</p>
                                 </figcaption>
                                 </figure>
 
@@ -74,9 +74,9 @@ if(!isset($_SESSION['cart'])) {
                      <img src='images/zoloImage.png' alt='Myth Black and White'>
 
                                 <figcaption>
-                                <button onclick="addToCart('catapult', 120)">Add to Cart</button>
-                        <div onmouseenter="itemDetails(2)" onmouseout="removeDetails()">Dust of Dryness</div>
-                        <p>120 Gold Pieces per pinch</p>
+                                <button onclick="addToCart('China's Speaker, 50)">Add to Cart</button>
+                        <div onmouseenter="itemDetails(2)" onmouseout="removeDetails()">China's Speaker</div>
+                        <p> Price: $50</p>
                                 </figcaption>
                             </figure>
         
@@ -86,9 +86,9 @@ if(!isset($_SESSION['cart'])) {
 
 
                                 <figcaption>
-                                <button onclick="addToCart('hole', 200)">Add to Cart</button>
-                        <div onmouseenter="itemDetails(4)" onmouseout="removeDetails()">Marvelous Pigments</div>
-                        <p>200 Gold Pieces per box</p>
+                                <button onclick="addToCart('August Venus Alexa', 200)">Add to Cart</button>
+                        <div onmouseenter="itemDetails(4)" onmouseout="removeDetails()">August Venus Alexa</div>
+                        <p>Price: $20</p>
                                 </figcaption>
                             </figure>
         
