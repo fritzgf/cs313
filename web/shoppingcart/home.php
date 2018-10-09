@@ -20,7 +20,7 @@ if(!isset($_SESSION['cart'])) {
 <body>
     <div id="wrapper">
     <header class="page-header">
-    <img src="images/ShoppingCartLogo.png" alt="Acme logo" title=" logo for acme site">
+    <!-- <img src="images/ShoppingCartLogo.png" alt="Acme logo" title=" logo for acme site"> -->
             
             <!-- <a href="viewCart.php">View Cart</a> -->
         </header>
