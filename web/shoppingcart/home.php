@@ -30,10 +30,10 @@ if(!isset($_SESSION['cart'])) {
            <nav id="page-nav">
             <ul>
                 <li><a id= "home_color" href="home.php" title="Go to home page">Home</a></li>
-                <li><a id="anvils" href="eufy.html" title="Acme's product"></a></li>
-                <li><a id="explosive" href="huawei.html" title="Acme's product"></a></li>
-                <li><a id="decoys" href="china.html" title="Acme's product"></a></li>
-                <li><a id="traps" href="august.html" title="Acme's product"></a></li>
+                <li><a id="eufy" href="eufy.html" title="Acme's product"></a></li>
+                <li><a id="huawei" href="huawei.html" title="Acme's product"></a></li>
+                <li><a id="china" href="china.html" title="Acme's product"></a></li>
+                <li><a id="august" href="august.html" title="Acme's product"></a></li>
                
             </ul>
 
