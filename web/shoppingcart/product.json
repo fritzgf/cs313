@@ -4,7 +4,8 @@
         "link_one": "Anvils",
         "link_two": "Explosives",
         "link_three": "Decoys",
-        "link_four": "Traps"
+        "link_four": "Traps",
+        "link_five": "view Cart"
        
     },
     "Anvils": {

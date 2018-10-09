@@ -97,7 +97,7 @@ function getData(linkName) {
                 $("#displayManufacturer").html("<b>Made by:</b> " + manufacturer);
                 $("#displayReviews").html("<b>Reviews:</b> " + reviews + " /5 starts");
                 $("#displayPrice").html("Price: $ " + price);
-               
+                
                 
             }
 
