@@ -41,7 +41,7 @@ if(!isset($_SESSION['cart'])) {
        
        <main class="page-main">
        <section id="home-content">
-                <h1>Welcome to Acme!</h1>
+                
                 <!-- <div class="description-item">
                 <img id="pic" src="images/site/feature.jpg" alt="rocket acme strapped">
 
@@ -93,7 +93,7 @@ if(!isset($_SESSION['cart'])) {
                         <div onmouseenter="itemDetails(1)" onmouseout="removeDetails()">Philter of Love</div>
                         <p>90 Gold Pieces per vial</p>
                                 </figcaption>
-
+                                </figure>
                     <!-- <tr>
                         <td><button onclick="addToCart('catapult', 120)">Add to Cart</button></td>
                         <td onmouseenter="itemDetails(2)" onmouseout="removeDetails()">Dust of Dryness</td>
