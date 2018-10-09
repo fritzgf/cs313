@@ -42,6 +42,7 @@ $(function () {
             var l_two = data.links.link_two;
             var l_three = data.links.link_three;
             var l_four = data.links.link_four;
+            var l_five = data.links.link_five;
 
             console.log("links" + l_one);
             console.log("links" + l_two);
@@ -53,7 +54,7 @@ $(function () {
             $("#explosive").text(l_two);
             $("#decoys").text(l_three);
             $("#traps").text(l_four);
-
+            $("#browse").text(l_five);
 
         }
 
