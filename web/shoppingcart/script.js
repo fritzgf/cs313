@@ -89,7 +89,6 @@ function getData(linkName) {
                 var price = data[linkName].price;
                 var reviews = data[linkName].reviews;
                 var path = data[linkName].path;
-                var addToCart = data[linkName].addToCart;
                 console.log(" data" + linkName);
                 $("title").html(linkName + ' | ACME');
                 $("#displayName").text(name);

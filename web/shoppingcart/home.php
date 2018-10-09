@@ -42,7 +42,7 @@ if(!isset($_SESSION['cart'])) {
        <main class="page-main">
        <section id="home-content">
                 <h1>Welcome to Acme!</h1>
-                <div class="description-item">
+                <!-- <div class="description-item">
                 <img id="pic" src="images/site/feature.jpg" alt="rocket acme strapped">
 
 <ul id="rocket-item">
@@ -54,15 +54,14 @@ if(!isset($_SESSION['cart'])) {
     <li>Mobile launch stand included</li>
     <li><a href="#"><img id="actionbtn" alt="Add to cart button" src="/acme/images/site/iwantit.gif"></a></li>
 </ul>
-</div>
+</div> -->
 <section id="recipe-content">
 
 <div id="recipe-images">
 
-    <h3>Featured Recipes</h3>
+   
     <div id="image-wrapper">
-        
-                <h2>Inventory</h2>
+    
                 
          <!-- <div id="item-details">
                     
