@@ -63,7 +63,7 @@ if(!isset($_SESSION['cart'])) {
 
 
                                 <figcaption>
-                                <button onclick="addToCart('Huawe Alexa', 60)">Add to Cart</button>
+                                <button onclick="addToCart('Huawei Alexa', 60)">Add to Cart</button>
                         <div onmouseenter="itemDetails(1)" onmouseout="removeDetails()">Huawe Alexa</div>
                         <p>Price: $60</p>
                                 </figcaption>
@@ -74,7 +74,7 @@ if(!isset($_SESSION['cart'])) {
                      <img src='images/zoloImage.png' alt='Myth Black and White'>
 
                                 <figcaption>
-                                <button onclick="addToCart('China's Speaker, 50)">Add to Cart</button>
+                                <button onclick="addToCart('Zolo Speaker', 50)">Add to Cart</button>
                         <div onmouseenter="itemDetails(2)" onmouseout="removeDetails()">China's Speaker</div>
                         <p> Price: $50</p>
                                 </figcaption>
@@ -82,7 +82,7 @@ if(!isset($_SESSION['cart'])) {
         
                    
                     <figure>
-                    <img src='images/augustVenus.png' alt='Myth Black and White'>
+                    <img src='images/augustVenus.png' alt=''>
 
 
                                 <figcaption>
@@ -93,23 +93,23 @@ if(!isset($_SESSION['cart'])) {
                             </figure>
         
                     <figure>
-                    <img src='images/boxImage.png' alt='Myth Black and White'>
+                    <img src='images/boxImage.png' alt=''>
 
                                 <figcaption>
-                            <button onclick="addToCart('hole', 200)">Add to Cart</button>
-                        <div onmouseenter="itemDetails(4)" onmouseout="removeDetails()">Marvelous Pigments</div>
-                        <p>200 Gold Pieces per box</p>
+                            <button onclick="addToCart('China's Speaker, 50)">Add to Cart</button>
+                        <div onmouseenter="itemDetails(4)" onmouseout="removeDetails()">China's Speaker</div>
+                        <p>Price: 60</p>
                                 </figcaption>
                             </figure>
                 
                 <figure>
-                <img src='images/eufy.png' alt='Myth Black and White'>
+                <img src='images/eufy.png' alt=''>
 
 
                             <figcaption>
-                            <button onclick="addToCart('piano', 400)">Add to Cart</button>
-                        <div onmouseenter="itemDetails(5)" onmouseout="removeDetails()">Sovereign Glue</div>
-                        <p>400 Gold Pieces per vial</p>
+                            <button onclick="addToCart('Amazon Echo', 400)">Add to Cart</button>
+                        <div onmouseenter="itemDetails(5)" onmouseout="removeDetails()">Amazon Echo</div>
+                        <p>Price: $70</p>
                                 </figcaption>
                             </figure>
 
