@@ -1,14 +1,14 @@
 {
 
     "links": {
-        "link_one": "Eufy",
-        "link_two": "Huawei",
-        "link_three": "China",
-        "link_four": "August"
+        "link_one": "Eufy's Speaker",
+        "link_two": "Huawei's Speaker",
+        "link_three": "China's Alexa Speaker",
+        "link_four": "August Venus Alexa"
          
     },
     "Eufy": {
-        "name": "Eufy",
+        "name": "Eufy's Speaker",
         "path": "images/eufy.png",
         "description": "Anker made a tiny Alexa speaker that's like an Echo Dot but cheaper.",
         "manufacturer": "Amazon",
@@ -18,7 +18,7 @@
        
     },
     "Huawei": {
-        "name": "Huawei",
+        "name": "Huawei's Speaker",
         "path": "images/Huawei.png",
         "description": "Huawei Ai Cube Alexa Smart Speaker.",
         "manufacturer": "Amazon",
@@ -26,7 +26,7 @@
         "reviews": "5"
     },
     "China": {
-        "name": "China Alexa",
+        "name": "China's Alexa Speaker",
         "path": "images/boxImage.png",
         "description": "China Alexa Smart stereo speaker for the rectangle WIFI stereo speaker with quality kits in the...",
         "manufacturer": "China",
@@ -34,7 +34,7 @@
         "reviews": "4.7"
     },
     "August": {
-        "name": "August Venus Alexa ",
+        "name": "August Venus Alexa",
         "path": "images/augustVenus.png",
         "description": "August Venus Alexa enabled Wireless smart phone speaker.",
         "manufacturer": "Amazon",
