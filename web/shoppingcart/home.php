@@ -187,7 +187,7 @@ if(!isset($_SESSION['cart'])) {
 <li id="displayManufacturer"></li>
 <li id="displayReviews"></li>
 <li id="displayPrice"></li>
-<li id="displayButton"> </li>
+
 
 </ul>
 </div>
