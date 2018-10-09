@@ -20,6 +20,11 @@ if(!isset($_SESSION['cart'])) {
 <body>
     <div id="wrapper">
     <header class="page-header">
+
+     <a href="viewCart.php">
+    <img src="images/ShoppingCartLogo.png" alt="Shopping Cart logo" title=" logo for MyStore site"> </a>
+            
+           
         </header>
 
            <nav id="page-nav">
@@ -29,9 +34,9 @@ if(!isset($_SESSION['cart'])) {
                 <li><a id="huawei" href="huawei.html" title=""></a></li>
                 <li><a id="china" href="china.html" title=""></a></li>
                 <li><a id="august" href="august.html" title=" "></a></li>
+               
             </ul>
-            <a href="viewCart.php">
-    <img src="images/ShoppingCartLogo.png" alt="Shopping Cart logo" title=" logo for MyStore site"> </a>
+
         </nav>
 
        
