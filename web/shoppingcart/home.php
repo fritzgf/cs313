@@ -20,7 +20,7 @@ if(!isset($_SESSION['cart'])) {
 <body>
     <div id="wrapper">
     <header class="page-header">
-    <!-- <img src="images/ShoppingCartLogo.png" alt="Acme logo" title=" logo for acme site"> -->
+    <img src="images/ShoppingCartLogo.png" alt="Acme logo" title=" logo for acme site">
             
             <!-- <a href="viewCart.php">View Cart</a> -->
         </header>
@@ -70,7 +70,7 @@ if(!isset($_SESSION['cart'])) {
                 <table>
                     <tr> <figure> -->
                     <figure class="featured-image">
-                    <img src='images/longImage.jpg' alt='Myth Black and White'>
+                    <img src='images/longImage.png' alt='Myth Black and White'>
             <figcaption><button onclick="addToCart('anvil', 50)">Add to Cart</button>
                        <div  onmouseenter="itemDetails(0)" onmouseout="removeDetails()">Potion of Healing</div>
                         <p>50 Gold Pieces per vial</p></figcaption>
@@ -85,7 +85,7 @@ if(!isset($_SESSION['cart'])) {
                         <td>90 Gold Pieces per vial</td>
                     </tr> -->
                     <figure>
-                    <img src='images/Huawei.jpg' alt='Myth Black and White'>
+                    <img src='images/Huawei.png' alt='Myth Black and White'>
 
 
                                 <figcaption>
@@ -101,7 +101,7 @@ if(!isset($_SESSION['cart'])) {
                     </tr> -->
 
                      <figure>
-                     <img src='images/zoloImage.jpg' alt='Myth Black and White'>
+                     <img src='images/zoloImage.png' alt='Myth Black and White'>
 
                                 <figcaption>
                                 <button onclick="addToCart('catapult', 120)">Add to Cart</button>
@@ -116,7 +116,7 @@ if(!isset($_SESSION['cart'])) {
                     </tr> -->
                    
                     <figure>
-                    <img src='images/augustVenus.jpg' alt='Myth Black and White'>
+                    <img src='images/augustVenus.png' alt='Myth Black and White'>
 
 
                                 <figcaption>
@@ -131,7 +131,7 @@ if(!isset($_SESSION['cart'])) {
                         <td>200 Gold Pieces per box</td>
                     </tr> -->
                     <figure>
-                    <img src='images/boxImage.jpg' alt='Myth Black and White'>
+                    <img src='images/boxImage.png' alt='Myth Black and White'>
 
                                 <figcaption>
                             <button onclick="addToCart('hole', 200)">Add to Cart</button>
