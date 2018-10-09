@@ -98,7 +98,7 @@ if(!isset($_SESSION['cart'])) {
                                 <figcaption>
                             <button onclick="addToCart('China's Speaker, 50)">Add to Cart</button>
                         <div onmouseenter="itemDetails(4)" onmouseout="removeDetails()">China's Speaker</div>
-                        <p>Price: 60</p>
+                        <p>Price: $60</p>
                                 </figcaption>
                             </figure>
                 
