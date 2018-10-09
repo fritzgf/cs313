@@ -13,14 +13,14 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width">
-        <title>View Cart | MME</title>
+        <title>View Cart | MyStore</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
         <div id="container">
             <header>
-                <h1>Meldanen's Mystic Emporium</h1>
+                <h1>MyStore</h1>
                 <a href="home.php">Browse Items</a>
             </header>
 
@@ -51,13 +51,7 @@ and open the template in the editor.
                 </section>
                 
                 <?php
-                /*
-                if (count($_SESSION['cart']) >= 1) {
-                    echo "<p id='checkout-link'><a href='checkout.php'>Checkout</a></p>";
-                } else {
-                    echo "<p>You cannot check out with an empty cart</p>";
-                }
-                */
+               
                 ?>
                 <p id='checkout-link'><a href='checkout.php'>Checkout</a></p>
             </main>

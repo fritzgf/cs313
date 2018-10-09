@@ -20,13 +20,13 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width">
-        <title>Confirmation | MME</title>
+        <title>Confirmation | MyStore</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <div id="container">
             <header>
-                <h1>Meldanen's Mystic Emporium</h1>
+                <h1>My Store</h1>
             </header>
 
             <nav></nav>

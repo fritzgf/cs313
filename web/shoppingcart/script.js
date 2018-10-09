@@ -69,7 +69,7 @@ function getData(linkName) {
 
         document.getElementById("home-content").style.display = "block";
 
-        $("title").html(linkName + ' | ACME');
+        $("title").html(linkName + ' | MyStore');
 
     } else {
 
@@ -90,7 +90,7 @@ function getData(linkName) {
                 var reviews = data[linkName].reviews;
                 var path = data[linkName].path;
                 console.log(" data" + linkName);
-                $("title").html(linkName + ' | ACME');
+                $("title").html(linkName + ' | MyStore');
                 $("#displayName").text(name);
                 $("#displayImage").html("<img src=' " + path + " 'alt='anvil'>");
                 $("#displayDescription").html(description);
