@@ -13,7 +13,7 @@ if(!isset($_SESSION['cart'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width">
-    <title>Browse Items | MME</title>
+    <title>Browse Items</title>
     <link href="style.css" rel="stylesheet" type="text/css" media ="screen"/>
 </head>
 
@@ -32,6 +32,8 @@ if(!isset($_SESSION['cart'])) {
                 <li><a id="explosive" href="explosives.html" title="Acme's product"></a></li>
                 <li><a id="decoys" href="decoys.html" title="Acme's product"></a></li>
                 <li><a id="traps" href="traps.html" title="Acme's product"></a></li>
+                <li><a id="browse" href="viewCart.php" title="Browse Items"></a></li>
+                
             </ul>
 
         </nav>
@@ -69,7 +71,7 @@ if(!isset($_SESSION['cart'])) {
                 <table>
                     <tr> <figure> -->
                     <figure class="featured-image">
-                    <img src='images/anvil.jpeg' alt='Myth Black and White'>
+                    <img src='images/anvil.png' alt='Myth Black and White'>
             <figcaption><button onclick="addToCart('anvil', 50)">Add to Cart</button>
                        <div  onmouseenter="itemDetails(0)" onmouseout="removeDetails()">Potion of Healing</div>
                         <p>50 Gold Pieces per vial</p></figcaption>
@@ -84,7 +86,7 @@ if(!isset($_SESSION['cart'])) {
                         <td>90 Gold Pieces per vial</td>
                     </tr> -->
                     <figure>
-                    <img src='images/anvil.jpeg' alt='Myth Black and White'>
+                    <img src='images/anvil.png' alt='Myth Black and White'>
 
 
                                 <figcaption>
@@ -100,7 +102,7 @@ if(!isset($_SESSION['cart'])) {
                     </tr> -->
 
                      <figure>
-                     <img src='images/anvil.jpeg' alt='Myth Black and White'>
+                     <img src='images/anvil.png' alt='Myth Black and White'>
 
                                 <figcaption>
                                 <button onclick="addToCart('catapult', 120)">Add to Cart</button>
@@ -115,7 +117,7 @@ if(!isset($_SESSION['cart'])) {
                     </tr> -->
                    
                     <figure>
-                    <img src='images/anvil.jpeg' alt='Myth Black and White'>
+                    <img src='images/anvil.png' alt='Myth Black and White'>
 
 
                                 <figcaption>
@@ -146,7 +148,7 @@ if(!isset($_SESSION['cart'])) {
                 </table> -->
                 
                 <figure>
-                <img src='images/anvil.jpeg' alt='Myth Black and White'>
+                <img src='images/anvil.png' alt='Myth Black and White'>
 
 
                             <figcaption>
@@ -158,7 +160,7 @@ if(!isset($_SESSION['cart'])) {
 
                 </div>
                     </div>
-                    <div id="product-review">
+                    <!-- <div id="product-review">
 
 <h3>Acme Rocket Reviews</h3>
 <ul>
@@ -168,7 +170,7 @@ if(!isset($_SESSION['cart'])) {
     <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
     <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
 </ul>
-</div>
+</div> -->
 
 </section>
 
