@@ -22,20 +22,20 @@ session_start();
 <section>
 <form method="post" action="" >
 
-<span> <label>Full Name </label> </span>
-    <input type="text" name="name"required>
-    <span> <label> Address Line 1 </label> </span>
-    <input type="text" name="address" required >
-    <span> <label> City: </label> </span>
-    <input type="text" name="city" required >
-    <span> <label> State/Province/Region: </label> </span>
-    <input type="text" name="state" required >
+<span> <label>Full Name </label> </span> <br>
+    <input type="text" name="name"required><br>
+    <span> <label> Address Line 1 </label> </span> <br>
+    <input type="text" name="address" required > <br> 
+    <span> <label> City: </label> </span> <br> 
+    <input type="text" name="city" required > <br>
+    <span> <label> State/Province/Region: </label> </span> <br>
+    <input type="text" name="state" required > <br>
     <span> <label> Country </label> </span>
-    <input type="text" name="country" required >
+    <input type="text" name="country" required > <br>
     <span> <label> Phone Number </label> </span>
-    <input type="text" name="phone-number" required >
+    <input type="text" name="phone-number" required > <br>
 
-    <input type="submit" value="Use this address">
+    <input type="submit" value="Use this address"> <br>
 </form>
 </section>
 <section>
