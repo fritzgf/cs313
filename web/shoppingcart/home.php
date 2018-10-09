@@ -53,9 +53,9 @@ if(!isset($_SESSION['cart'])) {
             
                     <figure class="featured-image">
                     <img src='images/longImage.png' alt=''>
-            <figcaption><button onclick="addToCart('Eufy's Speaker, 45)">Add to Cart</button>
-                       <div  onmouseenter="itemDetails(0)" onmouseout="removeDetails()">Eufy's Speaker</div>
-                        <p>Price: $45</p></figcaption>
+            <figcaption><button onclick="addToCart('Amazon Echo', 45)">Add to Cart</button>
+                       <div  onmouseenter="itemDetails(0)" onmouseout="removeDetails()">Amazon Echo</div>
+                        <p>Price: $70</p></figcaption>
                   </figure>
                        
                     <figure>
@@ -107,9 +107,9 @@ if(!isset($_SESSION['cart'])) {
 
 
                             <figcaption>
-                            <button onclick="addToCart('Amazon Echo', 400)">Add to Cart</button>
-                        <div onmouseenter="itemDetails(5)" onmouseout="removeDetails()">Amazon Echo</div>
-                        <p>Price: $70</p>
+                            <button onclick="addToCart('Eufy Speaker', 400)">Add to Cart</button>
+                        <div onmouseenter="itemDetails(5)" onmouseout="removeDetails()">Eufy Speaker</div>
+                        <p>Price: $45</p>
                                 </figcaption>
                             </figure>
 
