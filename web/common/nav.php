@@ -4,13 +4,13 @@
                 <!-- <li><a href="jobdevelopers.php" title="job developers">Job Developers</a></li> -->
                 <?php
 
-// if(isset($_SESSION["userData"]) != TRUE){
-//    echo '<li><a class="ask-question" href="./../view/login.php">login </a> </li>';
+   if(isset($_SESSION["userData"]) != TRUE){
+    echo '<li><a class="ask-question" href="./../view/login.php">login </a> </li>';
 
-// } 
-// else{
-//     include '../view/logout.php';
-// }
+   } 
+ else{
+     include '../view/logout.php';
+ }
 ?>
            
             </ul>
