@@ -10,7 +10,7 @@
    } 
  else{
      include '../view/logout.php';
- }
+ } 
 ?>
            
             </ul>
