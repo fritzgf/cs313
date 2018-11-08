@@ -30,7 +30,6 @@ id SERIAL PRIMARY KEY,
 account_id INT NOT NULL REFERENCES accounts (user_id),
 interviewq_id INT NOT NULL UNIQUE REFERENCES interviewsq (interviewq_id)
 );
-INSERT INTO accounts(userfirstname, userlastname, useremail) VALUES ('Fritz', 'Fevrier', 'fgfevrier@gmail.com');
 
 
 INSERT INTO interviewsq(interviewq_id, interviewtext) 
