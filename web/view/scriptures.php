@@ -15,7 +15,7 @@
 	<input type="text" name="inputBook"/>
     <input type="submit" name="SubmitButton"/>
     
-echo '<h3> Results </h3>'
+echo '<h3> Results </h3>';
 </form> 
 
     <?php
