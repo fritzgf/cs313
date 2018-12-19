@@ -13,7 +13,7 @@ if(!isset($_SESSION['cart'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width">
-    <title>Browse Items</title>
+    <title>MyStore</title>
     <link href="style.css" rel="stylesheet" type="text/css" media ="screen"/>
 </head>
 
@@ -29,7 +29,7 @@ if(!isset($_SESSION['cart'])) {
 
            <nav id="page-nav">
             <ul>
-                <li><a id= "home_color" href="home.php" title="Go to home page">Home</a></li>
+                <li><a id= "home_color" href="myStore.php" title="Go to home page">Home</a></li>
                 <li><a id="eufy" href="eufy.html" title=""></a></li>
                 <li><a id="huawei" href="huawei.html" title=""></a></li>
                 <li><a id="china" href="china.html" title=""></a></li>
