@@ -1,765 +1,4 @@
-
-
-
-/*This is the acme application stylesheet*/
-
-/********************************
-* Default Styles - Mobile First
-********************************/
-html{
-    box-sizing: border-box;
-}
-
 *, *:before, *:after{
-    box-sizing: inherit;
-}
-body {
-    font-family: sans-serif;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    background-image: url("/acme/images/site/background.jpg");
-    background-size: 100% 130%;
-    background-repeat: no-repeat;
-}
-
-body,
-caption,
-th,
-td,
-input,
-textarea,
-select,
-option,
-legend,
-fieldset,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-size-adjust: 1.5;
-}
-
-/* *********** Base Styles ***********/
-
-/*The body inner-div*/
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 5%;
-    background-color: #ffffff;
-    margin: 8px;
-
-}
-#logo{
-    width:114.75px;
-    height:45.75px;
-}
-.page-header{
-    display:flex;
-    justify-content: space-between;
-    max-height: 50px;
-}
-#account-img{
-    display: flex;
-    min-width: 200px;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0;
-
-}
-
-#account{
-    width:15%;
-    height:auto;
-    padding-right:.5em;
-}
-#account-text{
-    font-size: 1.1em;
-
-}
-
-#content-title {
-    font-size: 20px;
-}
-
-#content-wrapper {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding-bottom: 5px;
-}
-.welcomMes{
-        padding-top:1em;
-       color:black;
-   margin-left:.5em;
-    }
-    #account-text{
-        padding-top:1em;
-    }
-    .logoutBnt{
-        padding-top:1em;
-        margin-right:.5em;
-        color:black;
-        
-    }
-   a:link {
-    text-decoration: none;
-}
-.review-form{
-    display:flex;
-    flex-direction:column;
-     
-}
-.reviews{
-   margin-left:1em;
-    
-}
-#revbtn{
-    
-    
-}
-#reviewText{
-   border-radius: 2px;
-  margin-bottom: .5em;
-}
-.revTextarea{
-    display:flex;
-    flex-direction:column;
-    width:300px;
-        height: 200px;
-        margin:auto;
-        
-}
-
-
-/*	Background Images - use with Small screens */
-
-/*******************************
-* Page Navigation Styles
-*******************************/
-
-#page-nav {
-    background-color: red;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 200;
-}
-
-#page-nav ul {
-    display: flex;
-    align-items: stretch;
-    height: 2.5em;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#page-nav ul li {
-    display: flex;
-    flex: auto;
-    justify-content: center;
-}
-
-#page-nav a {
-    display: flex;
-    text-decoration: none;
-
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-}
-#page-nav li a{
-    color:white;
-}
-
-#page-nav a:link {
-    color: white;
-}
-
-a:focus {
-
-    background: white;
-}
-
-
-
-a:active {
-    background: white;
-    color: white;
-} 
-
-#home_color {
-    color: white;
-}
-
-/********************************
-* Main Content Styles
-********************************/
-
-/*#view-display{
-    max-width: 100%;
-    display:flex;
-    list-style: none;
-}
-
-
-.pdview{
-    margin-left:1.5em;}*/
-
-#view-display{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-#view-display li{
-    margin-bottom: .5em;
-
-    list-style-type: none;
-    flex: 1 1 auto;
-}
-#view-display img{ 
-    width: 100%;
-/*    height: 200px;*/
-}
-#home-content {
-    max-width: 100%;
-    padding: 5px;
-
-}
-
-
-    #pic {
-        max-width: 100%;
-    }
-
-    #rocket-item {
-        list-style: none;
-        text-align: left;
-        position: absolute;
-        top: 0em;
-        right: 0em;
-        color: red;
-        margin: .2em auto;
-        order: 2;
-        padding: .5em;
-        font-size: 0.8em;
-
-    }
-
-
-    #actionbtn {
-        width: 150px;
-    }
-
-    .description-item {
-        width: 100%;
-        position: relative;
-        text-align: center;
-
-        order: 2;
-    }
-
-    #recipe-content {
-        display: flex;
-        flex-flow: column nowrap;
-
-    }
-
-    #image-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    figure {
-        max-width: 35%;
-        margin: 0;
-        margin-bottom: 1em;
-    }
-
-    .featured-image {
-        width: 100%;
-    }
-
-    #recipe-lists {
-        list-style: none;
-
-    }
-
-    /*The page footer*/
-
-    #page-footer {
-        font-size: .7em;
-        margin: 0;
-    }
-
-    #page-footer > * {
-        padding: 0 0 0 1em;
-    }
-
-    #page-footer li {
-        padding-right: 1em;
-
-    }
-
-    hr {
-        border-width: 2px;
-        border-color: #000000;
-        margin-top: 2em;
-    }
-
-    #recipe-lists {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    #product-review {
-        margin: 6px;
-    }
-
-    #product-content ul {
-        list-style: none;
-    }
-
-    #displayImage {
-        max-width: 360px;
-        margin: 0 auto;
-
-    }
-
-    #displayImage img {
-        max-width: 360px;
-        max-height: 250px;
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    #displayName {
-        padding-left: .5em;
-        font-size: 40px;
-
-    }
-
-    #displayDescription {
-        padding-right: 1em;
-    }
-
-    #product-wrapper {
-        justify-content: center;
-    }
-
-    #displayManufacturer {
-        margin-top: 1em;
-
-    }
-
-    #displayPrice {
-        margin-top: 1em;
-        color: #990033;
-        font-weight: bold;
-        font-size: 2em;
-        font-family: fantasy;
-    }
-    #prod-display{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-    }
-    #prod-display li{
-        margin-bottom: .5em;
-        border: 1px #ccc solid;
-        list-style-type: none;
-        flex: 1 1 auto;
-    }
-    #prod-display li img{
-        min-width: 100%;
-        height: 200px;
-    }
-
-    /********************************
-    * Medium Screen Styles
-    ********************************/
-
-    @media (min-width: 41.67em) {
-
-        .wrapper {
-            margin: 1.5em;
-            padding-bottom: 2%;
-        }
-
-        /* nav bar at top */
-        #page-nav {
-            position: inherit;
-        }
-
-        .page-main {
-            border-top: none;
-        }
-
-        #home-content {
-            margin-left: 2%;
-            margin-right: 2%;
-        }
-
-        #page-footer {
-            margin-bottom: 1%;
-        }
-
-        #recipe-item {
-            width: 40%;
-        }
-
-        #product-review {
-            width: 50%;
-            margin: 0;
-
-        }
-        #product-wrapper {
-            display: flex;
-            justify-content: space-around;
-        }
-        #displayImage {
-            margin: 0;
-        }
-
-        #description-position {
-            max-width: 45%;
-            padding: 0;
-
-        }
-        #page-footer {
-            font-size: 1.25rem;
-        }
-        #page-footer {
-            font-size: 12px;
-            text-align: center;
-        }
-
-        #recipe-content {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-
-        }
-
-        #recipe-images {
-            max-width: 40%;
-        }
-
-        #product-review {
-            max-width: 40%;
-        }
-        #actionbtn {
-            width: 200px;
-
-        }
-        #rocket-item {
-            font-size: 1em;
-        }
-        #displayName {
-            padding-left: .5em;
-            font-size: 2.5em;
-        }
-    }
-    
-
-/********************************
-    * Large Screen Styles
-    ********************************/
-
-    @media (min-width: 66.7em) {
-        body {
-            font-size: 1.5vw;
-        }
-
-        .wrapper {
-            max-width: 1000px;
-            margin: 1.5em auto;
-        }
-
-
-        #page-main {
-            border-top: none;
-        }
-
-        .description-item {
-            position: relative;
-            text-align: center;
-        }
-
-        #rocket-item {
-            list-style: none;
-            text-align: left;
-            position: absolute;
-            top: 15%;
-            right: 10%;
-        }
-        figure {
-            max-width: 35%;
-            margin: 0;
-            margin-bottom: 1em;
-        }
-        .page-header{
-            display: flex;
-            justify-content: space-between;
-            min-height: 100px;
-        }
-        #logo{
-            width: 229.5px;
-            height: 91.5px;
-            margin: 0 0 0 5px;
-
-        }
-        #account-text{
-            padding-right:1em;
-        }
-
-        /* Style login page*/
-        .logForm {
-
-            display: flex;
-            margin:auto;
-        }
-        #signIn{
-            text-align: center;
-            margin-left:2.5em;
-        }
-        .login-page{
-            display:flex;
-            flex-direction:column;
-            text-align:center;  
-            margin-top: 2em;
-
-        }
-
-        button{
-            width:300px;
-            height: 30px;
-            margin-left:40%;
-            background-color:red;
-            color:white;
-
-        }
-
-        input{
-            width:300px;
-            height: 20px;
-            flex-direction:column;
-            text-align:left;
-            margin-left:40%;
-            margin-top: 2em;
-        }
-
-        .psw{
-            text-align: center;
-            margin-left:40%;
-            font-size: 12px;
-            margin-top:2em;
-
-        }
-
-        .create-account{
-            text-align:left;
-            margin-left:35%;
-            width:140px;
-        }
-
-        /* Style register page*/
-        .register-page{
-            display:flex;
-            flex-direction:column;
-            text-align: center;
-            display: flex;
-            margin:auto;
-
-        }
-
-        label{
-            margin-left:18.5em;
-            display:flex;
-        }
-        #account{
-            padding-top:2em;
-
-        }
-        #account-text{
-            padding-top:2em; 
-            font-size: 17px;
-
-        }
-
-        /*style for product pages*/
-
-        .newProduct{
-            display:flex    
-        }
-        textarea{
-            height:150px;
-            width:250px;
-            margin-left: 40%;
-        }
-        .proDescription{
-
-            margin-left:40%;
-        }
-
-        /*style for product category*/
-
-        .proCategory{
-            margin-left:40%;
-        }
-
-        #prod-display{
-            flex-flow: row wrap;
-            justify-content: flex-start;
-            
-            
-        }
-        #prod-display li{
-            max-width: 200px;
-            flex: 1 0 auto;
-            text-align: center;
-            max-height: 400px; 
-            list-style: none;
-        }
-        .priceColor{
-            color:red;
-            margin-top: 1em;
-            font-weight: bold;
-            font-size: 1em;
-            font-family: fantasy;
-        }
-        #view-display{
-            display:flex;
-            list-style: none;
-           flex-direction:row;
-
-        }
-         #view-display1{
-            display:flex;
-            list-style: none;
-           flex-direction:row;
-
-        }
-        #view-display li{
-/*           margin-left: 2em;*/
-           
-        }
-       
-       
-        .viewImg img{
-         width: 100%;
-          height: 250px;
-           
-        }
-        .viewInfo{
-            margin-left: 6em;
-        }
-        #image-display li img{
-            
-           flex-flow: row wrap;
-            list-style: none;
-            
-        }
-        #image-display1 li img{
-           
-           flex-flow: row;
-            list-style: none;
-            
-    }
-    .inputItem{
-      
-        
-    }
-    .inputFile{
-        margin-left: 18.5em;
-    }
-    .addProd{
-        margin-left: 12.4em;
-    }
-   
-    
-    .welcomMes{
-        padding-top:2em;
-        margin-left: 23em;
-    }
-    #account-text{
-        padding-top:2em;
-    }
-    .logoutBnt{
-        padding-top:2em;
-        margin-right:2em;
-    }
-    
- 
- .review-form{
-    display:flex;
-    flex-direction:column;
-}
-.reviews{
-   margin-left:16.5em;
-     
-}
-#revbtn{
-   
-   margin-left:1.1em; 
-}
-#reviewText{
-   
-    margin-left:1.1em;
-}
-.revTextarea{
-    display:flex;
-    flex-direction:column;
-     
-        
-}
-#displayReviews{
-    margin-left:15.3em;
-   
-    
-}
-#displayReviews li{
-    list-style-type: none;
-}
-#displayReviews1 li{
-    list-style-type: none;
-}
-#image-display1 li{
-      list-style-type: none;
-}
-.updateReview1{
-    margin-left:16.5em;
-     padding-top:1em;
-}
-.updateReview{
-   
-    margin-left:1em;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* *, *:before, *:after{
     box-sizing: inherit;
 }
 body {
@@ -822,9 +61,9 @@ h2{
 * Page Navigation Styles
 *******************************/
 
-/* #page-nav {
+#page-nav {
     /* background-color:#f49e42; */
-    /* background-color:#f08c0a; 
+    background-color:#f08c0a; 
     position: fixed;
     bottom: 0;
     left: 0;
@@ -832,18 +71,18 @@ h2{
     z-index: 200;
     margin-bottom:2em;
     
-} */
+}
 
-/* #page-nav ul {
+#page-nav ul {
     display: flex;
     align-items: left;
     height: 2.5em;
     margin: 0;
     padding: 0;
     list-style: none;
-} */
+}
 
-/* #page-nav ul li {
+#page-nav ul li {
     display: flex;
    flex:auto;
 }
@@ -854,7 +93,7 @@ h2{
 
     flex: 1;
     /* justify-content: ; */
-    /* align-items: center;
+    align-items: center;
 }
 #page-nav li a{
     color:white;
@@ -862,7 +101,7 @@ h2{
 
 #page-nav a:link {
     color: white;
-} */ */
+}
 
 /* a:focus {
 
@@ -874,15 +113,15 @@ h2{
     color: white;
 }  */
 
-/* #home_color {
+#home_color {
     color: white;
-} */
+}
 
  /********************************
     * Medium Screen Styles
     ********************************/
 
-    /* @media (min-width: 41.67em) {
+    @media (min-width: 41.67em) {
 
         .wrapper {
             margin: 1.5em;
@@ -890,7 +129,7 @@ h2{
         }
 
         /* nav bar at top */
-        /* #page-nav {
+        #page-nav {
             position: inherit;
         }
 
@@ -906,13 +145,13 @@ h2{
         #page-footer {
             margin-bottom: 1%;
         }
-    /* } */ */ */
+    }
 
 /********************************
     * Large Screen Styles
 ********************************/
 
-    /* @media (min-width: 66.7em) {
+    @media (min-width: 66.7em) {
         body {
             font-size: 1.5vw;
         }
@@ -924,7 +163,7 @@ h2{
 
     
         /* Style login page*/
-        /* .logForm {
+        .logForm {
 
             display: flex;
             margin:auto;
@@ -980,7 +219,7 @@ h2{
         }
 
         /* Style register page*/
-        /* .register-page{
+        .register-page{
             display:flex;
             flex-direction:column;
             text-align: center;
@@ -1001,11 +240,11 @@ h2{
             padding-top:2em; 
             font-size: 17px;
 
-        } */ */ */
+        }
         /* .page-header{
             display: flex;
             justify-content: space-between;
             min-height: 100px;
         } */
- /* } */
- */ */
+    }
+
