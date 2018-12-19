@@ -38,7 +38,6 @@ if(!isset($_SESSION['cart'])) {
 
         </nav>
 
-       
        <main class="page-main">
        <section id="home-content">
                 
