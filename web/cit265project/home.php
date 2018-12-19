@@ -21,7 +21,7 @@
 
 <ul>
 <li><a href="home.php" title="">Home</a></li>
-<li><a id= "home_color" href="myStore.php" title="my Store">Home</a></li>
+<li><a id= "home_color" href="myStore.php" title="my Store">Project</a></li>
 </ul>
 </nav>
 

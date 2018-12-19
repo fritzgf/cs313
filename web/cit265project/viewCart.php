@@ -16,7 +16,7 @@ session_start();
         <div id="container">
             <header>
                 <h1>MyStore</h1>
-                <a href="home.php">Browse Items</a>
+                <a href="myStore.php">Browse Items</a>
             </header>
 
             <nav></nav>

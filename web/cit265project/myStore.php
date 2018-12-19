@@ -29,7 +29,8 @@ if(!isset($_SESSION['cart'])) {
 
            <nav id="page-nav">
             <ul>
-                <li><a id= "home_color" href="home.php" title="Go to home page">Home</a></li>
+                <li><a href="home.php" title="">Home</a></li>
+                <li><a id= "home_color" href="myStore.php" title="Go to home page">MyStore</a></li>
                 <li><a id="eufy" href="eufy.html" title=""></a></li>
                 <li><a id="huawei" href="huawei.html" title=""></a></li>
                 <li><a id="china" href="china.html" title=""></a></li>
