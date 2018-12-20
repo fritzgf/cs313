@@ -25,17 +25,11 @@
         <ul>
             <li> <a href="index.php"> Home</a></li>
             <li> <a href="myStore.php"> Final Project</a></li>
-            <li> <a href="allObjectives/basicJavascript/example.php"> Basic JavaScript</a></li>
             <li> <a href="allObjectives/Canvas/example.php"> Canvas</a></li>
             <li> <a href="allObjectives/CSS3Transforms/example.php">Triggering Transformation</a> </li>
-            <li> <a href="allObjectives/cssAnimation/example.php">Triggering Animation</a></li>
-            <li> <a href="allObjectives/cssTransition/example.php">Triggering CSS3 Transition </a></li>
             <li> <a href="allObjectives/cssTransitionJava/example.php">CSS And JavaScript</a></li>
             <li> <a href="allObjectives/DOM-Manupulation/example.php"> DOM Manipulation Using createElement, appendChild</a></li>
-            <li> <a href="allObjectives/localStorage/example.php">LocalStorage</a></li>
-
-
-
+            <li> <a href="allObjectives/localStorage/example.php">Local Storage</a></li>
         </ul>
     </nav>
 

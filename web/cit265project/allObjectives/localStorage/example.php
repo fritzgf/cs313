@@ -12,7 +12,7 @@
 </head>
 <body onload="getData()">
 <div class="formFactor">
-    <h1 >Objective 5</h1>
+    <h1 >Local Storage</h1>
     <p >Please submit your info below</p>
        <h4>Fill out this form<span class="glyphicon glyphicon-heart"></span></h4>
         <form id="form">
