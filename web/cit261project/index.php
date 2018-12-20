@@ -5,9 +5,7 @@
     <!-- head describes the page to the browser-->
 
     <meta charset="utf-8">
-    <title> Home | fritzgf.github.io</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
-    </script>
+    <title> Home |Fritz Fevrier</title>
 
 </head>
 
